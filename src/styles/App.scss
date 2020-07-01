@@ -1,0 +1,10 @@
+@import "./variables";
+@import "./Hero";
+@import "./Loading";
+
+$theme-colors: (
+    "primary": $primaryColor,
+    "secondary": $secondaryColor
+);
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";

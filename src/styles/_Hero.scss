@@ -1,0 +1,32 @@
+.hero {
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  .position-absolute {
+      top: 0;
+      height: 100%;
+      background-color: rgba(0,0,0,0.25);
+  }
+  h1 {
+      text-transform: uppercase;
+  }
+  .hero__text {
+    bottom: 0;
+    color: #fff;
+  }
+  .hero__column {
+      height: 100%;
+  }
+  @media screen and (min-width: 575px) {
+    .hero__column-start {
+      text-align: left;
+    }
+    .hero__column-center {
+      text-align: center;
+    }
+    .hero__column-end {
+      text-align: right;
+    }
+  }
+}
