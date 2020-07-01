@@ -17,6 +17,11 @@ $theme-colors: (
 .App {
     background-color: $secondaryColor;
 }
+h1 {
+    font-family: 'Dosis', sans-serif;
+    line-height: 2rem;
+    letter-spacing: 4px;
+  }
 .hollow {
     background-color: transparent;
     border-radius: 2rem;

@@ -5,6 +5,7 @@ nav {
   z-index: 1;
   width: 100%;
   padding: 32px 0;
+  color: #fff;
 }
 
 nav::after {
@@ -43,14 +44,17 @@ nav .nav__content {
   color: #fff;
 }
 
-.hero h1 {
-  font-family: 'Dosis', sans-serif;
-  line-height: 2rem;
-  letter-spacing: 4px;
-}
-
 .hero .hero__column {
   height: 100%;
+}
+
+.hero a {
+  margin: 0 7.5px;
+  color: #fff;
+}
+
+.hero .hero__column-center {
+  font-size: 2rem;
 }
 
 @media screen and (min-width: 575px) {
@@ -10890,6 +10894,12 @@ a.text-dark:hover, a.text-dark:focus {
 
 .App {
   background-color: #7D7D7D;
+}
+
+h1 {
+  font-family: 'Dosis', sans-serif;
+  line-height: 2rem;
+  letter-spacing: 4px;
 }
 
 .hollow {

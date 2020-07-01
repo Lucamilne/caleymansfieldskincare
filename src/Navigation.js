@@ -17,6 +17,7 @@ class Navigation extends React.Component {
                             <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
+                    <h1>Kitchenism.</h1>
                     <Button variant="primary" className="btn btn-outline-light hollow">Contact</Button>
                 </Container>
             </nav>
