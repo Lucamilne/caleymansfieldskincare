@@ -1,23 +1,25 @@
 import React from "react";
-import Navbar from 'react-bootstrap/Navbar'
+import { Container, Dropdown, Button } from "react-bootstrap";
 
 class Navigation extends React.Component {
     render() {
         return (
-            <div className="position-fixed">
-                <Navbar bg="dark" variant="dark">
-                    <Navbar.Brand href="#home">
-                        <img
-                            alt=""
-                            src="/logo.svg"
-                            width="30"
-                            height="30"
-                            className="d-inline-block align-top"
-                        />{' '}
-                        <span>Kitchenism.</span>
-                    </Navbar.Brand>
-                </Navbar>
-            </div>
+
+            <nav className="position-absolute">
+                <Container fluid className="nav__content d-flex justify-content-between">
+                    <Dropdown className="nav__item">
+                        <Dropdown.Toggle variant="primary" id="dropdown-basic">
+                            Furniture
+                        </Dropdown.Toggle>
+                        <Dropdown.Menu>
+                            <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                            <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                            <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                        </Dropdown.Menu>
+                    </Dropdown>
+                    <Button variant="primary" className="nav__item">Contact</Button>
+                </Container>
+            </nav>
         )
     }
 }

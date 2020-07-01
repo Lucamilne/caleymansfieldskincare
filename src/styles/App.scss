@@ -1,4 +1,5 @@
 @import "./variables";
+@import "./Navigation";
 @import "./Hero";
 @import "./Loading";
 
@@ -8,3 +9,7 @@ $theme-colors: (
 );
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+.App {
+    background-color: $secondaryColor;
+}
