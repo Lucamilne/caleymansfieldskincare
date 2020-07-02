@@ -1,0 +1,92 @@
+[
+    {
+      "name": "Single",
+      "image": "https://www.mdhouse.it/ContentsFiles/mdhouse_armadi_single_gallery_preview.jpg",
+      "type": "standard"
+    },
+    {
+        "name": "Gola Companar Door",
+        "image": "https://www.mdhouse.it/ContentsFiles/mdhouse_armadi_gola-complanare_gallery_preview.jpg",
+        "type": "standard"
+    },
+    {
+        "name": "Gola Hinged Door",
+        "image": "https://www.mdhouse.it/ContentsFiles/mdhouse_armadi_gola-battente_gallery_preview.jpg",
+        "type": "standard"
+    },
+    {
+        "name": "Caris",
+        "image": "https://www.mdhouse.it/ContentsFiles/mdhouse_armadi_caris_gallery_preview.jpg",
+        "type": "standard"
+    },
+    {
+        "name": "Twin",
+        "image": "https://www.mdhouse.it/ContentsFiles/mdhouse_armadi_twin_gallery_preview.jpg",
+        "type": "standard"
+    },
+    {
+        "name": "Harriet",
+        "image": "https://www.mdhouse.it/ContentsFiles/mdhouse_armadi_harriet_gallery_preview.jpg",
+        "type": "standard"
+    },
+    {
+        "name": "Plus",
+        "image": "https://www.mdhouse.it/ContentsFiles/mdhouse_armadi_plus_gallery_preview.jpg",
+        "type": "standard"
+    },
+    {
+        "name": "Liscia Hinged Door",
+        "image": "https://www.mdhouse.it/ContentsFiles/mdhouse_armadi_liscia-battente_gallery_preview.jpg",
+        "type": "standard"
+    },
+    {
+        "name": "Liscia Sliding Door",
+        "image": "https://www.mdhouse.it/ContentsFiles/mdhouse_armadi_liscia-scorrevole_gallery_preview.jpg",
+        "type": "standard"
+    },
+    {
+        "name": "Glass Profile",
+        "image": "https://www.mdhouse.it/ContentsFiles/mdhouse_armadi_profilo-vetro_gallery_preview.jpg",
+        "type": "standard"
+    },
+    {
+        "name": "Frame Profile",
+        "image": "https://www.mdhouse.it/ContentsFiles/mdhouse_armadi_telaio-vetro_gallery_preview.jpg",
+        "type": "standard"
+    },
+    {
+        "name": "Vert",
+        "image": "https://www.mdhouse.it/ContentsFiles/mdhouse_armadi_vert_gallery_preview.jpg",
+        "type": "standard"
+    },
+    {
+        "name": "Tetris Pelle Version",
+        "image": "https://www.mdhouse.it/ContentsFiles/mdhouse_armadi_tetris-pelle_gallery_preview.jpg",
+        "type": "standard"
+    },
+    {
+        "name": "1/2",
+        "image": "https://www.mdhouse.it/ContentsFiles/mdhouse_armadi_1-2_gallery_preview.jpg",
+        "type": "standard"
+    },
+    {
+        "name": "TV Out",
+        "image": "https://www.mdhouse.it/ContentsFiles/mdhouse_armadi_tv-out_gallery_preview.jpg",
+        "type": "standard"
+    },
+    {
+        "name": "Kabina Kloset",
+        "image": "https://www.mdhouse.it/ContentsFiles/mdhouse_cabine-armadio_kabina-kloset_gallery_preview.jpg",
+        "type": "walk-in"
+    },
+    {
+        "name": "Kabina Boxes",
+        "image": "https://www.mdhouse.it/ContentsFiles/mdhouse_cabine-armadio_kabina-boxes_gallery_preview.jpg",
+        "type": "walk-in"
+    },
+    {
+        "name": "Kabina Boiserie",
+        "image": "https://www.mdhouse.it/ContentsFiles/mdhouse_cabine-armadio_kabina-boiserie_gallery_preview.jpg",
+        "type": "walk-in"
+    }
+]
