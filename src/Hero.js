@@ -5,7 +5,7 @@ class Hero extends React.Component {
     render() {
         return (
             <div className="hero position-relative">
-                <img src={require("./images/Interior.jpg")} />
+                <img src={require("./images/Interior-2.jpg")} />
                 <div className="position-absolute d-flex align-items-end">
                     <div className="hero__text position-sticky">
                         <Container fluid>
@@ -16,7 +16,7 @@ class Hero extends React.Component {
                                             <h1>Kitchenism.</h1><em>noun</em>
                                         </div>
                                         <em>kitch·​en·ism | \ ˈki-chən-is-zəm  \</em>
-                                        <h5>Design and Installation service for Italian Kitchens.</h5>
+                                        <p>Having your imagination turned into a reality without compromise.</p>
                                     </div>
                                 </Col>
                                 <Col sm>
