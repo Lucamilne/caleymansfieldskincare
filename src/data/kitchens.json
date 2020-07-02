@@ -1,0 +1,83 @@
+[
+    {
+        "name": "Smart",
+        "image": "https://www.gicinque.com/uploads/products/principale_1-738x416.jpg",
+        "type": "modern"
+    },
+    {
+        "name": "Xilo",
+        "image": "https://www.gicinque.com/uploads/products/sfondo-738x416.jpg",
+        "type": "modern"
+    },
+    {
+        "name": "Time",
+        "image": "https://www.gicinque.com/uploads/products/copertina-rovere-neve_1-738x416.jpg",
+        "type": "modern"
+    },
+    {
+        "name": "De.Sign Stone",
+        "image": "https://www.gicinque.com/uploads/products/copertina-bottocino-scuro_1-738x416.jpg",
+        "type": "modern"
+    },
+    {
+        "name": "Colors",
+        "image": "https://www.gicinque.com/uploads/products/copertina-colors-738x416.jpg",
+        "type": "modern"
+    },
+    {
+        "name": "Dolce Vita",
+        "image": "https://www.gicinque.com/uploads/products/copertina-12-13-738x416.jpg",
+        "type": "modern"
+    },
+    {
+        "name": "De.Sign",
+        "image": "https://www.gicinque.com/uploads/products/design-738x416.jpg",
+        "type": "modern"
+
+    },
+    {
+        "name": "Oslo",
+        "image": "https://www.gicinque.com/uploads/products/1-5-738x416.jpg",
+        "type": "modern"
+    },
+    {
+        "name": "Joy",
+        "image": "https://www.gicinque.com/uploads/products/2-6-738x416.jpg",
+        "type": "modern"
+    },
+    {
+        "name": "Myglass",
+        "image": "https://www.gicinque.com/uploads/products/background-738x416.jpg",
+        "type": "modern"
+    },
+    {
+        "name": "Asia",
+        "image": "https://www.gicinque.com/uploads/products/asia-home-page-def_1-738x416.jpg",
+        "type": "modern"
+    },
+    {
+        "name": "Kristal",
+        "image": "https://www.gicinque.com/uploads/products/g5c1011017bis-738x416.jpg",
+        "type": "modern"
+    },
+    {
+        "name": "Montecarlo",
+        "image": "https://www.gicinque.com/uploads/products/1-2-738x416.jpg",
+        "type": "classic"
+    },
+    {
+        "name": "Laguna",
+        "image": "https://www.gicinque.com/uploads/products/mg-1667-738x416.jpg",
+        "type": "classic"
+    },
+    {
+        "name": "Canova",
+        "image": "https://www.gicinque.com/uploads/products/p60-c1-0744-738x416.jpg",
+        "type": "classic"
+    },
+    {
+        "name": "Elite",
+        "image": "https://www.gicinque.com/uploads/products/mg-0142-738x416.jpg",
+        "type": "classic"
+    }
+]

@@ -93,8 +93,16 @@ nav .nav__content {
   }
 }
 
+.range {
+  margin: 56px 0;
+}
+
+.range .range__text {
+  min-height: 400px;
+}
+
 .contact-us {
-  margin: 32px 0;
+  margin: 56px 0;
 }
 
 .contact-us .form-group {
