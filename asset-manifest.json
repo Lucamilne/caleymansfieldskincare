@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Kitchenism/static/css/main.eb5a8fec.chunk.css",
+    "main.js": "/Kitchenism/static/js/main.096a2623.chunk.js",
+    "main.js.map": "/Kitchenism/static/js/main.096a2623.chunk.js.map",
+    "runtime-main.js": "/Kitchenism/static/js/runtime-main.f0f17471.js",
+    "runtime-main.js.map": "/Kitchenism/static/js/runtime-main.f0f17471.js.map",
+    "static/js/2.f5d486c4.chunk.js": "/Kitchenism/static/js/2.f5d486c4.chunk.js",
+    "static/js/2.f5d486c4.chunk.js.map": "/Kitchenism/static/js/2.f5d486c4.chunk.js.map",
+    "index.html": "/Kitchenism/index.html",
+    "precache-manifest.368005438defb3127456f9f8d98c8534.js": "/Kitchenism/precache-manifest.368005438defb3127456f9f8d98c8534.js",
+    "service-worker.js": "/Kitchenism/service-worker.js",
+    "static/css/main.eb5a8fec.chunk.css.map": "/Kitchenism/static/css/main.eb5a8fec.chunk.css.map",
+    "static/js/2.f5d486c4.chunk.js.LICENSE.txt": "/Kitchenism/static/js/2.f5d486c4.chunk.js.LICENSE.txt",
+    "static/media/Interior-2.jpg": "/Kitchenism/static/media/Interior-2.d233e7b3.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f0f17471.js",
+    "static/js/2.f5d486c4.chunk.js",
+    "static/css/main.eb5a8fec.chunk.css",
+    "static/js/main.096a2623.chunk.js"
+  ]
+}
