@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6e591c63ebed9a077a8d0e20250dd2b0",
+    "revision": "ae33e4b2ac1940b9a184ae34e0dfaef0",
     "url": "/Kitchenism/index.html"
   },
   {
-    "revision": "15e116a53802142935d4",
-    "url": "/Kitchenism/static/css/main.eb5a8fec.chunk.css"
+    "revision": "84687b2db518d9f9d648",
+    "url": "/Kitchenism/static/css/main.44708f4c.chunk.css"
   },
   {
     "revision": "b2b67868815313f94709",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Kitchenism/static/js/2.f5d486c4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "15e116a53802142935d4",
-    "url": "/Kitchenism/static/js/main.096a2623.chunk.js"
+    "revision": "84687b2db518d9f9d648",
+    "url": "/Kitchenism/static/js/main.0cce574f.chunk.js"
   },
   {
     "revision": "87ec1acc6903e04a65f7",

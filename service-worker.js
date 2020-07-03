@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Kitchenism/precache-manifest.368005438defb3127456f9f8d98c8534.js"
+  "/Kitchenism/precache-manifest.36d3fb3abce7a59b691d3bbdae629d86.js"
 );
 
 self.addEventListener('message', (event) => {
