@@ -69,16 +69,15 @@ nav .nav__content {
   height: 100%;
 }
 
-.hero a {
-  margin: 0 7.5px;
-  color: #fff;
-}
-
 .hero .hero__column-center {
   font-size: 2rem;
 }
 
-@media screen and (min-width: 575px) {
+.hero i {
+  color: #fff;
+}
+
+@media screen and (min-width: 540px) {
   .hero .hero__column-start {
     text-align: left;
   }
@@ -95,10 +94,21 @@ nav .nav__content {
 
 .range {
   margin: 56px 0;
+  font-family: 'Cutive Mono', monospace;
+}
+
+.range .range__container {
+  min-height: 400px;
 }
 
 .range .range__text {
-  min-height: 400px;
+  max-width: 600px;
+}
+
+@media screen and (min-width: 992px) {
+  .range .top-buffer {
+    margin-top: 56px;
+  }
 }
 
 .contact-us {
@@ -121,6 +131,28 @@ nav .nav__content {
 
 .contact-us .required {
   color: red;
+}
+
+.contact-us textarea {
+  resize: none;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer ul {
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li {
+  list-style: none;
+}
+
+footer i {
+  color: #222;
+  font-size: 1.5rem;
 }
 
 /*!
@@ -10944,9 +10976,13 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 h1 {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   line-height: 2rem;
   letter-spacing: 4px;
+}
+
+i {
+  margin-right: 1rem;
 }
 
 .carousel-indicators li {
@@ -10960,5 +10996,9 @@ h1 {
   border-radius: 2rem;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+.mask {
+  overflow: hidden;
 }
 /*# sourceMappingURL=App.css.map */

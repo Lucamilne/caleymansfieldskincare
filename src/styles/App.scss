@@ -1,35 +1,40 @@
-@import url('https://fonts.googleapis.com/css?family=Cutive+Mono|Dosis&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Cutive+Mono|Dosis&display=swap");
 @import "./variables";
 @import "./Navigation";
 @import "./Hero";
 @import "./Range";
 @import "./Contact";
 @import "./Loading";
+@import "./Footer";
 
 $theme-colors: (
-    "primary": $primaryColor,
-    "secondary": $secondaryColor,
-    "light": $lightColor,
-    "dark": $darkColor
+  "primary": $primaryColor,
+  "secondary": $secondaryColor,
+  "light": $lightColor,
+  "dark": $darkColor,
 );
-
-
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 h1 {
-    font-family: 'Dosis', sans-serif;
-    line-height: 2rem;
-    letter-spacing: 4px;
+  font-family: "Dosis", sans-serif;
+  line-height: 2rem;
+  letter-spacing: 4px;
+}
+i {
+  margin-right: 1rem;
 }
 .carousel-indicators li {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
 }
 .hollow {
-    background-color: transparent;
-    border-radius: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+  background-color: transparent;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.mask {
+  overflow: hidden;
 }

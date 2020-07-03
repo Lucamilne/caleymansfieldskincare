@@ -19,14 +19,13 @@
   .hero__column {
       height: 100%;
   }
-  a {
-    margin: 0 7.5px;
-    color: $lightColor;
-  }
   .hero__column-center {
     font-size: 2rem;
   }
-  @media screen and (min-width: 575px) {
+  i {
+    color: $lightColor;
+  }
+  @media screen and (min-width: 540px) {
     .hero__column-start {
       text-align: left;
     }

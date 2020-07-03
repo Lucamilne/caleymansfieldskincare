@@ -42,7 +42,7 @@ function Contact() {
 
                 <Form.Group controlId="fromMessage">
                     <Form.Label>Message</Form.Label>
-                    <Form.Control as="textarea" rows="5" defaultValue="I'm interested in booking a free consultation." />
+                    <Form.Control as="textarea" rows="15" defaultValue="I'm interested in booking a free consultation." />
                 </Form.Group>
                 <div className="d-flex justify-content-center">
                     <Button className="btn-outline-dark hollow" type="submit">Submit form</Button>

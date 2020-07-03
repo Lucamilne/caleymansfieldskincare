@@ -4,6 +4,7 @@ import Navigation from "./Navigation";
 import Hero from "./Hero";
 import Range from "./Range"
 import Contact from "./Contact"
+import Footer from "./Footer"
 
 
 function App() {
@@ -11,8 +12,9 @@ function App() {
     <div className="App">
       <Navigation />
       <Hero />
-       <Range />
+      <Range />
       <Contact />
+      <Footer />
     </div>
   );
 }
