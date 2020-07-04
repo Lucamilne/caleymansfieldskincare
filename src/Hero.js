@@ -13,9 +13,9 @@ class Hero extends React.Component {
                                 <Col sm>
                                     <div className="hero__column hero__column-start">
                                         <div>
-                                            <h1>Kitchenism.</h1><em>noun</em>
+                                            <h1>Impressionism.</h1><em>noun</em>
                                         </div>
-                                        <em>kitch·​en·ism | \ ˈki-chən-is-zəm  \</em>
+                                        <em>im·​pres·​sion·​ism | \ im-ˈpre-shə-ˌni-zəm \</em>
                                         <p>Having your imagination turned into a reality without compromise.</p>
                                     </div>
                                 </Col>
