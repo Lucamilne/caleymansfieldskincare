@@ -1,11 +1,12 @@
 import React from "react";
 import { Container, Row, Col } from 'react-bootstrap';
+import ShapeFill from "./ShapeFill"
 
 class Hero extends React.Component {
     render() {
         return (
             <div className="hero position-relative">
-                <img src={require("./images/Interior-2.jpg")} />
+                <img src={require("./images/1.jpg")} />
                 <div className="position-absolute d-flex align-items-end">
                     <div className="hero__text position-sticky">
                         <Container fluid>
@@ -13,7 +14,7 @@ class Hero extends React.Component {
                                 <Col sm>
                                     <div className="hero__column hero__column-start">
                                         <div>
-                                            <h1>Impressionism.</h1><em>noun</em>
+                                            <h1>Skin Revivival.</h1><em>noun</em>
                                         </div>
                                         <em>im·​pres·​sion·​ism | \ im-ˈpre-shə-ˌni-zəm \</em>
                                         <p>Having your imagination turned into a reality without compromise.</p>
@@ -26,17 +27,9 @@ class Hero extends React.Component {
                                         <a href="https://www.linkedin.com/in/john-harvey-a914771b/"><i className="fab fa-linkedin"></i></a>
                                     </div>
                                 </Col>
-                                <Col sm>
-                                    <div className="hero__column hero__column-end">
-                                        <address className="d-flex flex-column">
-                                            <span>SL6 1NJ, Maidenhead, United Kingdom</span>
-                                            <span>john@kitchenism.co.uk</span>
-                                            <span>+44 (0)7974 349658</span>
-                                        </address>
-                                    </div>
-                                </Col>
                             </Row>
                         </Container>
+                        <ShapeFill />
                     </div>
                 </div>
             </div>

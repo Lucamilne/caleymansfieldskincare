@@ -1,7 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Cutive+Mono|Dosis&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Over+the+Rainbow&family=Playfair+Display:wght@400;700&family=Rubik&display=swap");
 @import "./variables";
 @import "./Navigation";
 @import "./Hero";
+@import "./ShapeFill";
 @import "./Range";
 @import "./Contact";
 @import "./Loading";
@@ -16,13 +17,17 @@ $theme-colors: (
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
+body {
+  font-family: "Rubik", sans-serif;
+}
 h1 {
-  font-family: "Dosis", sans-serif;
+  font-family: "Playfair Display", serif;
   line-height: 2rem;
   letter-spacing: 4px;
-}
-i {
-  margin-right: 1rem;
+
+  span {
+    font-family: "Over the Rainbow", cursive;
+  }
 }
 .carousel-indicators li {
   width: 6px;
@@ -32,9 +37,33 @@ i {
 .hollow {
   background-color: transparent;
   border-radius: 2rem;
-  text-transform: uppercase;
   letter-spacing: 2px;
 }
 .mask {
   overflow: hidden;
+}
+
+.desktop {
+  display: none;
+}
+
+@media (min-width: 576px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .desktop {
+    display: inherit;
+  }
+  .mobile {
+    display: none;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
 }

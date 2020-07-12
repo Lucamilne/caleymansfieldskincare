@@ -1,0 +1,7 @@
+.fill-shapes {
+    transform: scaleY(-1) translateY(-5px);
+
+    .shape-fill {
+        fill: $lightColor;
+    } 
+}

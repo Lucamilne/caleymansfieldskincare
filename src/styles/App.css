@@ -1,46 +1,31 @@
-@import url("https://fonts.googleapis.com/css?family=Cutive+Mono|Dosis&display=swap");
-nav {
-  font-family: 'Dosis', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Over+the+Rainbow&family=Playfair+Display:wght@400;700&family=Rubik&display=swap");
+#navbar {
+  position: absolute;
   top: 0;
   z-index: 1;
   width: 100%;
-  padding: 32px 0;
-  color: #fff;
-  opacity: 0;
-  -webkit-animation: fade-in 1s ease forwards;
-          animation: fade-in 1s ease forwards;
 }
 
-@-webkit-keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+#navbar .nav__section {
+  width: 100%;
 }
 
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+#navbar .menu-btn {
+  border-radius: 0px;
 }
 
-nav::after {
+#navbar i {
+  margin-right: 1rem;
+}
+
+#navbar::after {
   content: "";
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   position: absolute;
   bottom: 0;
   left: 15px;
   width: calc(100% - 30px);
   right: 15px;
-}
-
-nav .nav__content {
-  list-style: none;
 }
 
 .hero {
@@ -56,7 +41,8 @@ nav .nav__content {
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.25)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(180deg, rgba(34, 34, 34, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .hero .hero__text {
@@ -92,8 +78,17 @@ nav .nav__content {
   }
 }
 
+.fill-shapes {
+  -webkit-transform: scaleY(-1) translateY(-5px);
+          transform: scaleY(-1) translateY(-5px);
+}
+
+.fill-shapes .shape-fill {
+  fill: #fff;
+}
+
 .range {
-  margin: 56px 0;
+  margin: 56px;
   font-family: 'Cutive Mono', monospace;
 }
 
@@ -112,7 +107,7 @@ nav .nav__content {
 }
 
 .contact-us {
-  margin: 56px 0;
+  margin: 56px;
 }
 
 .contact-us .form-group {
@@ -10987,14 +10982,18 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+body {
+  font-family: "Rubik", sans-serif;
+}
+
 h1 {
-  font-family: "Dosis", sans-serif;
+  font-family: "Playfair Display", serif;
   line-height: 2rem;
   letter-spacing: 4px;
 }
 
-i {
-  margin-right: 1rem;
+h1 span {
+  font-family: "Over the Rainbow", cursive;
 }
 
 .carousel-indicators li {
@@ -11006,11 +11005,23 @@ i {
 .hollow {
   background-color: transparent;
   border-radius: 2rem;
-  text-transform: uppercase;
   letter-spacing: 2px;
 }
 
 .mask {
   overflow: hidden;
+}
+
+.desktop {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .desktop {
+    display: inherit;
+  }
+  .mobile {
+    display: none;
+  }
 }
 /*# sourceMappingURL=App.css.map */
