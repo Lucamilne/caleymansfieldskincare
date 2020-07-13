@@ -25,6 +25,12 @@
   i {
     color: $lightColor;
   }
+  h1 {
+    color: $darkColor;
+    span {
+      color: $lightColor;
+    }
+  }
   @media screen and (min-width: 540px) {
     .hero__column-start {
       text-align: left;

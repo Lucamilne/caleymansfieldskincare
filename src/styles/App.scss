@@ -3,6 +3,8 @@
 @import "./Navigation";
 @import "./Hero";
 @import "./ShapeFill";
+@import "./Introduction";
+@import "./Services";
 @import "./Range";
 @import "./Contact";
 @import "./Loading";
@@ -20,15 +22,25 @@ $theme-colors: (
 body {
   font-family: "Rubik", sans-serif;
 }
-h1 {
+h1,h2,h3,h4,h5,h6 {
   font-family: "Playfair Display", serif;
+}
+h1 {
   line-height: 2rem;
   letter-spacing: 4px;
+  text-transform: uppercase;
 
   span {
     font-family: "Over the Rainbow", cursive;
+    position: absolute;
+    font-size: 5rem;
+    z-index: -1;
   }
 }
+.btn {
+  border-radius: 0px;
+}
+
 .carousel-indicators li {
   width: 6px;
   height: 6px;
@@ -43,10 +55,6 @@ h1 {
   overflow: hidden;
 }
 
-.desktop {
-  display: none;
-}
-
 @media (min-width: 576px) {
 }
 
@@ -56,14 +64,16 @@ h1 {
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-  .desktop {
-    display: inherit;
-  }
-  .mobile {
-    display: none;
-  }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
+}
+
+//Change typography size
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1rem;
+    //change in future
+  }
 }
