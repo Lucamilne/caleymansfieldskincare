@@ -13,7 +13,7 @@ class Hero extends React.Component {
                             <Row>
                                 <Col sm>
                                     <div className="hero__column hero__column-start">
-                                        <h1><span>new!</span>This is a hero image</h1>
+                                        <h5>This is a hero image</h5>
                                     </div>
                                 </Col>
                                 <Col sm></Col>

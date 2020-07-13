@@ -1,55 +1,18 @@
-import React, { useState } from "react";
-import { Container, Form, Col, Button } from 'react-bootstrap';
+import React from "react";
+import { Container, Row, Col, Image } from 'react-bootstrap';
+import ContactForm from "./ContactForm"
 
 function Contact() {
-    const [validated, setValidated] = useState(false);
-
-    const handleSubmit = (event) => {
-        const form = event.currentTarget;
-        if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-        }
-
-        setValidated(true);
-    };
-
     return (
         <Container>
-            <Container fluid className="contact-us">
-                <Form noValidate validated={validated} onSubmit={handleSubmit}>
-                    <Form.Row>
-                        <Col sm>
-                            <Form.Group controlId="formName">
-                                <Form.Label>Name <span className="required">*</span></Form.Label>
-                                <Form.Control required type="name" placeholder="Enter name" />
-                            </Form.Group>
-                        </Col>
-                        <Col sm>
-                            <Form.Group controlId="formEmail">
-                                <Form.Label>Email address <span className="required">*</span></Form.Label>
-                                <Form.Control required type="email" placeholder="Enter email address" />
-                            </Form.Group>
-                        </Col>
-                        <Col sm>
-                            <Form.Group controlId="formNumber">
-                                <Form.Label>Phone number <span className="required">*</span></Form.Label>
-                                <Form.Control required type="tel" placeholder="Enter phone number" />
-                            </Form.Group>
-                        </Col>
-                    </Form.Row>
-
-
-
-                    <Form.Group controlId="fromMessage">
-                        <Form.Label>Message</Form.Label>
-                        <Form.Control as="textarea" rows="15" defaultValue="I'm interested in booking a free consultation." />
-                    </Form.Group>
-                    <div className="d-flex justify-content-center">
-                        <Button variant="outline-light" type="submit">Submit form</Button>
-                    </div>
-                </Form>
-            </Container>
+            <Row>
+                <Col lg className="pl-0 pr-0">
+                    <ContactForm />
+                </Col>
+                <Col lg className="pl-0 pr-0">
+                    <Image src={require("./images/3.jpg")} style={{objectFit: "cover"}} fluid />
+                </Col>
+            </Row>
         </Container>
     )
 }
