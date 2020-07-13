@@ -1,13 +1,54 @@
 @import url("https://fonts.googleapis.com/css2?family=Over+the+Rainbow&family=Playfair+Display:wght@400;700&family=Rubik&display=swap");
+.filter {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 8;
+}
+
+.nav__menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #222;
+  padding-top: 154px;
+  z-index: 9;
+  -webkit-transition: -webkit-transform 250ms ease;
+  transition: -webkit-transform 250ms ease;
+  transition: transform 250ms ease;
+  transition: transform 250ms ease, -webkit-transform 250ms ease;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.nav__menu .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.nav__menu .nav-link:hover {
+  color: #fff;
+}
+
+.nav__menu-btn {
+  position: absolute;
+}
+
+.open {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 #navbar {
   position: absolute;
   top: 0;
-  z-index: 1;
+  z-index: 10;
   width: 100%;
 }
 
 #navbar .nav__section {
   width: 100%;
+  margin: 0;
 }
 
 #navbar .menu-btn {
@@ -15,7 +56,7 @@
 }
 
 #navbar .nav-link i {
-  margin-right: 1rem;
+  margin-right: 1em;
 }
 
 #navbar::after {
@@ -99,14 +140,18 @@
   height: 50vh;
 }
 
+.introduction .introduction__wrapper {
+  max-width: 700px;
+}
+
 .introduction h1 {
   font-family: "Playfair Display", serif;
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 1em;
 }
 
 .introduction h1 span {
-  font-size: 8rem;
+  font-size: 2em;
   color: #ffcece;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -115,6 +160,7 @@
 
 .introduction h5 {
   color: #540E33;
+  font-size: 1em;
   text-transform: capitalize;
 }
 
@@ -138,15 +184,17 @@
 }
 
 .contact-us {
-  margin: 56px;
+  padding: 56px;
+  background-color: #ffcece;
 }
 
 .contact-us .form-group {
-  border: 1px solid #222;
+  background-color: #fff;
 }
 
 .contact-us .form-control {
   border-radius: 0;
+  border: none;
 }
 
 .contact-us .form-label {
@@ -11022,8 +11070,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  line-height: 2rem;
-  letter-spacing: 4px;
+  line-height: 1em;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
 }
 
@@ -11036,6 +11084,7 @@ h1 span {
 
 .btn {
   border-radius: 0px;
+  overflow: hidden;
 }
 
 .carousel-indicators li {
@@ -11054,9 +11103,29 @@ h1 span {
   overflow: hidden;
 }
 
+.show {
+  display: block;
+}
+
+html {
+  font-size: 0.8rem;
+}
+
+@media (min-width: 576px) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
 @media (min-width: 992px) {
   html {
-    font-size: 1rem;
+    font-size: 1.6rem;
   }
 }
 /*# sourceMappingURL=App.css.map */

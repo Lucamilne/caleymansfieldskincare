@@ -1,12 +1,15 @@
 .introduction {
     height: 50vh;
 
+    .introduction__wrapper {
+        max-width: 700px;
+    }
     h1 {
         font-family: "Playfair Display", serif;
         text-align: center;
-        margin-bottom: 4rem;
+        margin-bottom: 1em;
         span {
-            font-size: 8rem;
+            font-size: 2em;
             color: $secondaryColor;
             left: 50%;
             transform: translateX(-50%);
@@ -14,6 +17,7 @@
     }
     h5 {
         color: $primaryColor;
+        font-size: 1em;
         text-transform: capitalize;
     }
 }

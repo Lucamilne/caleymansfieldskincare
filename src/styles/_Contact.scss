@@ -1,11 +1,12 @@
 .contact-us {
-  margin: $globalMargin;
-
+  padding: $globalMargin;
+  background-color: $secondaryColor;
   .form-group {
-    border: 1px solid $darkColor;
+    background-color: $lightColor;
   }
   .form-control {
     border-radius: 0;
+    border: none;
   }
   .form-label {
     width: 100%;
