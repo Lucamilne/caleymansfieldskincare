@@ -168,23 +168,30 @@
   text-transform: capitalize;
 }
 
-.range {
-  margin: 56px;
-  font-family: 'Cutive Mono', monospace;
+#showcase img {
+  width: 100%;
 }
 
-.range .range__container {
-  min-height: 400px;
+#showcase .position-relative {
+  width: 100%;
 }
 
-.range .range__text {
-  max-width: 600px;
+#showcase h5 {
+  color: #540E33;
 }
 
-@media screen and (min-width: 992px) {
-  .range .top-buffer {
-    margin-top: 56px;
-  }
+#showcase .showcase__text {
+  background-color: #eee;
+  padding-top: 25%;
+  margin-top: -25%;
+}
+
+#showcase .showcase__text p {
+  max-width: 300px;
+}
+
+.contact-image {
+  width: 100%;
 }
 
 #contact-us {
@@ -11117,13 +11124,15 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", serif;
 }
 
-h1, h2 {
+h1,
+h2 {
   line-height: 1em;
   letter-spacing: 0.15em;
   text-transform: uppercase;
 }
 
-h1 span, h2 span {
+h1 span,
+h2 span {
   font-family: "Over the Rainbow", cursive;
   position: absolute;
   font-size: 5rem;

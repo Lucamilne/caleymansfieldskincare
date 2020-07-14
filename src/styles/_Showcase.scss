@@ -1,0 +1,20 @@
+#showcase {
+  img {
+    width: 100%;
+  }
+  .position-relative {
+    width: 100%;
+  }
+  h5 {
+    color: $primaryColor;
+  }
+  .showcase__text {
+    background-color: #eee;
+    padding-top: 25%;
+    margin-top: -25%;
+    p {
+      max-width: 300px;
+    }
+  }
+
+}

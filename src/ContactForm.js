@@ -43,7 +43,7 @@ function ContactForm() {
                 <Form.Control as="textarea" rows="15" defaultValue="I'm interested in booking a free consultation." />
             </Form.Group>
             <div className="form-btn d-flex justify-content-center">
-                <Button variant="light" type="submit">Submit form</Button>
+                <Button variant="light" type="submit">Submit</Button>
             </div>
         </Form>
     )
