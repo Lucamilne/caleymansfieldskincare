@@ -12,7 +12,7 @@ function Footer() {
                                 <h6>Start a conversation.</h6>
                                 <ul>
                                     <li>email@businesshost.com</li>
-                                    <li>+44 (0)000000000</li>
+                                    <li>+44 (0)7976962012</li>
                                 </ul>
                             </div>
                         </Col>
