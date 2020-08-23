@@ -1,15 +1,19 @@
 .hero {
-  font-family: 'Cutive Mono', monospace;
-        
+  font-family: "Cutive Mono", monospace;
+
   img {
     width: 100%;
     height: 100%;
   }
   .position-absolute {
-      top: 0;
-      height: 100%;
-      width: 100%;
-      background: linear-gradient(180deg, rgba(34,34,34,0.25) 0%, rgba(255,255,255,0) 100%);
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+      180deg,
+      rgba(34, 34, 34, 0.25) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
   }
   .hero__text {
     bottom: 0;
@@ -17,7 +21,7 @@
     color: $lightColor;
   }
   .hero__column {
-      height: 100%;
+    height: 100%;
   }
   .hero__column-center {
     font-size: 2rem;
