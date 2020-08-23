@@ -6,7 +6,10 @@ class Hero extends React.Component {
     render() {
         return (
             <div className="hero position-relative">
-                <img src={require("./images/1.jpg")} />
+                {/* <img src={require("./images/1.jpg")} /> */}
+                <video width="100%" autoPlay muted loop>
+                    <source src={require("./images/routine2.mp4")} type="video/mp4" />
+                </video>
                 <div className="position-absolute d-flex align-items-end">
                     <div className="hero__text position-sticky">
                         <Container fluid>
