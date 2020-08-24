@@ -1,22 +1,10 @@
-.slide {
-  height: 25vmax;
-  background-color: #eee;
-}
-
-.carousel-dark {
-  .carousel-control-prev,
-  .carousel-control-next {
-    color: $darkColor;
-  }
-  .carousel-control-prev:hover,
-  .carousel-control-next:hover {
-    color: $darkColor;
+#testimonials {
+  .slide {
+    height: 243px;
   }
 
-  .carousel-indicators li {
-    background-color: $darkColor;
-  }
-  .carousel-caption {
-    color: $darkColor;
+  i,
+  .name {
+    color: $secondaryColor;
   }
 }

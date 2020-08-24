@@ -190,27 +190,13 @@
   max-width: 300px;
 }
 
-.slide {
-  height: 25vmax;
-  background-color: #eee;
+#testimonials .slide {
+  height: 243px;
 }
 
-.carousel-dark .carousel-control-prev,
-.carousel-dark .carousel-control-next {
-  color: #222;
-}
-
-.carousel-dark .carousel-control-prev:hover,
-.carousel-dark .carousel-control-next:hover {
-  color: #222;
-}
-
-.carousel-dark .carousel-indicators li {
-  background-color: #222;
-}
-
-.carousel-dark .carousel-caption {
-  color: #222;
+#testimonials i,
+#testimonials .name {
+  color: #ffcece;
 }
 
 .contact-image {
@@ -11326,15 +11312,29 @@ h2 span {
   z-index: -1;
 }
 
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.title::after, .title::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  border-top: 1px solid #222;
+  width: 1.2em;
+  top: 0.5em;
+  margin: 0 1rem;
+}
+
 .btn {
   border-radius: 0px;
   overflow: hidden;
-}
-
-.carousel-indicators li {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
 }
 
 .hollow {
@@ -11359,5 +11359,26 @@ html {
   html {
     font-size: 1rem;
   }
+}
+
+.carousel-dark .carousel-control-prev,
+.carousel-dark .carousel-control-next {
+  color: #222;
+}
+
+.carousel-dark .carousel-control-prev:hover,
+.carousel-dark .carousel-control-next:hover {
+  color: #222;
+}
+
+.carousel-dark .carousel-indicators li {
+  background-color: #222;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.carousel-dark .carousel-caption {
+  color: #222;
 }
 /*# sourceMappingURL=App.css.map */
