@@ -16,8 +16,7 @@ class Hero extends React.Component {
                             <Row>
                                 <Col sm>
                                     <div className="hero__column hero__column-start">
-                                        <h5>This text moves up and down when scrolling on desktop</h5>
-                                        <p></p>
+                                        <h5></h5>
                                     </div>
                                 </Col>
                                 <Col sm></Col>

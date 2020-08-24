@@ -1,0 +1,22 @@
+.slide {
+  height: 250px;
+  background-color: #eee;
+}
+
+.carousel-dark {
+  .carousel-control-prev,
+  .carousel-control-next {
+    color: $darkColor;
+  }
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    color: $darkColor;
+  }
+
+  .carousel-indicators li {
+    background-color: $darkColor;
+  }
+  .carousel-caption {
+    color: $darkColor;
+  }
+}

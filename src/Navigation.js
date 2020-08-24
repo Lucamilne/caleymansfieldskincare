@@ -53,9 +53,9 @@ class Navigation extends React.Component {
 
                     <div className="d-none d-lg-block nav__section">
                         <Nav className="flex-column">
-                            <Nav.Link><i className="fas fa-map-marker-alt"></i>12 Business Address, SL8 1AN</Nav.Link>
-                            <Nav.Link><i className="far fa-envelope"></i>email@businesshost.com</Nav.Link>
-                            <Nav.Link><i className="fas fa-phone-alt"></i>+44 7976 962012</Nav.Link>
+                            <Nav.Link><i className="fas fa-map-marker-alt"></i>96 Marlow Bottom, SL7 3PH</Nav.Link>
+                            <Nav.Link><i className="far fa-envelope"></i>caleymansfield@icloud.com</Nav.Link>
+                            <Nav.Link><i className="fas fa-phone-alt"></i>(0) 7976 962012</Nav.Link>
                         </Nav>
                     </div>
 

@@ -190,6 +190,29 @@
   max-width: 300px;
 }
 
+.slide {
+  height: 250px;
+  background-color: #eee;
+}
+
+.carousel-dark .carousel-control-prev,
+.carousel-dark .carousel-control-next {
+  color: #222;
+}
+
+.carousel-dark .carousel-control-prev:hover,
+.carousel-dark .carousel-control-next:hover {
+  color: #222;
+}
+
+.carousel-dark .carousel-indicators li {
+  background-color: #222;
+}
+
+.carousel-dark .carousel-caption {
+  color: #222;
+}
+
 .contact-image {
   width: 100%;
 }
