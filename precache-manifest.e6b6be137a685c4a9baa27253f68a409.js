@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "357ebec4a97c23e08b137e1abf909219",
+    "revision": "29d5c1401d1702393425ed0f49a50a67",
     "url": "/caleymansfieldskincare/index.html"
   },
   {
-    "revision": "0c65711d158939fded6e",
-    "url": "/caleymansfieldskincare/static/css/main.24513b3e.chunk.css"
+    "revision": "cbfb201f2c9b11a1c7aa",
+    "url": "/caleymansfieldskincare/static/css/main.3dad1cc6.chunk.css"
   },
   {
-    "revision": "80f40c7ede1ac23b6caa",
-    "url": "/caleymansfieldskincare/static/js/2.65d17e23.chunk.js"
+    "revision": "a3efa2f0a8823f52a39b",
+    "url": "/caleymansfieldskincare/static/js/2.a36d0ba9.chunk.js"
   },
   {
     "revision": "5ac48c47bb3912b14c2d8de4f56d5ae8",
-    "url": "/caleymansfieldskincare/static/js/2.65d17e23.chunk.js.LICENSE.txt"
+    "url": "/caleymansfieldskincare/static/js/2.a36d0ba9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0c65711d158939fded6e",
-    "url": "/caleymansfieldskincare/static/js/main.bb03c0aa.chunk.js"
+    "revision": "cbfb201f2c9b11a1c7aa",
+    "url": "/caleymansfieldskincare/static/js/main.c11c1c53.chunk.js"
   },
   {
     "revision": "983ab79c665a0a817d51",
     "url": "/caleymansfieldskincare/static/js/runtime-main.bd8c4d50.js"
+  },
+  {
+    "revision": "327351f232166b8cc93143875c8451b1",
+    "url": "/caleymansfieldskincare/static/media/1.327351f2.jpg"
   },
   {
     "revision": "20893e5733b834c4b6c03ac4ddcfeb0a",

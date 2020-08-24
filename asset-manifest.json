@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/caleymansfieldskincare/static/css/main.24513b3e.chunk.css",
-    "main.js": "/caleymansfieldskincare/static/js/main.bb03c0aa.chunk.js",
-    "main.js.map": "/caleymansfieldskincare/static/js/main.bb03c0aa.chunk.js.map",
+    "main.css": "/caleymansfieldskincare/static/css/main.3dad1cc6.chunk.css",
+    "main.js": "/caleymansfieldskincare/static/js/main.c11c1c53.chunk.js",
+    "main.js.map": "/caleymansfieldskincare/static/js/main.c11c1c53.chunk.js.map",
     "runtime-main.js": "/caleymansfieldskincare/static/js/runtime-main.bd8c4d50.js",
     "runtime-main.js.map": "/caleymansfieldskincare/static/js/runtime-main.bd8c4d50.js.map",
-    "static/js/2.65d17e23.chunk.js": "/caleymansfieldskincare/static/js/2.65d17e23.chunk.js",
-    "static/js/2.65d17e23.chunk.js.map": "/caleymansfieldskincare/static/js/2.65d17e23.chunk.js.map",
+    "static/js/2.a36d0ba9.chunk.js": "/caleymansfieldskincare/static/js/2.a36d0ba9.chunk.js",
+    "static/js/2.a36d0ba9.chunk.js.map": "/caleymansfieldskincare/static/js/2.a36d0ba9.chunk.js.map",
     "index.html": "/caleymansfieldskincare/index.html",
-    "precache-manifest.6ed0dba454951ad8c97879012f9d5f66.js": "/caleymansfieldskincare/precache-manifest.6ed0dba454951ad8c97879012f9d5f66.js",
+    "precache-manifest.e6b6be137a685c4a9baa27253f68a409.js": "/caleymansfieldskincare/precache-manifest.e6b6be137a685c4a9baa27253f68a409.js",
     "service-worker.js": "/caleymansfieldskincare/service-worker.js",
-    "static/css/main.24513b3e.chunk.css.map": "/caleymansfieldskincare/static/css/main.24513b3e.chunk.css.map",
-    "static/js/2.65d17e23.chunk.js.LICENSE.txt": "/caleymansfieldskincare/static/js/2.65d17e23.chunk.js.LICENSE.txt",
+    "static/css/main.3dad1cc6.chunk.css.map": "/caleymansfieldskincare/static/css/main.3dad1cc6.chunk.css.map",
+    "static/js/2.a36d0ba9.chunk.js.LICENSE.txt": "/caleymansfieldskincare/static/js/2.a36d0ba9.chunk.js.LICENSE.txt",
+    "static/media/1.jpg": "/caleymansfieldskincare/static/media/1.327351f2.jpg",
     "static/media/3.jpg": "/caleymansfieldskincare/static/media/3.20893e57.jpg",
     "static/media/6.jpg": "/caleymansfieldskincare/static/media/6.5528accd.jpg",
     "static/media/logo_fff.png": "/caleymansfieldskincare/static/media/logo_fff.d38c5324.png",
@@ -19,8 +20,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.bd8c4d50.js",
-    "static/js/2.65d17e23.chunk.js",
-    "static/css/main.24513b3e.chunk.css",
-    "static/js/main.bb03c0aa.chunk.js"
+    "static/js/2.a36d0ba9.chunk.js",
+    "static/css/main.3dad1cc6.chunk.css",
+    "static/js/main.c11c1c53.chunk.js"
   ]
 }
