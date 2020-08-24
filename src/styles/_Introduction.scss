@@ -1,24 +1,40 @@
-.introduction {
-    height: 50vh;
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
-    .introduction__wrapper{
-        max-width: 700px;
+#introduction {
+  height: 100vh;
+
+  h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.5em;
+    margin: 0;
+    span {
+      font-size: 2em;
+      color: $secondaryColor;
+      left: 50%;
+      transform: translateX(-50%);
     }
+  }
+  .last-row {
+    margin-bottom: 2em;
+  }
+  p {
+    max-width: 450px;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0;
+  }
+  h5 {
+    color: $primaryColor;
+    font-size: 1em;
+    text-transform: capitalize;
+  }
+  @include media-breakpoint-up(sm) {
     h1 {
-        font-family: "Playfair Display", serif;
-        text-align: center;
-        margin-bottom: 1em;
-        span {
-            font-size: 2em;
-            color: $secondaryColor;
-            left: 50%;
-            transform: translateX(-50%);
-        }
+      font-size: 4em;
     }
-    h5 {
-        color: $primaryColor;
-        font-size: 1em;
-        text-transform: capitalize;
+    p {
+      font-size: 1.5em;
+      line-height: 1.5em;
     }
+  }
 }
-
