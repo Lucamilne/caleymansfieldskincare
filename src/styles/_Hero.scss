@@ -2,6 +2,9 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 0.8rem;
+  color: $lightColor;
+
+
 
   img {
     width: 100%;
@@ -12,9 +15,10 @@
     width: 100%;
     background: linear-gradient(
       180deg,
-      rgba(34, 34, 34, 0.25) 0%,
+      rgba(34, 34, 34, 0.4) 0%,
       rgba(255, 255, 255, 0) 100%
     );
+
   }
   .hero__text {
     bottom: 0;
@@ -40,12 +44,6 @@
     }
     from {
       transform: translateY(5px);
-    }
-  }
-  h1 {
-    color: $darkColor;
-    span {
-      color: $lightColor;
     }
   }
   @media screen and (min-width: 540px) {

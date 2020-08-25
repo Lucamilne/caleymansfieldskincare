@@ -15,7 +15,7 @@ class Hero extends React.Component {
                         <Container fluid className="d-flex justify-content-center">
                             <div className="scroll d-flex flex-column align-items-center">
                                 <span>Scroll</span>
-                                <i class="fas fa-caret-down"></i>
+                                <i className="fas fa-caret-down"></i>
                             </div>
                         </Container>
                         <ShapeFill />
