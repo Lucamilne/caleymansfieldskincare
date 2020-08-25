@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/caleymansfieldskincare/static/css/main.b624225e.chunk.css",
-    "main.js": "/caleymansfieldskincare/static/js/main.92539c64.chunk.js",
-    "main.js.map": "/caleymansfieldskincare/static/js/main.92539c64.chunk.js.map",
+    "main.css": "/caleymansfieldskincare/static/css/main.2130b788.chunk.css",
+    "main.js": "/caleymansfieldskincare/static/js/main.c709384e.chunk.js",
+    "main.js.map": "/caleymansfieldskincare/static/js/main.c709384e.chunk.js.map",
     "runtime-main.js": "/caleymansfieldskincare/static/js/runtime-main.bd8c4d50.js",
     "runtime-main.js.map": "/caleymansfieldskincare/static/js/runtime-main.bd8c4d50.js.map",
     "static/js/2.a36d0ba9.chunk.js": "/caleymansfieldskincare/static/js/2.a36d0ba9.chunk.js",
     "static/js/2.a36d0ba9.chunk.js.map": "/caleymansfieldskincare/static/js/2.a36d0ba9.chunk.js.map",
     "index.html": "/caleymansfieldskincare/index.html",
-    "precache-manifest.1dfd1f2ee355d7f5b1d177f18cf4bf0a.js": "/caleymansfieldskincare/precache-manifest.1dfd1f2ee355d7f5b1d177f18cf4bf0a.js",
+    "precache-manifest.c60012258d39516d579b70c0f008566b.js": "/caleymansfieldskincare/precache-manifest.c60012258d39516d579b70c0f008566b.js",
     "service-worker.js": "/caleymansfieldskincare/service-worker.js",
-    "static/css/main.b624225e.chunk.css.map": "/caleymansfieldskincare/static/css/main.b624225e.chunk.css.map",
+    "static/css/main.2130b788.chunk.css.map": "/caleymansfieldskincare/static/css/main.2130b788.chunk.css.map",
     "static/js/2.a36d0ba9.chunk.js.LICENSE.txt": "/caleymansfieldskincare/static/js/2.a36d0ba9.chunk.js.LICENSE.txt",
     "static/media/3.jpg": "/caleymansfieldskincare/static/media/3.20893e57.jpg",
     "static/media/6.jpg": "/caleymansfieldskincare/static/media/6.5528accd.jpg",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.bd8c4d50.js",
     "static/js/2.a36d0ba9.chunk.js",
-    "static/css/main.b624225e.chunk.css",
-    "static/js/main.92539c64.chunk.js"
+    "static/css/main.2130b788.chunk.css",
+    "static/js/main.c709384e.chunk.js"
   ]
 }
