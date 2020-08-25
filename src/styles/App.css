@@ -12,7 +12,7 @@
   top: 0;
   width: 100%;
   background-color: #222;
-  padding-top: 154px;
+  padding-top: 143.78px;
   z-index: 9;
   -webkit-transition: -webkit-transform 250ms ease;
   transition: -webkit-transform 250ms ease;
@@ -73,16 +73,17 @@
   right: 15px;
 }
 
-.hero {
-  font-family: "Cutive Mono", monospace;
+#hero {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
 }
 
-.hero img {
+#hero img {
   width: 100%;
-  height: 100%;
 }
 
-.hero .position-absolute {
+#hero .position-absolute {
   top: 0;
   height: 100%;
   width: 100%;
@@ -90,43 +91,72 @@
   background: linear-gradient(180deg, rgba(34, 34, 34, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
-.hero .hero__text {
+#hero .hero__text {
   bottom: 0;
   width: 100%;
   color: #fff;
 }
 
-.hero .hero__column {
+#hero .hero__column {
   height: 100%;
 }
 
-.hero .hero__column-center {
+#hero .hero__column-center {
   font-size: 2rem;
 }
 
-.hero i {
+#hero i {
   color: #fff;
+  -webkit-animation: upDown infinite 1s ease;
+          animation: upDown infinite 1s ease;
 }
 
-.hero h1 {
+#hero .scroll {
+  -webkit-transform: translateY(60px);
+          transform: translateY(60px);
+}
+
+@-webkit-keyframes upDown {
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  from {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+}
+
+@keyframes upDown {
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  from {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+}
+
+#hero h1 {
   color: #222;
 }
 
-.hero h1 span {
+#hero h1 span {
   color: #fff;
 }
 
 @media screen and (min-width: 540px) {
-  .hero .hero__column-start {
+  #hero .hero__column-start {
     text-align: left;
   }
-  .hero .hero__column-center {
+  #hero .hero__column-center {
     text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .hero .hero__column-end {
+  #hero .hero__column-end {
     text-align: right;
   }
 }
@@ -11025,6 +11055,23 @@ a.text-dark:hover, a.text-dark:focus {
 
 #showcase .showcase__text p {
   max-width: 300px;
+}
+
+#products {
+  height: 50vh;
+}
+
+#products h1 {
+  margin-bottom: 1.5em;
+}
+
+#products .slide {
+  height: 243px;
+}
+
+#products i,
+#products .name {
+  color: #ffcece;
 }
 
 #testimonials {

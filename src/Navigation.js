@@ -29,7 +29,7 @@ class Navigation extends React.Component {
             <div>
                 <Filter className={this.state.isMenuOpen ? "d-block" : "d-none"} />
                 <div className={`nav__menu d-block d-lg-none ${isOpen}`}>
-                    <Nav className="d-flex flex-column align-items-center justify-content-center">
+                    <Nav className="py-3 d-flex flex-column align-items-center justify-content-center">
                         <Nav.Link href="#about">About</Nav.Link>
                         <Nav.Link href="#treatments">Treatments</Nav.Link>
                         <Nav.Link href="#testimonials">Testimonials</Nav.Link>
