@@ -8,7 +8,7 @@
 }
 
 .nav__menu {
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   background-color: #222;
@@ -22244,6 +22244,7 @@ html {
 @media (min-width: 576px) {
   html {
     font-size: 1rem;
+    overflow-x: hidden;
   }
 }
 
