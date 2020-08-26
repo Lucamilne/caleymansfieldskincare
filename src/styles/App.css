@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Over+the+Rainbow&family=Playfair+Display:wght@400;700&family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Over+the+Rainbow&family=Playfair+Display:wght@400;700&family=Rubik:wght@100;200;300;400&display=swap");
 .filter {
   position: fixed;
   width: 100vw;
@@ -89,7 +89,60 @@
   width: 100%;
 }
 
-#hero .position-absolute {
+#hero .postcard__wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#hero .postcard {
+  border-radius: 8px;
+  background-color: transparent;
+  border: 1px rgba(255, 255, 255, 0.5) solid;
+}
+
+#hero .postcard ::-webkit-input-placeholder {
+  color: white;
+}
+
+#hero .postcard :-ms-input-placeholder {
+  color: white;
+}
+
+#hero .postcard ::-ms-input-placeholder {
+  color: white;
+}
+
+#hero .postcard ::placeholder {
+  color: white;
+}
+
+#hero .postcard .card,
+#hero .postcard input,
+#hero .postcard textarea {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+#hero .postcard .form-group {
+  width: 100%;
+}
+
+#hero .postcard input,
+#hero .postcard textarea {
+  resize: none;
+  border-bottom: 1px rgba(255, 255, 255, 0.8) solid;
+}
+
+#hero .postcard button {
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+#hero .filter {
   top: 0;
   height: 100%;
   width: 100%;
@@ -109,39 +162,6 @@
 
 #hero .hero__column-center {
   font-size: 2rem;
-}
-
-#hero i {
-  color: #fff;
-  -webkit-animation: upDown infinite 1s ease;
-          animation: upDown infinite 1s ease;
-}
-
-#hero .scroll {
-  -webkit-transform: translateY(60px);
-          transform: translateY(60px);
-}
-
-@-webkit-keyframes upDown {
-  to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  from {
-    -webkit-transform: translateY(5px);
-            transform: translateY(5px);
-  }
-}
-
-@keyframes upDown {
-  to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  from {
-    -webkit-transform: translateY(5px);
-            transform: translateY(5px);
-  }
 }
 
 @media screen and (min-width: 540px) {
@@ -10988,8 +11008,8 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-#introduction {
-  height: 100vh;
+#introduction .paragraph {
+  border-left: 2px solid #540E33;
 }
 
 #introduction h1 {
@@ -11006,15 +11026,12 @@ a.text-dark:hover, a.text-dark:focus {
           transform: translateX(-50%);
 }
 
-#introduction .last-row {
-  margin-bottom: 2em;
-}
-
 #introduction p {
   max-width: 450px;
   font-size: 1.5em;
   line-height: 1.5em;
   margin: 0;
+  font-weight: 100;
 }
 
 #introduction h5 {
@@ -11023,13 +11040,12 @@ a.text-dark:hover, a.text-dark:focus {
   text-transform: capitalize;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
+  #introduction {
+    height: 100vh;
+  }
   #introduction h1 {
     font-size: 4em;
-  }
-  #introduction p {
-    font-size: 1.5em;
-    line-height: 1.5em;
   }
 }
 
@@ -22180,14 +22196,6 @@ h2 {
   line-height: 1em;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-}
-
-h1 span,
-h2 span {
-  font-family: "Over the Rainbow", cursive;
-  position: absolute;
-  font-size: 5rem;
-  z-index: -1;
 }
 
 .title {

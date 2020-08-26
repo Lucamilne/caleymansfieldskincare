@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Over+the+Rainbow&family=Playfair+Display:wght@400;700&family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Over+the+Rainbow&family=Playfair+Display:wght@400;700&family=Rubik:wght@100;200;300;400&display=swap");
 @import "./variables";
 @import "./Filter";
 @import "./Navigation";
@@ -38,12 +38,6 @@ h2 {
   line-height: 1em;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  span {
-    font-family: "Over the Rainbow", cursive;
-    position: absolute;
-    font-size: 5rem;
-    z-index: -1;
-  }
 }
 .title {
   display: flex;

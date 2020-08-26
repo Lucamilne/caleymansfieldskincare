@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Carousel, CarouselItem } from "react-bootstrap"
+import { Container, Carousel } from "react-bootstrap"
 
 class Testimonials extends React.Component {
     render() {

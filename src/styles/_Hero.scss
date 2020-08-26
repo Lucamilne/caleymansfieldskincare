@@ -4,12 +4,43 @@
   font-size: 0.8rem;
   color: $lightColor;
 
-
-
   img {
     width: 100%;
   }
-  .position-absolute {
+  .postcard__wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .postcard {
+    border-radius: 8px;
+    background-color: transparent;
+    border: 1px rgba(255, 255, 255, 0.5) solid;
+    ::placeholder {
+      color: white;
+    }
+    .card,
+    input,
+    textarea {
+      background-color: transparent;
+      border: none;
+      color: white;
+    }
+    .form-group {
+      width: 100%;
+    }
+    input,
+    textarea {
+      resize: none;
+      border-bottom: 1px rgba(255, 255, 255, 0.8) solid;
+    }
+    button {
+      border-radius: 4px;
+      text-transform: uppercase;
+    }
+  }
+  .filter {
     top: 0;
     height: 100%;
     width: 100%;
@@ -18,7 +49,6 @@
       rgba(34, 34, 34, 0.4) 0%,
       rgba(255, 255, 255, 0) 100%
     );
-
   }
   .hero__text {
     bottom: 0;
@@ -30,21 +60,6 @@
   }
   .hero__column-center {
     font-size: 2rem;
-  }
-  i {
-    color: $lightColor;
-    animation: upDown infinite 1s ease;
-  }
-  .scroll {
-    transform: translateY(60px)
-  }
-  @keyframes upDown {
-    to {
-      transform: translateY(0);
-    }
-    from {
-      transform: translateY(5px);
-    }
   }
   @media screen and (min-width: 540px) {
     .hero__column-start {
