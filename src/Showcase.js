@@ -14,7 +14,7 @@ const Showcase = () => {
     return (
         <Container id="showcase">
             <motion.div ref={ref} animate={inView ? { opacity: [0, 1] } : { opacity: 0 }} transition={{ duration: duration }}>
-                <motion.section ref={ref} animate={inView ? { transform: [`translateX(${xDist})`, `translateX(0px)`] } : { transform: `translateX(${xDist})` }} transition={{ duration: duration }}>
+                <motion.section ref={ref} animate={inView ? { transform: [`translateY(${xDist})`, `translateY(0px)`] } : { transform: `translateY(${xDist})` }} transition={{ duration: duration }}>
                     <Row className="d-flex justify-content-end showcase__section">
                         <Col xs lg="9" className="showcase__text">
                             <Row>
@@ -30,7 +30,7 @@ const Showcase = () => {
                         </Col>
                     </Row>
                 </motion.section>
-                <motion.section ref={ref} animate={inView ? { transform: [`translateX(-${xDist})`, `translateX(0px)`] } : { transform: `translateX(-${xDist})` }} transition={{ duration: duration }}>
+                <motion.section ref={ref} animate={inView ? { transform: [`translateY(-${xDist})`, `translateY(0px)`] } : { transform: `translateY(-${xDist})` }} transition={{ duration: duration }}>
                     <Row className="showcase__section">
                         <Col xs lg="11" style={{ padding: "0px" }}>
                             <Image fluid src={require("./images/6.jpg")} />
