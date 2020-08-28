@@ -20,11 +20,8 @@
     font-weight: 100;
     border-left: 2px solid $primaryColor;
   }
-  // .paragraph {
-  //   max-width: 550px;
-  // }
   img {
-    height: 380px;
+    height: 320px;
   }
   .column {
     display: flex;
@@ -33,6 +30,9 @@
   }
   @include media-breakpoint-up(lg) {
     height: 100vh;
+    img {
+      height: 380px;
+    }
     h1 {
       font-size: 4em;
     }

@@ -1,7 +1,6 @@
 import React from "react";
 
 function ShapeFill() {
-    console.log(document.body.clientWidth)
     return (
         // <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.5 19.6" preserveAspectRatio="none" className="fill-shapes">
         //     <path className="shape-fill" style={{opacity:0.33}} d="M0 0L0 18.8 141.8 4.1 283.5 18.8 283.5 0z"></path>

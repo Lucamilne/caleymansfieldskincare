@@ -11,7 +11,7 @@ const Introduction = () => {
 
     return (
         <motion.div ref={ref} animate={inView ? { opacity: [0, 1] } : { opacity: 0 }} transition={{ duration: 0.5 }}>
-            <Container fluid id="introduction" className="d-flex align-items-center">
+            <Container id="introduction" className="d-flex align-items-center">
                 <Row>
                     <Col lg className="column my-5">
                         <Image fluid src={require("./images/10.png")} />
