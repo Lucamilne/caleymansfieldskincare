@@ -1,9 +1,6 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 #introduction {
-  .paragraph {
-    border-left: 2px solid $primaryColor;
-  }
   h1 {
     font-family: "Playfair Display", serif;
     font-size: 2.5em;
@@ -21,16 +18,29 @@
     line-height: 1.5em;
     margin: 0;
     font-weight: 100;
+    border-left: 2px solid $primaryColor;
   }
-  h5 {
-    color: $primaryColor;
-    font-size: 1em;
-    text-transform: capitalize;
+  // .paragraph {
+  //   max-width: 550px;
+  // }
+  img {
+    height: 380px;
   }
-  @include media-breakpoint-up(md) {
+  .column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @include media-breakpoint-up(lg) {
     height: 100vh;
     h1 {
       font-size: 4em;
+    }
+    .column:nth-of-type(1) {
+      justify-content: flex-end;
+    }
+    .column:nth-of-type(2) {
+      justify-content: flex-start;
     }
   }
 }
