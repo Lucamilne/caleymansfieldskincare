@@ -1,7 +1,3 @@
-.fill-shapes {
-    transform: scaleY(-1) translateY(-5px);
-
-    .shape-fill {
-        fill: $lightColor;
-    } 
+.shapefill-alt {
+    transform: scale(-1, -1);
 }
