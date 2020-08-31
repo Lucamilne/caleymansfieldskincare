@@ -184,6 +184,11 @@
           transform: scale(-1, -1);
 }
 
+.bottom {
+  position: absolute;
+  bottom: 0;
+}
+
 /*!
  * Bootstrap v4.5.0 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -11004,20 +11009,6 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-#introduction h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 2.5em;
-  margin: 0;
-}
-
-#introduction h1 span {
-  font-size: 2em;
-  color: #ffcece;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
 #introduction p {
   max-width: 450px;
   font-size: 1.5em;
@@ -11067,6 +11058,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 #showcase {
   position: relative;
+  color: #fff;
   background-image: url(../images/background.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -11081,14 +11073,23 @@ a.text-dark:hover, a.text-dark:focus {
   width: 100%;
 }
 
-#showcase .showcase__text {
-  background-color: #eee;
-  padding-bottom: 25%;
-  margin-bottom: -25%;
+#showcase p {
+  font-weight: 100;
+  border-left: 2px solid #ffcece;
+  font-size: 1.5em;
 }
 
-#showcase .showcase__text p {
-  max-width: 300px;
+#showcase .bottom {
+  bottom: 0;
+}
+
+@media (min-width: 992px) {
+  #showcase {
+    height: 100vh;
+  }
+  #showcase h1 {
+    font-size: 4em;
+  }
 }
 
 #products {
@@ -11108,21 +11109,23 @@ a.text-dark:hover, a.text-dark:focus {
   color: #ffcece;
 }
 
-#testimonials {
-  height: 50vh;
-}
-
-#testimonials h1 {
-  margin-bottom: 1.5em;
+#testimonials .carousel-item {
+  height: 100vmin;
 }
 
 #testimonials .slide {
-  height: 243px;
+  height: 400px;
 }
 
 #testimonials i,
 #testimonials .name {
   color: #ffcece;
+}
+
+@media (min-width: 992px) {
+  #testimonials .carousel-item {
+    height: 350px;
+  }
 }
 
 .contact-image {
@@ -22216,6 +22219,8 @@ h2 {
   line-height: 1em;
   letter-spacing: 0.15em;
   text-transform: uppercase;
+  font-size: 2.5em;
+  margin: 0;
 }
 
 .title {
@@ -22232,7 +22237,8 @@ h2 {
   display: inline-block;
   position: relative;
   text-align: center;
-  border-top: 1px solid #222;
+  border-top: 1px solid;
+  border-color: inherit;
   width: 1.2em;
   top: 0.5em;
   margin: 0 1rem;
@@ -22259,6 +22265,11 @@ h2 {
 
 html {
   font-size: 0.8rem;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: #ffcece;
+  text-decoration: none;
 }
 
 @media (min-width: 576px) {

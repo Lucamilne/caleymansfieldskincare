@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Nav, Button, Image, Row, Col } from "react-bootstrap";
+import { Navbar, Nav, Button, Image, Col } from "react-bootstrap";
 import Filter from "./Filter"
 
 class Navigation extends React.Component {

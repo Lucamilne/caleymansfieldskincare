@@ -1,15 +1,18 @@
 #testimonials {
-  height: 50vh;
-  h1 {
-    margin-bottom: 1.5em;
+  .carousel-item {
+    height: 100vmin;
   }
   .slide {
-    height: 243px;
+    height: 400px;
   }
-
   i,
   .name {
     color: $secondaryColor;
+  }
+  @include media-breakpoint-up(lg) {
+    .carousel-item {
+      height: 350px;
+    }
   }
 }
 

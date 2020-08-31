@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Image, Col, Row, Button } from "react-bootstrap"
+import { Container, Col, Row } from "react-bootstrap"
 import { useInView } from 'react-intersection-observer'
 import { motion } from 'framer-motion'
 import ShapeFill from "./ShapeFill";
@@ -10,38 +10,21 @@ const Showcase = () => {
     })
 
     const duration = 0.5;
-    const xDist = "50px";
 
     return (
-        <div id="showcase">
-            <ShapeFill cssClass="shapefill-alt" />
-            <Container >
-                <motion.div ref={ref} animate={inView ? { opacity: [0, 1] } : { opacity: 0 }} transition={{ duration: duration }}>
-                    <motion.section ref={ref} animate={inView ? { transform: [`translateY(${xDist})`, `translateY(0px)`] } : { transform: `translateY(${xDist})` }} transition={{ duration: duration }}>
-                        <Row className="d-flex justify-content-end showcase__section">
-                            <Col xs lg="9" className="showcase__text">
-                                <Row>
-                                    <Col className="d-flex flex-column align-items-center my-5">
-                                        <p>Based from her private Marlow clinic, Caley Mansfield is trained and qualified to offer a range of aesthetic procedures that combine the latest medical platform technologies with advanced aesthetic skincare to cater to wide range of skin types.</p>
-                                    </Col>
-                                    <Col className="d-flex flex-column align-items-center my-5">
-                                        <p>Caley guarantees the services she provides at her studio use the latest technologies and techniques in the industry.</p>
-                                        <h5 className="mb-4">Call (0)7976962012</h5>
-                                        <Button variant="secondary">Contact</Button>
-                                    </Col>
-                                </Row>
-                            </Col>
-                        </Row>
-                    </motion.section>
-                    <motion.section ref={ref} animate={inView ? { transform: [`translateY(-${xDist})`, `translateY(0px)`] } : { transform: `translateY(-${xDist})` }} transition={{ duration: duration }}>
-                        <Row className="showcase__section">
-                            <Col xs lg="11" style={{ padding: "0px" }}>
-                                <Image fluid src={require("./images/6.jpg")} />
-                            </Col>
-                        </Row>
-                    </motion.section>
-                </motion.div>
-            </Container>
+        <div id="showcase" className="d-flex flex-column justify-content-between">
+            <ShapeFill alt="shapefill-alt" />
+            <motion.div ref={ref} animate={inView ? { opacity: [0, 1], transform: ["translateY(10px)", "translateY(0px)"]} : { opacity: 0, transform: "translateY(0px)" }} transition={{ duration: duration }}>
+                <Container className="d-flex align-items-center my-5">
+                    <Row className="d-flex justify-content-center">
+                        <Col lg={6}>
+                            <h1 className="mb-3">Skin Revival Specialist</h1>
+                            <p className="pl-3">Based from her private Marlow clinic, Caley Mansfield is trained and qualified to offer a range of aesthetic procedures that combine the latest medical platform technologies with advanced aesthetic skincare to cater to wide range of skin types.</p>
+                            <p className="pl-3"><a href="https://www.w3schools.com/">Contact us to book an appointment.</a></p>
+                        </Col>
+                    </Row>
+                </Container>
+            </motion.div>
             <ShapeFill />
         </div>
     )

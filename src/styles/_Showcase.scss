@@ -1,5 +1,6 @@
 #showcase {
   position: relative;
+  color: $lightColor;
   background-image: url(../images/background.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -10,13 +11,18 @@
   .position-relative {
     width: 100%;
   }
-  .showcase__text {
-    background-color: #eee;
-    padding-bottom: 25%;
-    margin-bottom: -25%;
-    p {
-      max-width: 300px;
+  p {
+    font-weight: 100;
+    border-left: 2px solid $secondaryColor;
+    font-size: 1.5em;
+  }
+  .bottom {
+    bottom: 0;
+  }
+  @include media-breakpoint-up(lg) {
+    height: 100vh;
+    h1 {
+      font-size: 4em;
     }
   }
-
 }
