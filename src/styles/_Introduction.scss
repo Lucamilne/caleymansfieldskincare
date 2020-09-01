@@ -1,13 +1,14 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 #introduction {
+  background-color: #eee;
   p {
     max-width: 450px;
     font-size: 1.5em;
     line-height: 1.5em;
     margin: 0;
     font-weight: 100;
-    border-left: 2px solid $primaryColor;
+    border-left: 2px solid $thirdColor;
   }
   img {
     height: 320px;
@@ -21,9 +22,6 @@
     height: 100vh;
     img {
       height: 380px;
-    }
-    h1 {
-      font-size: 4em;
     }
     .column:nth-of-type(1) {
       justify-content: flex-end;

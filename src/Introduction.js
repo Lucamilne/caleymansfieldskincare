@@ -9,8 +9,8 @@ const Introduction = () => {
     })
 
     return (
-        <Container id="introduction" className="d-flex align-items-center">
-            <motion.div ref={ref} animate={inView ? { opacity: [0, 1], transform: ["translateY(10px)", "translateY(0px)"] } : { opacity: 0, transform: "translateY(0px)" }} transition={{ duration: 0.5 }}>
+        <Container fluid id="introduction" className="d-flex align-items-center">
+            <motion.div ref={ref} animate={inView ? { opacity: [0, 1] } : { opacity: 0}} transition={{ duration: 0.5 }}>
                 <Row>
                     <Col lg className="column my-5">
                         <Image fluid src={require("./images/10.png")} />

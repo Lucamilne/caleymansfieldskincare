@@ -1,14 +1,19 @@
 #products {
-  height: 50vh;
-  h1 {
-    margin-bottom: 1.5em;
+  .card-header {
+    background-color: transparent;
+    font-size: 1.5em;
+    font-weight: 400;
   }
-  .slide {
-    height: 243px;
+  button {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
   }
-
-  i,
-  .name {
-    color: $secondaryColor;
+  ul {
+    list-style: none;
+    border-left: 2px solid $thirdColor;
+  }
+  @include media-breakpoint-up(lg) {
+    height: 100vh;
   }
 }

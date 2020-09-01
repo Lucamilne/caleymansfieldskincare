@@ -11,7 +11,7 @@ class Hero extends React.Component {
                 </video>
                 <div className="filter position-absolute d-flex align-items-end">
                     <div className="hero__text position-absolute">
-                        <ShapeFill />
+                        <ShapeFill color="#eee"/>
                     </div>
                 </div>
             </div>
