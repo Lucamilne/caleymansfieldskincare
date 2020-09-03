@@ -11145,8 +11145,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 #testimonials .icon {
   top: 0;
-  height: 6rem;
-  width: 6rem;
+  height: 96px;
+  width: 96px;
   background-color: #222;
   border-radius: 50%;
 }

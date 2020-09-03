@@ -20,7 +20,7 @@ const Testimonials = () => {
     return (
         <section id="testimonials" className="d-flex flex-column justify-content-between">
             <ShapeFill alt="shapefill-alt" />
-            <Container className="pl-0 pr-0">
+            <Container>
                 <h1 className="text-center mb-5">What our clients say.</h1>
                 <Row>
                     {reviews.map(review => (
