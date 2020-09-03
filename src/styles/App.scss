@@ -61,7 +61,11 @@ h2 {
   border-radius: 0px;
   overflow: hidden;
 }
-
+hr {
+  border-top: 1px solid inherit;
+  width: 32px;
+  margin: 0;
+}
 .hollow {
   background-color: transparent;
   border-radius: 2rem;
@@ -89,25 +93,5 @@ a:link,a:visited,a:hover,a:active {
 @include media-breakpoint-up(lg) {
   h1 {
     font-size: 4em;
-  }
-}
-.carousel-dark {
-  .carousel-control-prev,
-  .carousel-control-next {
-    color: $darkColor;
-  }
-  .carousel-control-prev:hover,
-  .carousel-control-next:hover {
-    color: $darkColor;
-  }
-
-  .carousel-indicators li {
-    background-color: $darkColor;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-  }
-  .carousel-caption {
-    color: $darkColor;
   }
 }

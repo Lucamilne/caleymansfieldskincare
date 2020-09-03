@@ -11097,23 +11097,63 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-#testimonials .carousel-item {
-  height: 100vmin;
+#testimonials {
+  position: relative;
+  background-image: url(../images/wallpaper.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#testimonials h1 {
+  color: #fff;
+}
+
+#testimonials .card {
+  border-radius: 0;
+  border: none;
+  background-color: #eee;
+  height: calc(100% - 48px);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+#testimonials .card:hover {
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+#testimonials .card-footer {
+  background-color: #222;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 0;
+}
+
+#testimonials p {
+  font-size: 0.75em;
+  font-weight: 100;
 }
 
 #testimonials .slide {
-  height: 400px;
+  height: 360px;
 }
 
-#testimonials i,
-#testimonials .name {
-  color: #ffcece;
+#testimonials .icon {
+  top: 0;
+  height: 6rem;
+  width: 6rem;
+  background-color: #222;
+  border-radius: 50%;
 }
 
-@media (min-width: 992px) {
-  #testimonials .carousel-item {
-    height: 350px;
-  }
+#testimonials i {
+  color: #fff;
+  font-size: 1.5em;
 }
 
 .contact-image {
@@ -22218,6 +22258,12 @@ h2 {
   overflow: hidden;
 }
 
+hr {
+  border-top: 1px solid inherit;
+  width: 32px;
+  margin: 0;
+}
+
 .hollow {
   background-color: transparent;
   border-radius: 2rem;
@@ -22252,26 +22298,5 @@ a:link, a:visited, a:hover, a:active {
   h1 {
     font-size: 4em;
   }
-}
-
-.carousel-dark .carousel-control-prev,
-.carousel-dark .carousel-control-next {
-  color: #222;
-}
-
-.carousel-dark .carousel-control-prev:hover,
-.carousel-dark .carousel-control-next:hover {
-  color: #222;
-}
-
-.carousel-dark .carousel-indicators li {
-  background-color: #222;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-}
-
-.carousel-dark .carousel-caption {
-  color: #222;
 }
 /*# sourceMappingURL=App.css.map */
