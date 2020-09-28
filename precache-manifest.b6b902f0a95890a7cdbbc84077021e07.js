@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5c71532984da0687884097dd51e445c9",
+    "revision": "e345c88454ca247ee04b76dd29af3220",
     "url": "/caleymansfieldskincare/index.html"
   },
   {
-    "revision": "c58d4bab6b08539610ba",
-    "url": "/caleymansfieldskincare/static/css/main.8d172d03.chunk.css"
+    "revision": "c3d75dd66ae7b3cac33d",
+    "url": "/caleymansfieldskincare/static/css/main.8e4c7b2c.chunk.css"
   },
   {
-    "revision": "980af794283ce6479d43",
-    "url": "/caleymansfieldskincare/static/js/2.218ab4f3.chunk.js"
+    "revision": "86ae20d34979f69f6757",
+    "url": "/caleymansfieldskincare/static/js/2.b4276fc9.chunk.js"
   },
   {
     "revision": "a73511fdd0e79fea52c5f42ad1574633",
-    "url": "/caleymansfieldskincare/static/js/2.218ab4f3.chunk.js.LICENSE.txt"
+    "url": "/caleymansfieldskincare/static/js/2.b4276fc9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c58d4bab6b08539610ba",
-    "url": "/caleymansfieldskincare/static/js/main.51f061d7.chunk.js"
+    "revision": "c3d75dd66ae7b3cac33d",
+    "url": "/caleymansfieldskincare/static/js/main.b1fe9de8.chunk.js"
   },
   {
     "revision": "983ab79c665a0a817d51",
@@ -40,15 +40,19 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/caleymansfieldskincare/static/media/background.004ce405.jpg"
   },
   {
+    "revision": "e7a1c2c781e84172eb078ce01afa0aef",
+    "url": "/caleymansfieldskincare/static/media/background2.e7a1c2c7.jpg"
+  },
+  {
+    "revision": "8da328ed4446ab3b2a7384760b2385f2",
+    "url": "/caleymansfieldskincare/static/media/icon.8da328ed.ico"
+  },
+  {
     "revision": "d38c53241518b73f1819dd1edbc85c92",
     "url": "/caleymansfieldskincare/static/media/logo_fff.d38c5324.png"
   },
   {
     "revision": "34006f386c448e5752eaffeb1a451d6b",
     "url": "/caleymansfieldskincare/static/media/routine2.34006f38.mp4"
-  },
-  {
-    "revision": "3af9c008f50883a42af7c0009bf734b3",
-    "url": "/caleymansfieldskincare/static/media/wallpaper.3af9c008.jpg"
   }
 ]);
