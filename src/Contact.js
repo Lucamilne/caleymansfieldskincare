@@ -10,7 +10,7 @@ function Contact() {
                     <ContactForm />
                 </Col>
                 <Col lg className="pl-0 pr-0">
-                    <img className="contact-image" src={require("./images/3.jpg")} />
+                    <img className="contact-image" src={require("./images/5.jpg")} />
                 </Col>
             </Row>
         </Container>
