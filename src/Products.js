@@ -2,9 +2,11 @@ import React from "react";
 import { Container, Accordion, Card, Button, Row, Col } from "react-bootstrap"
 
 const treatments = [
-    { id: 1, header: "The Signature Skin Revival Treatment", description: "This luxurious signature and relaxing facial delivers, immediate results, hydration firming and lifting the skin whilst building up longer term health and vitality to the skin. In this treatment advanced aesthetic products are applied to deep cleanse, nourish and balance the skin whilst a selection of suitable non invasive technologies will be used to create the efficacy required for each and every client. Relaxing massage and hydrogel masks may be included depending on requirements. Feel and look 10 years younger after just one treatment.", services: ["Oxygeneo", "A-lift", "Dermalux Tri-wave LED", "Coolift Gun"], packages: [{ length: "60 mins", price: "£120" }, { length: "90 mins", price: "£175" }, { length: "120 mins", price: "£210" }] },
-    { id: 2, header: "The Skin Revival and Recovery Facial", description: "Meta Therapy is a new method for skin rejuvenation- great for anti ageing, skin Hydration and restoration. Thousands of micro perforations are made to the upper layer of the skin.As a result this treatment stimulates the skin to go into repair mode, which triggers collagen and elastin production.LED and Nano current increase cell energy mixed with the use of adult stem cell products the recovery process starts before the treatment even ends. A course of 6 is recommended for ultimate results.", services: ["Dermatude Microneedling", "A-Lift Nano Current", "Dermalux Tri-wave LED"], packages: [{ length: "60mins", price: "£195" }] },
-    { id: 3, header: "Peel and Revival", description: "Progressive not Aggressive peels are a new generation of peels using polyhydroxyacids. They are less irritating to the skin providing more comfort at application and better results. Tailored to you skin requirements, these peels can help with a multitude of skin conditions from acne, uneven skin tone, hyperpigmentation, couperosis and more. Home are products are essential before commencing treatment for peels to fully prepare the skin", services: ["Dermalux Tri-wave LED (if suitable)"], packages: [{ length: "One session", price: "£95" }] }
+    { id: 1, header: "The Ultimate Skin Revival Treatment", description: "The luxurious relaxing signature facial delivers immediate results by:", services: ["Oxygeneo", "A-lift", "Dermalux Tri-wave LED", "Coolift Gun"], detail: "Using a selection of non-invasive technologies and advanced aesthetic products, each treatment is tailored to create efficacy for each and every client. A journey of skin improvement to feel and look years younger after just one treatment. This treatment may include the use of some or all these technologies, depending on your skin type and requirements:", list: ["Stimulating collagen and elastin", "Increasing hydration levels", "Healing and enhancing skin health", "Charging up cell energy", "Oxygenating cells from within", "Lifting, shaping and firming the skin"], packages: [{ length: "70 minutes", price: "£145" }, { length: "105 minutes", price: "£205" }] },
+    { id: 2, header: "The Skin Revival and Recovery Treatment", description: "Reviving the skin by using Fusion Fractional Mesotherapy - one of the most advanced microneedling systems in the UK. This unique method combines two concepts. Firstly - Advanced Collagen Stimulation Therapy (micro needling) creates thousands of tiny punctures in the skin, causing the body to create a wound healing response to renew the skin cells. As the skin repairs the production of collagen and elastin is stimulated. Secondly - Absorbtion of pharmaceuticals, vitamins, peptides, amino acids and growth factors into the skin to target specific skin conditions such as ageing, lines/wrinkles, hyperpigmentation and sun damage.", services: ["Fusion Platinum Pen", "A-Lift Nano Current", "Dermalux Tri-wave LED"], detail: "Recovery combines the use of LED phototherapy and nano current technology to increase cell energy, enhance healing capabilities and anti-ageing properties. The final ingredient is the use of adult stem cell serum which allows the recovery process to start before the treatment even ends. This treatment includes the use of:", packages: [{ length: "60 minutes", price: "£195" }] },
+    { id: 3, header: "The Peel and Revive Treatment", description: "Progressive not aggressive peels are a new generation of peels using polyhydroxyacids. They are less irritating to the skin providing more comfort at application and better results. Tailored to you skin requirements, these peels can help with a multitude of skin conditions from acne, uneven skin tone, hyperpigmentation, couperosis and more.", detail: "Home are products are essential before commencing treatment for peels to fully prepare the skin", services: ["Dermalux Tri-wave LED (if suitable)"], packages: [{ length: "45 - 60 minutes", price: "£95" }] },
+    { id: 4, header: "The Restorative Facial", description: "A beautiful hands-on facial using the highest quality and latest advanced aesthetic products with stem cell technology. A thoroughly restorative and relaxing facial including massage and gel masks to hydrate and reset the balance of skin.", packages: [{ length: "60 minutes", price: "£100" }] },
+    { id: 4, header: "Consulation", description: "For all new clients before treatments can commence, to ascertain the correct treatment plan and complete health questionnaires and a thorough skin analysis.", packages: [{ length: "30 minutes", price: "£30 (refunded back off the price of your first treatment)" }] },
 ];
 
 const Products = () => {
@@ -24,14 +26,26 @@ const Products = () => {
                             <Accordion.Collapse eventKey={treatment.id}>
                                 <Card.Body>
                                     <p>{treatment.description}</p>
-                                    <ul className="pl-3">
+                                    {treatment.list &&
+                                        <ul className="pl-3">
+                                            {treatment.list.map(el => (
+                                                <li key={el}>{el}</li>
+                                            ))}
+                                        </ul>
+                                    }
+                                    {treatment.detail &&
+                                        <p>{treatment.detail}</p>
+                                    }
+                                    {treatment.services &&
+                                        <ul className="pl-3">
                                         {treatment.services.map(service => (
                                             <li key={service}>{service}</li>
                                         ))}
                                     </ul>
+                                    }
                                     <ul className="pl-3">
-                                        {treatment.packages.map(entry => (
-                                            <li key={entry.length} className="d-flex justify-content-between"><span>{entry.length}</span><span>{entry.price}</span></li>
+                                        {treatment.packages.map(el => (
+                                            <li key={el.length} className="d-flex justify-content-between"><span>{el.length}</span><span>{el.price}</span></li>
                                         ))}
                                     </ul>
                                 </Card.Body>

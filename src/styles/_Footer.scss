@@ -1,27 +1,26 @@
 footer {
-
-    p {
-        margin: 0;
-    }
     ul {
         padding: 0;
         margin: 0;
     }
     ul li {
         list-style: none;
+        font-weight: 100;
     }
     i {
         color: $darkColor;
-        font-size: 1.5rem;
+        font-size: 3rem;
     }
-    .footer__wrapper {
+    .footer-bottom {
         width: 100%;
-        border-top: 1px solid $darkColor;
-        border-bottom: 1px solid $darkColor;
-        padding-top: 1rem;
-        margin-bottom: 1rem;
+        color: $lightColor;
+        background-color: $darkColor;
     }
-    .footer__column  {
-        margin-bottom: 1rem;
+    ul:nth-of-type(2) {
+        color: #666;
+    }
+    .favicon {
+        border: 1px solid $lightColor;
+        border-radius: 50%;
     }
 }
