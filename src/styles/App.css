@@ -11003,6 +11003,10 @@ a.text-dark:hover, a.text-dark:focus {
   border-left: 2px solid #FF9B9C;
 }
 
+#introduction a {
+  color: #FF9B9C;
+}
+
 #introduction img {
   height: 320px;
 }

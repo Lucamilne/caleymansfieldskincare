@@ -18,9 +18,8 @@ const Showcase = () => {
                 <Container className="d-flex align-items-center my-5">
                     <Row className="d-flex justify-content-center">
                         <Col lg={6}>
-                            <h1 className="mb-3">Skin Revival Specialist.</h1>
-                            <p className="pl-3">Based from her private Marlow clinic, Caley Mansfield is trained and qualified to offer a range of aesthetic procedures that combine the latest medical platform technologies with advanced aesthetic skincare to cater to wide range of skin types.</p>
-                            <p className="pl-3"><a href="https://www.w3schools.com/">Contact us to book an appointment.</a></p>
+                            <h1 className="mb-3">Get the best out of your skin.</h1>
+                            <p className="pl-3">Every single treatment we offer is tailored to your individual needs. No two skin complexions are the same.</p>
                         </Col>
                     </Row>
                 </Container>

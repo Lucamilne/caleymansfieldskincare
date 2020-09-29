@@ -17,8 +17,9 @@ const Introduction = () => {
                     </Col>
                     <Col lg className="column mb-5">
                         <div className="paragraph">
-                            <h1 className="mb-3">Get the best out of your skin.</h1>
-                            <p className="pl-3 mb-3">Every single treatment we offer is tailored to your individual needs. No two skin complexions are the same.</p>
+                            <h1 className="mb-3">Skin Revival Specialist.</h1>
+                            <p className="pl-3 mb-3">Based from her private Marlow clinic, Caley Mansfield is trained and qualified to offer a range of aesthetic procedures that combine the latest medical platform technologies with advanced aesthetic skincare to cater to wide range of skin types.</p>
+                            <p className="pl-3"><a href="https://www.w3schools.com/">Contact us to book an appointment.</a></p>
                         </div>
                     </Col>
                 </Row>
