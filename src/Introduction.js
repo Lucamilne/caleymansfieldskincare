@@ -7,11 +7,19 @@ const options = {
     rootMargin: "0px 0px -80px 0px"
 }
 
+
+const Mask = () => {
+    const { ref, inView, entry } = useInView(options);
+
+    return <div ref={ref} className={`mask fade-in from-left ${inView ? 'appear' : ''}`}></div>
+}
+
+
 const Sketch = () => {
     const { ref, inView, entry } = useInView(options);
 
     return (
-        <Image ref={ref} className={`fade-in ${inView ? 'appear' : ''}`} fluid src={require("./images/10.png")} />
+        <Image ref={ref} className={`fade-in from-right ${inView ? 'appear' : ''}`} fluid src={require("./images/10.png")} />
     );
 };
 
@@ -31,10 +39,11 @@ const Introduction = () => {
         <Container fluid id="introduction" className="d-flex justify-content-center">
             <Row>
                 <Col lg className="column my-5">
+                    {Mask()}
                     {Sketch()}
                 </Col>
                 <Col lg className="column mb-5">
-                    { Paragraph() }
+                    {Paragraph()}
                 </Col>
             </Row>
         </Container >

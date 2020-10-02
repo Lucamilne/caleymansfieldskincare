@@ -2,6 +2,15 @@
 
 #introduction {
   background-color: #eee;
+  .mask {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 137px solid transparent;
+    border-left: 275px solid #fff;
+    border-bottom: 137px solid transparent;
+    left: calc(50%-275px);
+  }
   p {
     max-width: 450px;
     font-size: 1.5em;
@@ -15,6 +24,7 @@
   }
   img {
     height: 320px;
+    z-index: 2;
   }
   .column {
     display: flex;

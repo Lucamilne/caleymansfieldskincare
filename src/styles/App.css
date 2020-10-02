@@ -21781,6 +21781,16 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: #eee;
 }
 
+#introduction .mask {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 137px solid transparent;
+  border-left: 275px solid #fff;
+  border-bottom: 137px solid transparent;
+  left: calc(50%-275px);
+}
+
 #introduction p {
   max-width: 450px;
   font-size: 1.5em;
@@ -21796,6 +21806,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 #introduction img {
   height: 320px;
+  z-index: 2;
 }
 
 #introduction .column {
