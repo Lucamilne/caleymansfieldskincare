@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Col, Row } from "react-bootstrap"
 import { useInView } from 'react-intersection-observer'
-import { motion } from 'framer-motion'
 import ShapeFill from "./ShapeFill";
 
 const Showcase = () => {
@@ -14,7 +13,6 @@ const Showcase = () => {
     return (
         <div id="showcase" className="d-flex flex-column justify-content-between">
             <ShapeFill alt="shapefill-alt" color="#eee"/>
-            <motion.div ref={ref} animate={inView ? { opacity: [0, 1], transform: ["translateY(10px)", "translateY(0px)"]} : { opacity: 0, transform: "translateY(0px)" }} transition={{ duration: duration }}>
                 <Container className="d-flex align-items-center my-5">
                     <Row className="d-flex justify-content-center">
                         <Col lg={6}>
@@ -23,7 +21,6 @@ const Showcase = () => {
                         </Col>
                     </Row>
                 </Container>
-            </motion.div>
             <ShapeFill/>
         </div>
     )

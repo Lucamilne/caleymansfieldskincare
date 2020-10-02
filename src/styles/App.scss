@@ -84,6 +84,38 @@ a:link,a:visited,a:hover,a:active {
   color: $secondaryColor;
   text-decoration: none;
 }
+//intersection observer classes
+.fade-in {
+  opacity: 0;
+  transition: opacity 600ms ease;
+}
+.fade-in.appear {
+  opacity: 1;
+}
+.from-left {
+  transform: translateX(-10%);
+}
+.from-right {
+  transform: translateX(10%);
+}
+.from-below {
+  transform: translateY(50%);
+}
+.from-above {
+  transform: translateY(-50%);
+}
+.from-left,
+.from-right,
+.from-below,
+.from-above {
+  transition: all 600ms ease;
+}
+.from-left.appear,
+.from-right.appear,
+.from-below.appear,
+.from-above.appear {
+  transform: translateX(0);
+}
 @include media-breakpoint-up(sm) {
   html {
     font-size: 1rem;

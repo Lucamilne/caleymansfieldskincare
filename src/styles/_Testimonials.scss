@@ -1,5 +1,4 @@
 #testimonials {
-  position: relative;
   background-image: url(../images/background2.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -25,22 +24,27 @@
     text-transform: uppercase;
     border-radius: 0;
   }
-  p {
-    font-size: 0.75em;
+  .card-body {
+    font-size: 0.85em;
+    line-height: 1.25em;
     font-weight: 100;
+    z-index: 2;
   }
   .slide {
     height: 360px;
   }
   .icon {
-    top: 0;
+    top: -48px;
+    left: 50%;
+    transform: translateX(-50%);
     height: 96px;
     width: 96px;
-    background-color: $darkColor;
+    background-color: $secondaryColor;
+    border: 4px solid #eee;
     border-radius: 50%;
   }
   i {
-    color: $lightColor;
+    color: #eee;
     font-size: 1.5em;
   }
 }

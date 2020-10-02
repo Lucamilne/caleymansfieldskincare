@@ -8,7 +8,7 @@ class Navigation extends React.Component {
         this.state = {
             isMenuOpen: false,
             address: "96 Marlow Bottom, SL7 3PH",
-            email: "caleymansfield@icloud.com",
+            email: "caley@skinrevivalspecialist.co.uk",
             number: "077976 962012"
         };
 

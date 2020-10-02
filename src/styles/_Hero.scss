@@ -1,3 +1,5 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
 #hero {
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -6,6 +8,11 @@
 
   img {
     width: 100%;
+  }
+  video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
   }
   .postcard__wrapper {
     position: absolute;
@@ -61,16 +68,7 @@
   .hero__column-center {
     font-size: 2rem;
   }
-  @media screen and (min-width: 540px) {
-    .hero__column-start {
-      text-align: left;
-    }
-    .hero__column-center {
-      text-align: center;
-      justify-content: center;
-    }
-    .hero__column-end {
-      text-align: right;
-    }
+  @include media-breakpoint-up(lg) {
+    height: 100vh;
   }
 }
