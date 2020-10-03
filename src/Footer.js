@@ -20,7 +20,7 @@ function Footer() {
                         <li>©{new Date().getFullYear()} Caley Mansfield Skin Revival</li>
                         <li>All rights reserved</li>
                     </ul>
-                    <img src={require("./images/icon.ico")} className="favicon mt-2 mb-4"/>
+                    <img src={require("./images/icon.ico")} alt="Caley Mansfield Logo" className="favicon mt-2 mb-4"/>
                 </Container>
             </div>
         </footer>

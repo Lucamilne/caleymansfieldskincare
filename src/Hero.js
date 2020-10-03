@@ -5,7 +5,7 @@ class Hero extends React.Component {
     render() {
         return (
             <div className="position-relative" id="hero">
-                <img src={require("./images/7.jpg")} className="d-md-block d-lg-none" />
+                <img src={require("./images/7.jpg")} alt="Woman undergoing skin care facial treatment" className="d-md-block d-lg-none" />
                 <video autoPlay muted loop className="d-none d-lg-block">
                     <source src={require("./images/routine2.mp4")} type="video/mp4" />
                 </video>
