@@ -31,10 +31,10 @@ const Introduction = () => {
         <Container fluid id="introduction" className="d-flex justify-content-center">
             <Row>
                 <Col lg className="column my-5">
-                    {Sketch()}
+                    <Sketch />
                 </Col>
                 <Col lg className="column mb-5">
-                    {Paragraph()}
+                    <Paragraph />
                 </Col>
             </Row>
         </Container >
