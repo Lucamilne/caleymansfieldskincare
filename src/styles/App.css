@@ -21946,6 +21946,25 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 1.5em;
 }
 
+#technology {
+  background-color: pink;
+}
+
+#technology .custom-slide {
+  max-width: 800px;
+  max-height: 600px;
+  background-color: red;
+}
+
+@media (min-width: 992px) {
+  #technology {
+    height: 100vh;
+  }
+  #technology h1 {
+    font-size: 4em;
+  }
+}
+
 .contact-image {
   width: 100%;
 }
