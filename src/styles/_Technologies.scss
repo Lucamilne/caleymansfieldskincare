@@ -1,11 +1,9 @@
 #technology {
-    background-color: pink;
-.custom-slide {
-    max-width: 800px;
-    max-height: 600px;
-    background-color: red;
-}
-@include media-breakpoint-up(lg) {
+  background-color: pink;
+  .tile-grid, .row, .tile {
+  height: 100%;
+  }
+  @include media-breakpoint-up(lg) {
     height: 100vh;
     h1 {
       font-size: 4em;
