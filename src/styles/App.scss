@@ -85,6 +85,10 @@ a:link,a:visited,a:hover,a:active {
   color: $secondaryColor;
   text-decoration: none;
 }
+.tooltip > .tooltip-inner  {
+  border-radius: 0px;
+  background-color: $darkColor;
+}
 //intersection observer classes
 .fade-in {
   opacity: 0;

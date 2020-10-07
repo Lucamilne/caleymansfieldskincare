@@ -13,4 +13,13 @@
     list-style: none;
     border-left: 2px solid $thirdColor;
   }
+  .service {
+    color: $thirdColor;
+    text-decoration: underline;
+    transition: all 400ms ease;
+    cursor: pointer;
+  }
+  .service:hover {
+    color: $darkColor;
+  }
 }

@@ -21883,6 +21883,18 @@ a.text-dark:hover, a.text-dark:focus {
   border-left: 2px solid #FF9B9C;
 }
 
+#products .service {
+  color: #FF9B9C;
+  text-decoration: underline;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+  cursor: pointer;
+}
+
+#products .service:hover {
+  color: #222;
+}
+
 #testimonials {
   background-image: url(../images/background2.jpg);
   background-position: center;
@@ -33108,6 +33120,11 @@ html {
 a:link, a:visited, a:hover, a:active {
   color: #ffcece;
   text-decoration: none;
+}
+
+.tooltip > .tooltip-inner {
+  border-radius: 0px;
+  background-color: #222;
 }
 
 .fade-in {
