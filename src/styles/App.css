@@ -21872,27 +21872,19 @@ a.text-dark:hover, a.text-dark:focus {
   font-weight: 400;
 }
 
-#products button {
+#products .product-toggle {
   height: 40px;
   width: 40px;
   border-radius: 50%;
 }
 
+#products button {
+  width: 200px;
+}
+
 #products ul {
   list-style: none;
   border-left: 2px solid #FF9B9C;
-}
-
-#products .service {
-  color: #FF9B9C;
-  text-decoration: underline;
-  -webkit-transition: all 400ms ease;
-  transition: all 400ms ease;
-  cursor: pointer;
-}
-
-#products .service:hover {
-  color: #222;
 }
 
 #testimonials {

@@ -4,22 +4,16 @@
     font-size: 1.5em;
     font-weight: 400;
   }
-  button {
+  .product-toggle {
     height: 40px;
     width: 40px;
     border-radius: 50%;
   }
+  button {
+    width: 200px;
+  }
   ul {
     list-style: none;
     border-left: 2px solid $thirdColor;
-  }
-  .service {
-    color: $thirdColor;
-    text-decoration: underline;
-    transition: all 400ms ease;
-    cursor: pointer;
-  }
-  .service:hover {
-    color: $darkColor;
   }
 }
