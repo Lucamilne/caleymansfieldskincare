@@ -1,5 +1,5 @@
-import React from "react";
-import { Container, Accordion, Card, Button, Row, Col } from "react-bootstrap"
+import React, { useState } from "react";
+import { Container, Accordion, Card, Button, Row, Col, Modal } from "react-bootstrap"
 
 const treatments = [
     { id: 1, header: "The Ultimate Skin Revival Treatment", description: "The luxurious relaxing signature facial delivers immediate results by:", services: ["Oxygeneo", "A-lift", "Dermalux Tri-wave LED", "Coolift Gun"], detail: "Using a selection of non-invasive technologies and advanced aesthetic products, each treatment is tailored to create efficacy for each and every client. A journey of skin improvement to feel and look years younger after just one treatment. This treatment may include the use of some or all these technologies, depending on your skin type and requirements:", list: ["Stimulating collagen and elastin", "Increasing hydration levels", "Healing and enhancing skin health", "Charging up cell energy", "Oxygenating cells from within", "Lifting, shaping and firming the skin"], packages: [{ length: "70 minutes", price: "£145" }, { length: "105 minutes", price: "£205" }] },
@@ -9,7 +9,26 @@ const treatments = [
     { id: 5, header: "Consultation", description: "For all new clients before treatments can commence, to ascertain the correct treatment plan and complete health questionnaires and a thorough skin analysis.", packages: [{ length: "30 minutes", price: "£30 (refunded back off the price of your first treatment)" }] },
 ];
 
+function ReadMore(props) {
+    return (
+        <Modal {...props} aria-labelledby="contained-modal-title-vcenter" centered size="lg">
+            <Modal.Header closeButton>
+                <Modal.Title id="contained-modal-title-vcenter">
+                    Technology
+                </Modal.Title>
+            </Modal.Header>
+            <Modal.Body className="show-grid">
+                <Container>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </Container>
+            </Modal.Body>
+        </Modal>
+    );
+}
+
 const Products = () => {
+    const [modalShow, setModalShow] = React.useState(false);
+
     return (
         <Container id="products" className="my-5">
             <h1 className="text-center mb-3">Treatments.</h1>
@@ -43,18 +62,22 @@ const Products = () => {
                                     </ul>
                                     {treatment.services &&
                                         <div className="d-flex flex-column align-items-start">
-                                            <p>Technologies:</p> 
+                                            <p>Technology</p>
                                             {treatment.services.map(service => (
-                                                <Button variant="outline-dark mb-1" key={service}>{service}</Button>
+                                                <Button variant="outline-dark mb-1" key={service} onClick={() => setModalShow(true)}>{service}</Button>
                                             ))}
                                         </div>
-                                    }  
+                                    }
                                 </Card.Body>
                             </Accordion.Collapse>
                         </Accordion>
                     </Col>
                 ))}
             </Row>
+            <ReadMore
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+            />
         </Container>
 
     )

@@ -31,11 +31,13 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.modal-title {
   font-family: "Playfair Display", serif;
 }
 h1,
-h2 {
+h2,
+.modal-title {
   line-height: 1em;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -85,9 +87,17 @@ a:link,a:visited,a:hover,a:active {
   color: $secondaryColor;
   text-decoration: none;
 }
+//redundant
 .tooltip > .tooltip-inner  {
   border-radius: 0px;
   background-color: $darkColor;
+}
+.modal-backdrop.show {
+  opacity: 0.75;
+}
+.modal-content {
+  border-radius: 0px;
+  padding: $spacer * 3;
 }
 //intersection observer classes
 .fade-in {
