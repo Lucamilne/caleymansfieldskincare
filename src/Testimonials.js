@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap"
-import { useInView } from 'react-intersection-observer'
 import ShapeFill from "./ShapeFill"
 
 const reviews = [
@@ -10,12 +9,6 @@ const reviews = [
 ]
 
 const Testimonials = () => {
-    const [ref, inView] = useInView({
-        threshold: 0.4
-    })
-
-    const duration = 0.5;
-
     return (
         <section id="testimonials" className="d-flex flex-column justify-content-between">
             <ShapeFill alt="shapefill-alt" />

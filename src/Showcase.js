@@ -1,15 +1,8 @@
 import React from "react";
 import { Container, Col, Row } from "react-bootstrap"
-import { useInView } from 'react-intersection-observer'
 import ShapeFill from "./ShapeFill";
 
 const Showcase = () => {
-    const [ref, inView] = useInView({
-        threshold: 0.4
-    })
-
-    const duration = 0.5;
-
     return (
         <div id="showcase" className="d-flex flex-column justify-content-between">
             <ShapeFill alt="shapefill-alt" color="#eee"/>
