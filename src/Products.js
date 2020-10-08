@@ -9,7 +9,7 @@ const treatments = [
     { id: 5, header: "Consultation", description: "For all new clients before treatments can commence, to ascertain the correct treatment plan and complete health questionnaires and a thorough skin analysis.", packages: [{ length: "30 minutes", price: "£30 (refunded back off the price of your first treatment)" }] },
 ];
 
-const techonology = {
+const technology = {
     "Oxygeneo": { },
     "A-lift": {},
     "Dermalux Tri-wave LED": {},
