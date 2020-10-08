@@ -14,12 +14,12 @@ function ReadMore(props) {
         <Modal {...props} aria-labelledby="contained-modal-title-vcenter" centered size="lg">
             <Modal.Header closeButton>
                 <Modal.Title id="contained-modal-title-vcenter">
-                    Technology
+                    {props.clicked}
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body className="show-grid">
                 <Container>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    This title of this popup changes based on what techonology is clicked on. There is a bug on mobile causing the X (close) to render too far to the right.
                 </Container>
             </Modal.Body>
         </Modal>
@@ -28,6 +28,7 @@ function ReadMore(props) {
 
 const Products = () => {
     const [modalShow, setModalShow] = React.useState(false);
+    const [clicked, setClicked] = useState("alift")
 
     return (
         <Container id="products" className="my-5">
@@ -64,7 +65,10 @@ const Products = () => {
                                         <div className="d-flex flex-column align-items-start">
                                             <p>Technology</p>
                                             {treatment.services.map(service => (
-                                                <Button variant="outline-dark mb-1" key={service} onClick={() => setModalShow(true)}>{service}</Button>
+                                                <Button variant="outline-dark mb-1" key={service} onClick={() => {
+                                                    setModalShow(true)
+                                                    setClicked(service)
+                                                }}>{service}</Button>
                                             ))}
                                         </div>
                                     }
@@ -77,6 +81,7 @@ const Products = () => {
             <ReadMore
                 show={modalShow}
                 onHide={() => setModalShow(false)}
+                clicked={clicked}
             />
         </Container>
 
