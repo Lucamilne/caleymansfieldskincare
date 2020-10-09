@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Container, Accordion, Card, Button, Row, Col, Modal } from "react-bootstrap"
 
 const treatments = [
-    { id: 1, header: "The Ultimate Skin Revival Treatment", description: "The luxurious relaxing signature facial delivers immediate results by:", services: ["Geneo", "A-lift", "Dermalux Tri-wave LED", "Coolift Gun"], detail: "Using a selection of non-invasive technologies and advanced aesthetic products, each treatment is tailored to create efficacy for each and every client. A journey of skin improvement to feel and look years younger after just one treatment. This treatment may include the use of some or all the technologies listed below, depending on your skin type and requirements.", list: ["Stimulating collagen and elastin", "Increasing hydration levels", "Healing and enhancing skin health", "Charging up cell energy", "Oxygenating cells from within", "Lifting, shaping and firming the skin"], packages: [{ length: "70 minutes", price: "£145" }, { length: "105 minutes", price: "£205" }] },
+    { id: 1, header: "The Ultimate Skin Revival Treatment", description: "The luxurious relaxing signature facial delivers immediate results by:", services: ["Geneo", "A-Lift", "Dermalux Tri-wave LED", "Coolift Gun"], detail: "Using a selection of non-invasive technologies and advanced aesthetic products, each treatment is tailored to create efficacy for each and every client. A journey of skin improvement to feel and look years younger after just one treatment. This treatment may include the use of some or all the technologies listed below, depending on your skin type and requirements.", list: ["Stimulating collagen and elastin", "Increasing hydration levels", "Healing and enhancing skin health", "Charging up cell energy", "Oxygenating cells from within", "Lifting, shaping and firming the skin"], packages: [{ length: "70 minutes", price: "£145" }, { length: "105 minutes", price: "£205" }] },
     { id: 2, header: "The Skin Revival and Recovery Treatment", description: "Reviving the skin by using Fusion Fractional Mesotherapy - one of the most advanced microneedling systems in the UK. This unique method combines two concepts. Firstly - Advanced Collagen Stimulation Therapy (micro needling) creates thousands of tiny punctures in the skin, causing the body to create a wound healing response to renew the skin cells. As the skin repairs the production of collagen and elastin is stimulated. Secondly - Absorbtion of pharmaceuticals, vitamins, peptides, amino acids and growth factors into the skin to target specific skin conditions such as ageing, lines/wrinkles, hyperpigmentation and sun damage.", services: ["Fusion Platinum Pen", "A-Lift", "Dermalux Tri-wave LED"], detail: "Recovery combines the use of LED phototherapy and A-lift nano current technology to increase cell energy, enhance healing capabilities and anti-ageing properties. The final ingredient is the use of adult stem cell serum which allows the recovery process to start before the treatment even ends. This treatment includes the use of the techonologies listed below.", packages: [{ length: "60 minutes", price: "£195" }] },
     { id: 3, header: "The Peel and Revive Treatment", description: "Progressive not aggressive peels are a new generation of peels using polyhydroxyacids. They are less irritating to the skin providing more comfort at application and better results. Tailored to you skin requirements, these peels can help with a multitude of skin conditions from acne, uneven skin tone, hyperpigmentation, couperosis and more.", detail: "Home are products are essential before commencing treatment for peels to fully prepare the skin", services: ["Dermalux Tri-wave LED"], packages: [{ length: "45 - 60 minutes", price: "£95" }] },
     { id: 4, header: "The Restorative Facial", description: "A beautiful hands-on facial using the highest quality and latest advanced aesthetic products with stem cell technology. A thoroughly restorative and relaxing facial including massage and gel masks to hydrate and reset the balance of skin.", packages: [{ length: "60 minutes", price: "£100" }] },
@@ -18,7 +18,7 @@ const technology = {
         media: "",
         list: ["Oxygeneo", "Tripollar", "Oxypods"]
     },
-    "A-lift": {
+    "A-Lift": {
         class: "alift",
         introduction: "A-Lift is a highly-effective, non-invasive facial treatment that uses the latest technology to deliver proven results. The A-Lift machine uses three phases of microcurrent and two phases of nanocurrent technology to lift, tone, and re-energise the cells in the face and neck. A-Lift increases Adenosine Triphosphate (ATP) production within the cells to accelerate their metabolism.",
         description: "A-Lift with its dual current output of microcurrent and nanocurrent boosts ATP production by up to 500% as well as automatically monitoring and adjusting itself to synchronise with the skin’s own bio-electrical frequency. The current stimulates ATP production within the cells which effectively ‘supercharges’ the rate of their metabolism back to previous levels of youth.",
@@ -43,10 +43,10 @@ const technology = {
         list: ["Intense hydration", "Improves skin texture and quality", "Collagen stimulation", "Dermis regeneration", "Visible plumping and brightening effects after just a single session"]
     },
     "Fusion Platinum Pen": {
-        class: "fusiom",
-        introduction: "",
-        description: "",
-        summary: "",
+        class: "fusion",
+        introduction: "TBC",
+        description: "TBC",
+        summary: "TBC",
         media: "",
         list: ""
     }
@@ -54,7 +54,6 @@ const technology = {
 
 function ReadMore(props) {
     const tech = props.clicked;
-    console.log(tech)
 
     return (
         <Modal {...props} aria-labelledby="contained-modal-title-vcenter" centered size="lg">
@@ -63,8 +62,7 @@ function ReadMore(props) {
                     {tech}
                 </Modal.Title>
             </Modal.Header>
-            <Modal.Body className="show-grid">
-                <Container>
+            <Modal.Body className="tech-text-content">
                     {tech &&
                         <>
                             <p>{technology[tech].introduction}</p>
@@ -72,7 +70,6 @@ function ReadMore(props) {
                             <p>{technology[tech].summary}</p>
                         </>
                     }
-                </Container>
             </Modal.Body>
         </Modal>
     );
