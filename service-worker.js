@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/caleymansfieldskincare/precache-manifest.760a646c7efa543fd6a935d282bf7e80.js"
+  "/caleymansfieldskincare/precache-manifest.edf027c9a4d753181cb371e5bf66b9ef.js"
 );
 
 self.addEventListener('message', (event) => {
