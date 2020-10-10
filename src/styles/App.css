@@ -33123,11 +33123,6 @@ a:link, a:visited, a:hover, a:active {
   text-decoration: none;
 }
 
-.tooltip > .tooltip-inner {
-  border-radius: 0px;
-  background-color: #222;
-}
-
 .modal-backdrop.show {
   opacity: 0.75;
 }
@@ -33135,6 +33130,13 @@ a:link, a:visited, a:hover, a:active {
 .modal-content {
   border-radius: 0px;
   padding: 3rem;
+  color: #ffffff;
+  background-color: #FF9B9C;
+  border: 8px solid #fff;
+}
+
+.modal-content .close {
+  color: #fff;
 }
 
 .fade-in {

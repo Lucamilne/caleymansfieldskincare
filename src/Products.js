@@ -56,7 +56,7 @@ function ReadMore(props) {
     const tech = props.clicked;
 
     return (
-        <Modal {...props} aria-labelledby="contained-modal-title-vcenter" centered size="lg">
+        <Modal {...props} aria-labelledby="contained-modal-title-vcenter" centered size="lg" id="modal">
             <Modal.Header closeButton>
                 <Modal.Title id="contained-modal-title-vcenter">
                     {tech}
@@ -77,7 +77,8 @@ function ReadMore(props) {
 
 const Products = () => {
     const [modalShow, setModalShow] = React.useState(false);
-    const [clicked, setClicked] = useState("")
+    const [clicked, setClicked] = useState("");
+    const [toggle, setToggle] = useState(false)
 
     return (
         <Container id="products" className="my-5">
@@ -88,8 +89,8 @@ const Products = () => {
                         <Accordion defaultActiveKey={treatment.id}>
                             <Card.Header className="d-flex justify-content-between">
                                 <span>{treatment.header}</span>
-                                <Accordion.Toggle as={Button} eventKey={treatment.id} variant="outline-link" className="product-toggle">
-                                    <i className="fas fa-chevron-up"></i>
+                                <Accordion.Toggle as={Button} eventKey={treatment.id} variant="outline-link" className="product-toggle" onClick={() => setToggle(!toggle)}>
+                                    <i className={`fas fa-chevron-${ toggle ? "up" : "down"}`}></i>
                                 </Accordion.Toggle>
                             </Card.Header>
                             <Accordion.Collapse eventKey={treatment.id}>

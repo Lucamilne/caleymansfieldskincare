@@ -87,17 +87,18 @@ a:link,a:visited,a:hover,a:active {
   color: $secondaryColor;
   text-decoration: none;
 }
-//redundant
-.tooltip > .tooltip-inner  {
-  border-radius: 0px;
-  background-color: $darkColor;
-}
 .modal-backdrop.show {
   opacity: 0.75;
 }
 .modal-content {
   border-radius: 0px;
   padding: $spacer * 3;
+  color: #ffffff;
+  background-color: $thirdColor;
+  border: 8px solid #fff;
+}
+.modal-content .close {
+  color: #fff;
 }
 //intersection observer classes
 .fade-in {
