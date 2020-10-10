@@ -90,12 +90,22 @@ a:link,a:visited,a:hover,a:active {
 .modal-backdrop.show {
   opacity: 0.75;
 }
+.modal-header {
+  margin: 0 16px;
+  padding: 16px 0;
+  border-bottom: 2px solid rgba(255,255,255,0.5);
+}
 .modal-content {
   border-radius: 0px;
-  padding: $spacer * 3;
+  padding: $spacer;
   color: #ffffff;
+  font-weight: 100px;
   background-color: $thirdColor;
   border: 8px solid #fff;
+}
+.modal-content ul {
+  list-style: none;
+  border-left: 2px solid rgba(255,255,255,0.5);
 }
 .modal-content .close {
   color: #fff;

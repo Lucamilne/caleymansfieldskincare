@@ -16,7 +16,7 @@ const technology = {
         description: "Geneo treatments can be offered to a wide variety of skin types, ages and needs, making it a perfect solution for ongoing maintenance of the skin, for targeted treatment of specific skin conditions, and for maintenance and enhancement of skin improvement following a surgical procedure.",
         summary: "",
         media: "",
-        list: ["Oxygeneo", "Tripollar", "Oxypods"]
+        list: { title: "Geneo delivers four essential treatments simulataneously:", content: ["Advanced exfoliation", "Oxygenation", "Infusion", "Skin tightening"] }
     },
     "A-Lift": {
         class: "alift",
@@ -32,7 +32,7 @@ const technology = {
         description: "The Dermalux® treatment is a relaxing, pain free experience with proven mood enhancing effects. Enjoy some luxury me-time as your skin absorbs the energising light to kick start cell regeneration and restore radiance. Each treatment lasts for around 20 minutes and with no downtime, you can simply get up and glow! As the light triggers a whole cascade of skin enhancing processes, the visible benefits continue even after the treatment has finished.",
         summary: "We are all influenced by the Power of Light. Light has many positive effects on our bodies; it helps us to produce essential vitamin D, triggers growth, promotes wellbeing and makes our skin glow!",
         media: "",
-        list: ""
+        list: null
     },
     "Coolift Gun": {
         class: "coolift",
@@ -40,7 +40,7 @@ const technology = {
         description: "This treatment is ideal for anti-aging and adding luminosity to the skin. It contains Hyaluronic acid and tighteners. Suitable for all skin types. It is designed to easily and quickly treat the entire face. Achieving a general lifting effect that smoothes and illuminates the skin.",
         summary: "£75 as a stand alone treatment.",
         media: "",
-        list: ["Intense hydration", "Improves skin texture and quality", "Collagen stimulation", "Dermis regeneration", "Visible plumping and brightening effects after just a single session"]
+        list: { title: "The benefits:", content: ["Intense hydration", "Improves skin texture and quality", "Collagen stimulation", "Dermis regeneration", "Visible plumping and brightening effects"] }
     },
     "Fusion Platinum Pen": {
         class: "fusion",
@@ -48,7 +48,7 @@ const technology = {
         description: "The disposable needles are 33g ultra sharp, and of the highest quality, encased in biocompatible medical plastic. The cartridges benefit from anti-back flow technology, to prevent product or bodily fluids entering the device and eliminating any chance of cross-contamination. Making the platinum pen one of the safest micro needling pens available.",
         summary: "The Fusion Mesotherapy range includes products containing the latest generation of Growth Factors and Biomimetic Peptides. Used in conjunction with the Platinum Pen, it guarantees hygiene, safety, quality treatments and results.",
         media: "",
-        list: ""
+        list: null
     }
 }
 
@@ -56,27 +56,37 @@ function ReadMore(props) {
     const tech = props.clicked;
 
     return (
-        <Modal {...props} aria-labelledby="contained-modal-title-vcenter" centered size="lg" id="modal">
+        <Modal {...props} aria-labelledby="contained-modal-title-vcenter" centered size="lg">
             <Modal.Header closeButton>
                 <Modal.Title id="contained-modal-title-vcenter">
                     {tech}
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body className="tech-text-content">
-                    {tech &&
-                        <>
-                            <p>{technology[tech].introduction}</p>
-                            <p>{technology[tech].description}</p>
-                            <p>{technology[tech].summary}</p>
-                        </>
-                    }
+                {tech &&
+                    <>
+                        <p>{technology[tech].introduction}</p>
+                        <p>{technology[tech].description}</p>
+                        <p>{technology[tech].summary}</p>
+                        {technology[tech].list &&
+                            <>
+                                <p>{technology[tech].list.title}</p>
+                                <ul className="pl-3">
+                                    {technology[tech].list.content.map(el => (
+                                        <li key={el}>{el}</li>
+                                    ))}
+                                </ul>
+                            </>
+                        }
+                    </>
+                }
             </Modal.Body>
         </Modal>
     );
 }
 
 const Products = () => {
-    const [modalShow, setModalShow] = React.useState(false);
+    const [modalShow, setModalShow] = useState(false);
     const [clicked, setClicked] = useState("");
     const [toggle, setToggle] = useState(false)
 
@@ -90,7 +100,7 @@ const Products = () => {
                             <Card.Header className="d-flex justify-content-between">
                                 <span>{treatment.header}</span>
                                 <Accordion.Toggle as={Button} eventKey={treatment.id} variant="outline-link" className="product-toggle" onClick={() => setToggle(!toggle)}>
-                                    <i className={`fas fa-chevron-${ toggle ? "up" : "down"}`}></i>
+                                    <i className={`fas fa-chevron-${toggle ? "up" : "down"}`}></i>
                                 </Accordion.Toggle>
                             </Card.Header>
                             <Accordion.Collapse eventKey={treatment.id}>
