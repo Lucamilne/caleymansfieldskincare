@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/caleymansfieldskincare/static/css/main.418e6cbe.chunk.css",
-    "main.js": "/caleymansfieldskincare/static/js/main.f78b9272.chunk.js",
-    "main.js.map": "/caleymansfieldskincare/static/js/main.f78b9272.chunk.js.map",
+    "main.js": "/caleymansfieldskincare/static/js/main.90c457eb.chunk.js",
+    "main.js.map": "/caleymansfieldskincare/static/js/main.90c457eb.chunk.js.map",
     "runtime-main.js": "/caleymansfieldskincare/static/js/runtime-main.bd8c4d50.js",
     "runtime-main.js.map": "/caleymansfieldskincare/static/js/runtime-main.bd8c4d50.js.map",
-    "static/js/2.188e4945.chunk.js": "/caleymansfieldskincare/static/js/2.188e4945.chunk.js",
-    "static/js/2.188e4945.chunk.js.map": "/caleymansfieldskincare/static/js/2.188e4945.chunk.js.map",
+    "static/js/2.6ddab46b.chunk.js": "/caleymansfieldskincare/static/js/2.6ddab46b.chunk.js",
+    "static/js/2.6ddab46b.chunk.js.map": "/caleymansfieldskincare/static/js/2.6ddab46b.chunk.js.map",
     "index.html": "/caleymansfieldskincare/index.html",
-    "precache-manifest.e6c1d20009c076e200dbe39e789c7d97.js": "/caleymansfieldskincare/precache-manifest.e6c1d20009c076e200dbe39e789c7d97.js",
+    "precache-manifest.d2a9e414f50e6150de1a4ba72017934c.js": "/caleymansfieldskincare/precache-manifest.d2a9e414f50e6150de1a4ba72017934c.js",
     "service-worker.js": "/caleymansfieldskincare/service-worker.js",
     "static/css/main.418e6cbe.chunk.css.map": "/caleymansfieldskincare/static/css/main.418e6cbe.chunk.css.map",
-    "static/js/2.188e4945.chunk.js.LICENSE.txt": "/caleymansfieldskincare/static/js/2.188e4945.chunk.js.LICENSE.txt",
+    "static/js/2.6ddab46b.chunk.js.LICENSE.txt": "/caleymansfieldskincare/static/js/2.6ddab46b.chunk.js.LICENSE.txt",
     "static/media/10.png": "/caleymansfieldskincare/static/media/10.5a61037b.png",
     "static/media/5.jpg": "/caleymansfieldskincare/static/media/5.d72cc49e.jpg",
     "static/media/7.jpg": "/caleymansfieldskincare/static/media/7.6862fd45.jpg",
@@ -22,8 +22,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.bd8c4d50.js",
-    "static/js/2.188e4945.chunk.js",
+    "static/js/2.6ddab46b.chunk.js",
     "static/css/main.418e6cbe.chunk.css",
-    "static/js/main.f78b9272.chunk.js"
+    "static/js/main.90c457eb.chunk.js"
   ]
 }
