@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d9557083a08344c47c77d4f3d46dc038",
+    "revision": "0dc31d38a51990bf53098e5498794678",
     "url": "/caleymansfieldskincare/index.html"
   },
   {
-    "revision": "11cad21cfbeec769992a",
-    "url": "/caleymansfieldskincare/static/css/main.418e6cbe.chunk.css"
+    "revision": "f619bc9ec87cc7d7a3e7",
+    "url": "/caleymansfieldskincare/static/css/main.d7e63605.chunk.css"
   },
   {
-    "revision": "0053cfcd49a3daf2f40c",
-    "url": "/caleymansfieldskincare/static/js/2.6ddab46b.chunk.js"
+    "revision": "6b1e71bd9188b49ed747",
+    "url": "/caleymansfieldskincare/static/js/2.292b669f.chunk.js"
   },
   {
     "revision": "5ac48c47bb3912b14c2d8de4f56d5ae8",
-    "url": "/caleymansfieldskincare/static/js/2.6ddab46b.chunk.js.LICENSE.txt"
+    "url": "/caleymansfieldskincare/static/js/2.292b669f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "11cad21cfbeec769992a",
-    "url": "/caleymansfieldskincare/static/js/main.90c457eb.chunk.js"
+    "revision": "f619bc9ec87cc7d7a3e7",
+    "url": "/caleymansfieldskincare/static/js/main.170841bb.chunk.js"
   },
   {
     "revision": "983ab79c665a0a817d51",
@@ -36,12 +36,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/caleymansfieldskincare/static/media/7.6862fd45.jpg"
   },
   {
+    "revision": "dac3073071694401049668b95435fac0",
+    "url": "/caleymansfieldskincare/static/media/alift.dac30730.jpg"
+  },
+  {
     "revision": "004ce40546496f0654c1d01a8043f096",
     "url": "/caleymansfieldskincare/static/media/background.004ce405.jpg"
   },
   {
     "revision": "e7a1c2c781e84172eb078ce01afa0aef",
     "url": "/caleymansfieldskincare/static/media/background2.e7a1c2c7.jpg"
+  },
+  {
+    "revision": "00fcf087e7e796ca83edc0c00c9433aa",
+    "url": "/caleymansfieldskincare/static/media/coolift.00fcf087.jpg"
+  },
+  {
+    "revision": "223dfa54a7c46427b0b7df1819c58123",
+    "url": "/caleymansfieldskincare/static/media/dermalux.223dfa54.jpg"
+  },
+  {
+    "revision": "418b686734214415da0fdfb7e4f37c9b",
+    "url": "/caleymansfieldskincare/static/media/geneo.418b6867.jpg"
   },
   {
     "revision": "8da328ed4446ab3b2a7384760b2385f2",
