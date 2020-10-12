@@ -33138,7 +33138,7 @@ a:link, a:visited, a:hover, a:active {
   padding: 1rem;
   color: #ffffff;
   font-weight: 100px;
-  background-color: #FF9B9C;
+  background-color: #222;
   border: 8px solid #fff;
 }
 
@@ -33149,6 +33149,14 @@ a:link, a:visited, a:hover, a:active {
 
 .modal-content .close {
   color: #fff;
+}
+
+.image-wrap {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  float: right;
+  max-width: 100%;
+  margin-bottom: 1rem;
 }
 
 .fade-in {
@@ -33207,6 +33215,10 @@ a:link, a:visited, a:hover, a:active {
 @media (min-width: 992px) {
   h1 {
     font-size: 4em;
+  }
+  .image-wrap {
+    margin-left: 1rem;
+    max-width: 300px;
   }
 }
 /*# sourceMappingURL=App.css.map */

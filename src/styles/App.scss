@@ -100,7 +100,7 @@ a:link,a:visited,a:hover,a:active {
   padding: $spacer;
   color: #ffffff;
   font-weight: 100px;
-  background-color: $thirdColor;
+  background-color: $darkColor;
   border: 8px solid #fff;
 }
 .modal-content ul {
@@ -109,6 +109,12 @@ a:link,a:visited,a:hover,a:active {
 }
 .modal-content .close {
   color: #fff;
+}
+.image-wrap {
+  box-sizing: border-box;
+  float: right;
+  max-width: 100%;
+  margin-bottom: $spacer;
 }
 //intersection observer classes
 .fade-in {
@@ -151,5 +157,9 @@ a:link,a:visited,a:hover,a:active {
 @include media-breakpoint-up(lg) {
   h1 {
     font-size: 4em;
+  }
+  .image-wrap {
+    margin-left: $spacer;
+    max-width: 300px;
   }
 }
