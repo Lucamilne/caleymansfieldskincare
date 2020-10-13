@@ -17,13 +17,15 @@ const Testimonials = () => {
                 <h1 className="text-center mb-5">What our clients say.</h1>
                 <Row>
                     {reviews.map(review => (
-                        <Col md={6} key={review.id}>
-                            <Card className="pt-5 my-5 position-relative">
+                        <Col md={6} key={review.id} style={{marginTop: "4.5rem"}}>
+                            <Card className="testimonial-card position-relative">
                                 <div className="icon d-flex justify-content-center align-items-center position-absolute">
-                                    <i className="fas fa-quote-left"/>
+                                    <i className="fas fa-quote-left" />
                                 </div>
                                 <Card.Body>
+                                    <Card.Text>
                                         {review.description}
+                                    </Card.Text>
                                 </Card.Body>
                                 <Card.Footer className="d-flex justify-content-center">
                                     <span>{review.name}</span>
@@ -33,7 +35,7 @@ const Testimonials = () => {
                     ))}
                 </Row>
             </Container>
-            <ShapeFill />
+            <ShapeFill color="#ffcece"/>
         </section>
     )
 }

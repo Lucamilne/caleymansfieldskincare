@@ -49,7 +49,7 @@ function ReadMore(props) {
     const [loaded, setLoaded] = useState(false)
 
     return (
-        <Modal {...props} aria-labelledby="contained-modal-title-vcenter" centered size="lg">
+        <Modal {...props} aria-labelledby="contained-modal-title-vcenter" centered size="xl">
             <Modal.Header closeButton>
                 <Modal.Title id="contained-modal-title-vcenter">
                     {tech}
@@ -64,7 +64,7 @@ function ReadMore(props) {
                                     <Spinner className="image-wrap" animation="grow" variant="light" />
                                 }
                                 <Image
-                                    className="image-wrap"
+                                    className={ loaded ? "image-wrap" : ""}
                                     alt={technology[tech].media.alt}
                                     src={require(`./images/technology/${technology[tech].media.src}`)}
                                     onLoad={() => {

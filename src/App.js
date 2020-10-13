@@ -6,7 +6,7 @@ import Introduction from "./Introduction";
 import Showcase from "./Showcase";
 import Products from "./Products";
 import Testimonials from "./Testimonials"
-import Contact from "./Contact"
+import ContactForm from "./ContactForm"
 import Footer from "./Footer"
 
 
@@ -19,7 +19,7 @@ function App() {
       <Showcase />
       <Products />
       <Testimonials />
-      <Contact />
+      <ContactForm />
       <Footer />
     </div>
   );

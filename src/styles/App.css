@@ -21898,11 +21898,15 @@ a.text-dark:hover, a.text-dark:focus {
   color: #fff;
 }
 
+#testimonials .testimonial-card {
+  padding-top: 4rem;
+}
+
 #testimonials .card {
-  border-radius: 0px;
+  border-radius: 4px;
   border: 0px;
   background-color: #eee;
-  height: calc(100% - 48px);
+  height: 100%;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -21927,7 +21931,6 @@ a.text-dark:hover, a.text-dark:focus {
 #testimonials .card-body {
   font-size: 1em;
   line-height: 1.5em;
-  font-weight: 100;
   z-index: 2;
 }
 
@@ -21936,12 +21939,12 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 #testimonials .icon {
-  top: -48px;
+  top: -4.5rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  height: 96px;
-  width: 96px;
+  height: 9rem;
+  width: 9rem;
   background-color: #ffcece;
   border: 4px solid #eee;
   border-radius: 50%;
@@ -21949,7 +21952,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 #testimonials i {
   color: #eee;
-  font-size: 1.5em;
+  font-size: 3em;
 }
 
 #technology {
@@ -21969,79 +21972,69 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-.contact-image {
-  width: 100%;
-}
-
-#contact-us {
+#contact-form {
   background-color: #ffcece;
-  padding: 56px 32px;
-  font-size: 0.8em;
 }
 
-#contact-us h1 {
-  font-size: 4em;
-}
-
-#contact-us p {
+#contact-form p {
   color: #fff;
   font-size: 1.5em;
 }
 
-#contact-us h1, #contact-us p {
+#contact-form h1, #contact-form p {
   text-align: center;
 }
 
-#contact-us ::-webkit-input-placeholder {
+#contact-form ::-webkit-input-placeholder {
   font-size: 0.8em;
 }
 
-#contact-us :-ms-input-placeholder {
+#contact-form :-ms-input-placeholder {
   font-size: 0.8em;
 }
 
-#contact-us ::-ms-input-placeholder {
+#contact-form ::-ms-input-placeholder {
   font-size: 0.8em;
 }
 
-#contact-us ::placeholder {
+#contact-form ::placeholder {
   font-size: 0.8em;
 }
 
-#contact-us textarea {
+#contact-form textarea {
   font-size: 1em;
 }
 
-#contact-us .form-row {
+#contact-form .form-row {
   margin-bottom: 10px;
 }
 
-#contact-us .form-group {
+#contact-form .form-group {
   background-color: #fff;
   margin: 0;
 }
 
-#contact-us .form-control {
+#contact-form .form-control {
   border-radius: 0;
   border: none;
 }
 
-#contact-us .form-label {
+#contact-form .form-label {
   width: 100%;
   padding: 0.75em 0.75em;
   margin: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-#contact-us .form-btn {
+#contact-form .form-btn {
   margin-top: 32px;
 }
 
-#contact-us .required {
+#contact-form .required {
   color: red;
 }
 
-#contact-us textarea {
+#contact-form textarea {
   resize: none;
 }
 
@@ -33137,7 +33130,7 @@ a:link, a:visited, a:hover, a:active {
   border-radius: 0px;
   padding: 1rem;
   color: #ffffff;
-  font-weight: 100px;
+  font-weight: 100;
   background-color: #222;
   border: 4px solid #eee;
 }
@@ -33156,7 +33149,6 @@ a:link, a:visited, a:hover, a:active {
           box-sizing: border-box;
   float: right;
   max-width: 100%;
-  margin: 1rem 0;
   border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
@@ -33206,7 +33198,7 @@ a:link, a:visited, a:hover, a:active {
           transform: translateX(0);
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   html {
     font-size: 1rem;
     overflow-x: hidden;
@@ -33219,6 +33211,7 @@ a:link, a:visited, a:hover, a:active {
   }
   .image-wrap {
     margin-left: 1rem;
+    margin-bottom: 1rem;
     max-width: 300px;
     max-height: 225px;
   }

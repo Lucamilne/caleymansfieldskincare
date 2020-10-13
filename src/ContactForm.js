@@ -1,5 +1,52 @@
 import React, { useState } from "react";
-import { Form, Col, Button } from 'react-bootstrap';
+import { Container, Form, Row, Col, Button } from 'react-bootstrap';
+
+const options = {
+    age: ["16 - 30", "31 - 45", "45 and over"],
+    gender: ["Male", "Female"],
+    skinColor: [
+        "White - Freckles, always burns",
+        "White - Usually burns, tans sometimes",
+        "White/Olive - Tans easily",
+        "White/Brown - Rarely burns",
+        "Light/Dark Brown - Tans very easily",
+        "Black - never burns, deeply pigmented"
+    ],
+    skinDescription: [
+        "Normal",
+        "Dry",
+        "Combination",
+        "Oily",
+        "Sensitive",
+        "Mature"
+    ],
+    skinConcern: [
+        "Acne/Spots/Blackheads",
+        "Redness/Rosacea",
+        "Eczema/Dry & flakey",
+        "Fine Lines/Wrinkles",
+        "Enlarged pores",
+        "Dullness/Highly reactive",
+        "Sun damage/Pigmentation"
+    ],
+    lifestyle: [
+        "I drink enough water",
+        "I stay indoors most of the day",
+        "I apply makeup regularly",
+        "I use sun protection daily",
+        "I smoke cigarettes",
+        "I eat healthy including '5 a day'",
+        "I get enough sleep",
+        "I'm pregnant",
+        "I have a regular skincare routine"
+    ],
+    preference: [
+        "Investing in my own home routine",
+        "Investing in professional treatments at a spa or salon",
+        "Both",
+        "Neither"
+    ]
+}
 
 function ContactForm() {
     const [validated, setValidated] = useState(false);
@@ -15,38 +62,116 @@ function ContactForm() {
     };
 
     return (
-        <Form noValidate validated={validated} onSubmit={handleSubmit} id="contact-us" className="h-100">
-            <h1>Contact</h1>
-            <p>Questions? Get in touch</p>
-            <Form.Row>
-                <Col md>
-                    <Form.Group controlId="formName">
-                        <Form.Label>Name<span className="required">*</span></Form.Label>
-                        <Form.Control required type="name" placeholder="Enter name" />
-                    </Form.Group>
-                </Col>
-                <Col md>
-                    <Form.Group controlId="formEmail">
-                        <Form.Label>Email<span className="required">*</span></Form.Label>
-                        <Form.Control required type="email" placeholder="Enter email address" />
-                    </Form.Group>
-                </Col>
-                <Col md>
-                    <Form.Group controlId="formNumber">
-                        <Form.Label>Number<span className="required">*</span></Form.Label>
-                        <Form.Control required type="tel" placeholder="Enter phone number" />
-                    </Form.Group>
-                </Col>
-            </Form.Row>
-            <Form.Group controlId="fromMessage">
-                <Form.Label>Message</Form.Label>
-                <Form.Control as="textarea" rows="15" defaultValue="I'm interested in booking a free consultation." />
-            </Form.Group>
-            <div className="form-btn d-flex justify-content-center">
-                <Button variant="light" type="submit">Submit</Button>
-            </div>
-        </Form>
+        <section id="contact-form">
+            <Container className="py-5">
+                <Form noValidate validated={validated} onSubmit={handleSubmit}>
+                    <h1>Contact</h1>
+                    <p>Questions? Get in touch</p>
+                    <Row>
+                        <Col lg>
+                            <Form.Row>
+                                <Col sm>
+                                    <Form.Group controlId="formName">
+                                        <Form.Label>Name<span className="required">*</span></Form.Label>
+                                        <Form.Control required type="name" placeholder="Enter name" />
+                                    </Form.Group>
+                                </Col>
+                                <Col sm>
+
+                                    <Form.Group controlId="formAge">
+                                        <Form.Label>Your age</Form.Label>
+                                        {options.age.map(option => (
+                                            <Form.Check type="radio" label={option} key={option} name="age" />
+                                        ))}
+                                    </Form.Group>
+                                </Col>
+                                <Col sm>
+                                    <Form.Group controlId="formGender">
+                                        <Form.Label>Your gender</Form.Label>
+                                        {options.gender.map(option => (
+                                            <Form.Check type="radio" label={option} key={option} name="gender" />
+                                        ))}
+                                    </Form.Group>
+                                </Col>
+                            </Form.Row>
+                            <Form.Row>
+                                <Col>
+                                    <Form.Group>
+                                        <Form.Label>Choose the description that best fits you</Form.Label>
+                                        <Form.Control as="select">
+                                            {options.skinColor.map((option, i) => (
+                                                <option key={i}>{option}</option>
+                                            ))}
+                                        </Form.Control>
+                                    </Form.Group>
+                                </Col>
+                            </Form.Row>
+                            <Form.Row>
+                                <Col>
+                                    <Form.Group>
+                                        <Form.Label>How would you describe your skin?</Form.Label>
+                                        <Form.Control as="select">
+                                            {options.skinDescription.map((option, i) => (
+                                                <option key={i}>{option}</option>
+                                            ))}
+                                        </Form.Control>
+                                    </Form.Group>
+                                </Col>
+                            </Form.Row>
+                            <Form.Row>
+                                <Col>
+                                    <Form.Group>
+                                        <Form.Label>Your skin concerns</Form.Label>
+                                        {options.skinConcern.map((option, i) => (
+                                            <Form.Check type="checkbox" label={option} key={i} />
+                                        ))}
+                                    </Form.Group>
+                                </Col>
+                            </Form.Row>
+                        </Col>
+                        <Col lg>
+                            <Form.Row>
+                                <Col>
+                                    <Form.Group>
+                                        <Form.Label>Tick all that apply</Form.Label>
+                                        {options.lifestyle.map((option, i) => (
+                                            <Form.Check type="checkbox" label={option} key={i} />
+                                        ))}
+                                    </Form.Group>
+                                </Col>
+                            </Form.Row>
+                            <Form.Row>
+                                <Col>
+                                    <Form.Group controlId="fromMessage">
+                                        <Form.Label>Message</Form.Label>
+                                        <Form.Control as="textarea" rows="5" defaultValue="I'm interested in booking a consultation." />
+                                    </Form.Group>
+                                </Col>
+                            </Form.Row>
+                            <Form.Row>
+                                <Col>
+                                    <Form.Group controlId="formEmail">
+                                        <Form.Label>Email<span className="required">*</span></Form.Label>
+                                        <Form.Control required type="email" placeholder="Enter email address" />
+                                    </Form.Group>
+                                </Col>
+                                <Col>
+                                    <Form.Group controlId="formNumber">
+                                        <Form.Label>Number<span className="required">*</span></Form.Label>
+                                        <Form.Control required type="tel" placeholder="Enter phone number" />
+                                    </Form.Group>
+                                </Col>
+                            </Form.Row>
+                        </Col>
+                    </Row>
+                    <div className="form-btn d-flex justify-content-center">
+                        <Button variant="dark" type="submit">Submit</Button>
+                    </div>
+                </Form>
+            </Container >
+        </section>
     )
 }
+
 
 export default ContactForm;

@@ -99,7 +99,7 @@ a:link,a:visited,a:hover,a:active {
   border-radius: 0px;
   padding: $spacer;
   color: #ffffff;
-  font-weight: 100px;
+  font-weight: 100;
   background-color: $darkColor;
   border: 4px solid #eee;
 }
@@ -114,7 +114,6 @@ a:link,a:visited,a:hover,a:active {
   box-sizing: border-box;
   float: right;
   max-width: 100%;
-  margin: $spacer 0;
   border: 2px solid rgba(255,255,255,0.5);
 }
 //intersection observer classes
@@ -149,7 +148,7 @@ a:link,a:visited,a:hover,a:active {
 .from-above.appear {
   transform: translateX(0);
 }
-@include media-breakpoint-up(sm) {
+@include media-breakpoint-up(md) {
   html {
     font-size: 1rem;
     overflow-x: hidden;
@@ -161,6 +160,7 @@ a:link,a:visited,a:hover,a:active {
   }
   .image-wrap {
     margin-left: $spacer;
+    margin-bottom: $spacer;
     max-width: 300px;
     max-height: 225px;
   }
