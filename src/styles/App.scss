@@ -114,7 +114,8 @@ a:link,a:visited,a:hover,a:active {
   box-sizing: border-box;
   float: right;
   max-width: 100%;
-  margin-bottom: $spacer;
+  margin: $spacer 0;
+  border: 2px solid rgba(255,255,255,0.5);
 }
 //intersection observer classes
 .fade-in {
@@ -161,5 +162,6 @@ a:link,a:visited,a:hover,a:active {
   .image-wrap {
     margin-left: $spacer;
     max-width: 300px;
+    max-height: 225px;
   }
 }

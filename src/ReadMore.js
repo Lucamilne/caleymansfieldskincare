@@ -70,7 +70,6 @@ function ReadMore(props) {
                                     onLoad={() => {
                                         setLoaded(true)
                                     }}
-                                    thumbnail
                                 />
                             </>
                         }
