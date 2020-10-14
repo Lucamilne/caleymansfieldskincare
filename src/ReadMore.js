@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Modal, Image, Spinner } from "react-bootstrap"
+import { Modal, Spinner } from "react-bootstrap"
 
 const technology = {
     "Geneo": {
@@ -63,7 +63,7 @@ function ReadMore(props) {
                                 {!loaded &&
                                     <Spinner className="image-wrap" animation="grow" variant="light" />
                                 }
-                                <Image
+                                <img
                                     className={ loaded ? "image-wrap" : ""}
                                     alt={technology[tech].media.alt}
                                     src={require(`./images/technology/${technology[tech].media.src}`)}

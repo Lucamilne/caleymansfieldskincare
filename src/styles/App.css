@@ -21790,8 +21790,14 @@ a.text-dark:hover, a.text-dark:focus {
   border-left: 2px solid #FF9B9C;
 }
 
-#introduction a {
+#introduction button {
   color: #FF9B9C;
+  border: none;
+  padding: 0;
+}
+
+#introduction button:hover {
+  text-decoration: underline;
 }
 
 #introduction img {
@@ -21976,26 +21982,6 @@ a.text-dark:hover, a.text-dark:focus {
 #contact-form p {
   color: #fff;
   font-size: 1.5em;
-}
-
-#contact-form h1, #contact-form p {
-  text-align: center;
-}
-
-#contact-form ::-webkit-input-placeholder {
-  font-size: 0.8em;
-}
-
-#contact-form :-ms-input-placeholder {
-  font-size: 0.8em;
-}
-
-#contact-form ::-ms-input-placeholder {
-  font-size: 0.8em;
-}
-
-#contact-form ::placeholder {
-  font-size: 0.8em;
 }
 
 #contact-form textarea {

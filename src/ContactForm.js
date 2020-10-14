@@ -63,10 +63,10 @@ function ContactForm() {
 
     return (
         <section id="contact-form">
-            <Container className="py-5">
+            <Container>
                 <Form noValidate validated={validated} onSubmit={handleSubmit}>
-                    <h1>Contact</h1>
-                    <p>Questions? Get in touch</p>
+                    <h1 className="text-center mb-3">Contact</h1>
+                    <p className="text-center mb-5">Questions? Get in touch</p>
                     <Row>
                         <Col lg>
                             <Form.Row>
@@ -87,7 +87,7 @@ function ContactForm() {
                                         </Form.Control>
                                     </Form.Group>
                                 </Col>
-                                <Col sm>
+                                {/* <Col sm>
                                     <Form.Group controlId="formGender">
                                         <Form.Label>Gender</Form.Label>
                                         <Form.Control as="select">
@@ -96,9 +96,9 @@ function ContactForm() {
                                             ))}
                                         </Form.Control>
                                     </Form.Group>
-                                </Col>
+                                </Col> */}
                             </Form.Row>
-                            <Form.Row>
+                            {/* <Form.Row>
                                 <Col>
                                     <Form.Group>
                                         <Form.Label>How would you describe your complexion?</Form.Label>
@@ -109,7 +109,7 @@ function ContactForm() {
                                         </Form.Control>
                                     </Form.Group>
                                 </Col>
-                            </Form.Row>
+                            </Form.Row> */}
                             <Form.Row>
                                 <Col>
                                     <Form.Group>
@@ -136,7 +136,7 @@ function ContactForm() {
                             </Form.Row>
                         </Col>
                         <Col lg>
-                            <Form.Row>
+                            {/* <Form.Row>
                                 <Col>
                                     <Form.Group>
                                         <Form.Label>Check all that applies to your lifestyle:</Form.Label>
@@ -147,7 +147,7 @@ function ContactForm() {
                                         </div>
                                     </Form.Group>
                                 </Col>
-                            </Form.Row>
+                            </Form.Row> */}
                             <Form.Row>
                                 <Col>
                                     <Form.Group controlId="fromMessage">
