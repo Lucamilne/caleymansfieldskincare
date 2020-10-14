@@ -21794,10 +21794,15 @@ a.text-dark:hover, a.text-dark:focus {
   color: #FF9B9C;
   border: none;
   padding: 0;
+  outline: none;
 }
 
 #introduction button:hover {
   text-decoration: underline;
+}
+
+#introduction button:focus {
+  border: none;
 }
 
 #introduction img {
