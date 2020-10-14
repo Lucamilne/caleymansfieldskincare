@@ -17,7 +17,7 @@ const Products = () => {
 
     return (
         <Container id="products" className="my-5">
-            <h1 className="text-center mb-3">Treatments.</h1>
+            <h1 className="text-center mb-4">Treatments.</h1>
             <Row>
                 {treatments.map(treatment => (
                     <Col lg={6} key={treatment.id}>

@@ -64,9 +64,9 @@ function ContactForm() {
     return (
         <section id="contact-form">
             <Container>
+                <h1 className="text-center mb-4">Enquiries.</h1>
+                <p className="text-center mb-4">Fill out the form below to learn more.</p>
                 <Form noValidate validated={validated} onSubmit={handleSubmit}>
-                    <h1 className="text-center mb-3">Contact</h1>
-                    <p className="text-center mb-5">Questions? Get in touch</p>
                     <Row>
                         <Col lg>
                             <Form.Row>
@@ -152,7 +152,7 @@ function ContactForm() {
                                 <Col>
                                     <Form.Group controlId="fromMessage">
                                         <Form.Label>Your Message</Form.Label>
-                                        <Form.Control as="textarea" rows="3" defaultValue="I'm interested in booking a consultation." />
+                                        <Form.Control as="textarea" rows="11" defaultValue="I'm interested in booking a consultation." />
                                     </Form.Group>
                                 </Col>
                             </Form.Row>
@@ -172,7 +172,7 @@ function ContactForm() {
                             </Form.Row>
                         </Col>
                     </Row>
-                    <div className="form-btn d-flex justify-content-center">
+                    <div className="pb-5 pt-4 d-flex justify-content-center">
                         <Button variant="dark" type="submit">Submit</Button>
                     </div>
                 </Form>

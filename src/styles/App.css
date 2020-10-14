@@ -21963,23 +21963,6 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 3em;
 }
 
-#technology {
-  background-color: pink;
-}
-
-#technology .tile-grid, #technology .row, #technology .tile {
-  height: 100%;
-}
-
-@media (min-width: 992px) {
-  #technology {
-    height: 100vh;
-  }
-  #technology h1 {
-    font-size: 4em;
-  }
-}
-
 #contact-form {
   background-color: #ffcece;
 }
@@ -22012,10 +21995,6 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 0.75em 0.75em;
   margin: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-#contact-form .form-btn {
-  margin-top: 32px;
 }
 
 #contact-form .required {

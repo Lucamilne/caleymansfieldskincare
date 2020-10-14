@@ -14,7 +14,7 @@ const Testimonials = () => {
         <section id="testimonials" className="d-flex flex-column justify-content-between">
             <ShapeFill alt="shapefill-alt" />
             <Container>
-                <h1 className="text-center mb-5">What our clients say.</h1>
+                <h1 className="text-center mb-4">What our clients say.</h1>
                 <Row>
                     {reviews.map(review => (
                         <Col md={6} key={review.id} style={{ marginTop: "4.5rem" }}>
