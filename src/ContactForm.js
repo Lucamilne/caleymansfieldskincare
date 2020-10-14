@@ -15,8 +15,8 @@ const options = {
     skinDescription: [
         "Normal",
         "Dry",
-        "Combination",
         "Oily",
+        "Combination",
         "Sensitive",
         "Mature"
     ],
@@ -79,25 +79,29 @@ function ContactForm() {
                                 <Col sm>
 
                                     <Form.Group controlId="formAge">
-                                        <Form.Label>Your age</Form.Label>
-                                        {options.age.map(option => (
-                                            <Form.Check type="radio" label={option} key={option} name="age" />
-                                        ))}
+                                        <Form.Label>Age</Form.Label>
+                                        <Form.Control as="select">
+                                            {options.age.map((option, i) => (
+                                                <option key={i}>{option}</option>
+                                            ))}
+                                        </Form.Control>
                                     </Form.Group>
                                 </Col>
                                 <Col sm>
                                     <Form.Group controlId="formGender">
-                                        <Form.Label>Your gender</Form.Label>
-                                        {options.gender.map(option => (
-                                            <Form.Check type="radio" label={option} key={option} name="gender" />
-                                        ))}
+                                        <Form.Label>Gender</Form.Label>
+                                        <Form.Control as="select">
+                                            {options.gender.map((option, i) => (
+                                                <option key={i}>{option}</option>
+                                            ))}
+                                        </Form.Control>
                                     </Form.Group>
                                 </Col>
                             </Form.Row>
                             <Form.Row>
                                 <Col>
                                     <Form.Group>
-                                        <Form.Label>Choose the description that best fits you</Form.Label>
+                                        <Form.Label>How would you describe your complexion?</Form.Label>
                                         <Form.Control as="select">
                                             {options.skinColor.map((option, i) => (
                                                 <option key={i}>{option}</option>
@@ -121,10 +125,12 @@ function ContactForm() {
                             <Form.Row>
                                 <Col>
                                     <Form.Group>
-                                        <Form.Label>Your skin concerns</Form.Label>
-                                        {options.skinConcern.map((option, i) => (
-                                            <Form.Check type="checkbox" label={option} key={i} />
-                                        ))}
+                                        <Form.Label>Check the concerns that apply to you:</Form.Label>
+                                        <div className="px-3 py-2">
+                                            {options.skinConcern.map((option, i) => (
+                                                <Form.Check type="checkbox" label={option} key={i} />
+                                            ))}
+                                        </div>
                                     </Form.Group>
                                 </Col>
                             </Form.Row>
@@ -133,18 +139,20 @@ function ContactForm() {
                             <Form.Row>
                                 <Col>
                                     <Form.Group>
-                                        <Form.Label>Tick all that apply</Form.Label>
-                                        {options.lifestyle.map((option, i) => (
-                                            <Form.Check type="checkbox" label={option} key={i} />
-                                        ))}
+                                        <Form.Label>Check all that applies to your lifestyle:</Form.Label>
+                                        <div className="px-3 py-2">
+                                            {options.lifestyle.map((option, i) => (
+                                                <Form.Check type="checkbox" label={option} key={i} />
+                                            ))}
+                                        </div>
                                     </Form.Group>
                                 </Col>
                             </Form.Row>
                             <Form.Row>
                                 <Col>
                                     <Form.Group controlId="fromMessage">
-                                        <Form.Label>Message</Form.Label>
-                                        <Form.Control as="textarea" rows="5" defaultValue="I'm interested in booking a consultation." />
+                                        <Form.Label>Your Message</Form.Label>
+                                        <Form.Control as="textarea" rows="3" defaultValue="I'm interested in booking a consultation." />
                                     </Form.Group>
                                 </Col>
                             </Form.Row>

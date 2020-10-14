@@ -21898,10 +21898,6 @@ a.text-dark:hover, a.text-dark:focus {
   color: #fff;
 }
 
-#testimonials .testimonial-card {
-  padding-top: 4rem;
-}
-
 #testimonials .card {
   border-radius: 4px;
   border: 0px;
@@ -21921,11 +21917,16 @@ a.text-dark:hover, a.text-dark:focus {
           transform: scale(1.01);
 }
 
-#testimonials .card-footer {
+#testimonials .card-header {
+  margin-bottom: 3rem;
+}
+
+#testimonials .card-footer, #testimonials .card-header {
   background-color: #222;
   color: #fff;
   text-transform: uppercase;
   border-radius: 0;
+  height: 3rem;
 }
 
 #testimonials .card-body {
@@ -21934,12 +21935,8 @@ a.text-dark:hover, a.text-dark:focus {
   z-index: 2;
 }
 
-#testimonials .slide {
-  height: 360px;
-}
-
 #testimonials .icon {
-  top: -4.5rem;
+  top: -3rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -33147,6 +33144,7 @@ a:link, a:visited, a:hover, a:active {
 .image-wrap {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin-bottom: 1rem;
   float: right;
   max-width: 100%;
   border: 2px solid rgba(255, 255, 255, 0.5);
@@ -33211,9 +33209,8 @@ a:link, a:visited, a:hover, a:active {
   }
   .image-wrap {
     margin-left: 1rem;
-    margin-bottom: 1rem;
-    max-width: 300px;
-    max-height: 225px;
+    max-width: 400px;
+    max-height: 300px;
   }
 }
 /*# sourceMappingURL=App.css.map */
