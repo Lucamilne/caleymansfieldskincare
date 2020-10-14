@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d8a72c578a792c5f26fc4777753f78fe",
+    "revision": "439873a3f40ba90787f895b4c7ae71fe",
     "url": "/caleymansfieldskincare/index.html"
   },
   {
-    "revision": "e7ea8c20225d561478da",
-    "url": "/caleymansfieldskincare/static/css/main.5d67ac33.chunk.css"
+    "revision": "348cb76484701118941f",
+    "url": "/caleymansfieldskincare/static/css/main.fe92afe2.chunk.css"
   },
   {
-    "revision": "2dc735ac93fb8bf61f9c",
-    "url": "/caleymansfieldskincare/static/js/2.cd74f237.chunk.js"
+    "revision": "536fb8333d9bb3f50427",
+    "url": "/caleymansfieldskincare/static/js/2.c0dce18c.chunk.js"
   },
   {
     "revision": "5ac48c47bb3912b14c2d8de4f56d5ae8",
-    "url": "/caleymansfieldskincare/static/js/2.cd74f237.chunk.js.LICENSE.txt"
+    "url": "/caleymansfieldskincare/static/js/2.c0dce18c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e7ea8c20225d561478da",
-    "url": "/caleymansfieldskincare/static/js/main.c49f729c.chunk.js"
+    "revision": "348cb76484701118941f",
+    "url": "/caleymansfieldskincare/static/js/main.f17ae1db.chunk.js"
   },
   {
     "revision": "983ab79c665a0a817d51",
@@ -26,10 +26,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5a61037b2e4a714d2c10423df645777d",
     "url": "/caleymansfieldskincare/static/media/10.5a61037b.png"
-  },
-  {
-    "revision": "6862fd4556e3848d6a43bf4e63f946b6",
-    "url": "/caleymansfieldskincare/static/media/7.6862fd45.jpg"
   },
   {
     "revision": "dac3073071694401049668b95435fac0",
@@ -66,6 +62,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d38c53241518b73f1819dd1edbc85c92",
     "url": "/caleymansfieldskincare/static/media/logo_fff.d38c5324.png"
+  },
+  {
+    "revision": "6862fd4556e3848d6a43bf4e63f946b6",
+    "url": "/caleymansfieldskincare/static/media/mobile-hero.6862fd45.jpg"
   },
   {
     "revision": "34006f386c448e5752eaffeb1a451d6b",
