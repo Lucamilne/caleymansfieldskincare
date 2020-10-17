@@ -23,10 +23,10 @@ const Paragraph = () => {
     return (
         <div ref={ref} className={`paragraph fade-in from-left ${inView ? 'appear' : ''}`}>
             <h1 className="mb-4">Skin Revival Specialist.</h1>
-            <p className="pl-3 mb-3">Based at her private Marlow clinic, <button type="button" onClick={() => setModalShow(true)}>Caley Mansfield</button> offers a new era of facial expertise. Providing exceptional facial treatments, combining state of the art technology with advanced aesthetic skincare to repair, revive and regenerate the skin.</p>
+            <p className="pl-3 mb-3">Based at her private Marlow clinic, <button type="button" onClick={() => {setModalShow(true)}}>Caley Mansfield</button> offers a new era of facial expertise. Providing exceptional facial treatments, combining state of the art technology with advanced aesthetic skincare to repair, revive and regenerate the skin.</p>
             <AboutMe
                 show={modalShow}
-                onHide={() => setModalShow(false)}
+                onHide={() => {setModalShow(false)}}
             />
         </div>
     );

@@ -10,7 +10,7 @@ const content = [
 
 function AboutMe(props) {
     return (
-        <Modal {...props} aria-labelledby="contained-modal-title-vcenter" centered size="xl">
+        <Modal {...props} aria-labelledby="contained-modal-title-vcenter" className="modal-fullscreen">
             <Modal.Header closeButton>
                 <Modal.Title id="contained-modal-title-vcenter">
                     About Caley Mansfield
