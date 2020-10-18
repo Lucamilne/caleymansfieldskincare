@@ -33103,7 +33103,6 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .modal-dialog {
-  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -33120,6 +33119,7 @@ a:link, a:visited, a:hover, a:active {
 
 @media (min-width: 576px) {
   .modal-dialog {
+    height: 100%;
     max-width: 100%;
   }
 }
