@@ -21795,6 +21795,7 @@ a.text-dark:hover, a.text-dark:focus {
   border: none;
   padding: 0;
   outline: none;
+  background-color: transparent;
 }
 
 #introduction button:hover {
@@ -33004,12 +33005,9 @@ a.text-link:hover, a.text-link:focus {
   }
 }
 
-html {
-  font-size: 0.8rem;
-}
-
 body {
   font-family: "Rubik", sans-serif;
+  font-size: 0.8rem;
 }
 
 h1,
@@ -33083,10 +33081,6 @@ a:link, a:visited, a:hover, a:active {
   text-decoration: none;
 }
 
-.modal-backdrop.show {
-  opacity: 0.75;
-}
-
 .modal-open {
   padding-right: 0 !important;
   overflow: hidden;
@@ -33098,13 +33092,10 @@ a:link, a:visited, a:hover, a:active {
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
 }
 
-.modal-fullscreen {
-  padding: 0 !important;
-}
-
 .modal-dialog {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 .modal-content {
@@ -33119,7 +33110,6 @@ a:link, a:visited, a:hover, a:active {
 
 @media (min-width: 576px) {
   .modal-dialog {
-    height: 100%;
     max-width: 100%;
   }
 }
@@ -33185,9 +33175,8 @@ a:link, a:visited, a:hover, a:active {
 }
 
 @media (min-width: 768px) {
-  html {
+  body {
     font-size: 1rem;
-    overflow-x: hidden;
   }
 }
 

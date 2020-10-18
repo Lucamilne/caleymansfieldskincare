@@ -5,6 +5,7 @@
 @import "./Hero";
 @import "./ShapeFill";
 @import "./Introduction";
+// @import "./AboutMe";
 @import "./Services";
 @import "./Showcase";
 @import "./Products";
@@ -21,11 +22,10 @@ $theme-colors: (
 );
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
-html {
-  font-size: 0.8rem;
-}
+
 body {
   font-family: "Rubik", sans-serif;
+  font-size: 0.8rem;
 }
 h1,
 h2,
@@ -85,9 +85,6 @@ a:link,a:visited,a:hover,a:active {
   color: $secondaryColor;
   text-decoration: none;
 }
-.modal-backdrop.show {
-  opacity: 0.75;
-}
 .modal-open {
   padding-right: 0 !important;
   overflow: hidden;
@@ -97,12 +94,10 @@ a:link,a:visited,a:hover,a:active {
   padding: 16px 0;
   border-bottom: 2px solid rgba(255,255,255,0.5);
 }
-.modal-fullscreen {
-  padding: 0 !important;
-}
 .modal-dialog {
    margin: 0;
    padding: 0;
+   height: 100%;
 }
 .modal-content {
     height: auto;
@@ -115,7 +110,6 @@ a:link,a:visited,a:hover,a:active {
 }
 @media (min-width: 576px) {
   .modal-dialog {
-    height: 100%;
     max-width: 100%;
   }
 }
@@ -123,7 +117,6 @@ a:link,a:visited,a:hover,a:active {
   list-style: none;
   border-left: 2px solid rgba(255,255,255,0.5);
 }
-
 .image-wrap {
   box-sizing: border-box;
   margin-bottom: $spacer;
@@ -164,18 +157,14 @@ a:link,a:visited,a:hover,a:active {
   transform: translateX(0);
 }
 @include media-breakpoint-up(md) {
-  html {
+  body {
     font-size: 1rem;
-    overflow-x: hidden;
   }
 }
 @include media-breakpoint-up(lg) {
   h1 {
     font-size: 4em;
   }
-  // .modal-dialog {
-  //   height: 100%;
-  // }
   .image-wrap {
     margin-left: $spacer;
     max-width: 400px;
