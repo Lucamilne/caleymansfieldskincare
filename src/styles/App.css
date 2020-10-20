@@ -33072,6 +33072,10 @@ hr {
   overflow: hidden;
 }
 
+.modal.show {
+  padding: 0 !important;
+}
+
 .show {
   display: block;
 }
@@ -33079,11 +33083,6 @@ hr {
 a:link, a:visited, a:hover, a:active {
   color: #ffcece;
   text-decoration: none;
-}
-
-.modal-open {
-  padding-right: 0 !important;
-  overflow: hidden;
 }
 
 .modal-header {
@@ -33132,7 +33131,7 @@ a:link, a:visited, a:hover, a:active {
   }
 }
 
-.modal-header h1 {
+.modal-header header {
   width: 100%;
   text-align: center;
 }
@@ -33217,14 +33216,14 @@ a:link, a:visited, a:hover, a:active {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-left: 1rem;
-  }
-  .modal-header {
     height: 40rem;
   }
-  .modal-header h1 {
+  .modal-header header {
     text-align: left;
     width: 37.5%;
+  }
+  .modal-header h1 {
+    padding-left: 1rem;
   }
   .modal-img {
     width: 62.5%;

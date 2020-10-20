@@ -1,5 +1,5 @@
 import React from "react";
-import { Modal } from "react-bootstrap"
+import { Modal, Container } from "react-bootstrap"
 import geneoImage from "./images/technology/geneo.jpg"
 import aliftImage from "./images/technology/alift.jpg"
 import dermaluxImage from "./images/technology/dermalux.jpg"
@@ -66,7 +66,7 @@ function ReadMore(props) {
             </Modal.Header>
             <Modal.Body className="tech-text-content">
                 {tech &&
-                    <>
+                    <Container className="my-5">
                         <p>{technology[tech].introduction}</p>
                         <p>{technology[tech].description}</p>
                         <p>{technology[tech].summary}</p>
@@ -80,7 +80,7 @@ function ReadMore(props) {
                                 </ul>
                             </>
                         }
-                    </>
+                    </Container>
                 }
             </Modal.Body>
         </Modal>
