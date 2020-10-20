@@ -90,9 +90,18 @@ a:link,a:visited,a:hover,a:active {
   overflow: hidden;
 }
 .modal-header {
-  margin: 0 16px;
-  padding: 16px 0;
-  border-bottom: 2px solid rgba(255,255,255,0.5);
+  width: 100%;
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
+  border: 0;
+}
+.modal-content .close {
+  outline: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0;
 }
 .modal-dialog {
    margin: 0;
@@ -101,28 +110,35 @@ a:link,a:visited,a:hover,a:active {
 }
 .modal-content {
     height: auto;
+    position: relative;
     min-height: 100%;
     border-radius: 0;
-    padding: $spacer;
+    padding: 0;
     color: $darkColor;
-    font-weight: 100;
-    background-color: $lightColor;
+    // background-color: $lightColor;
+}
+.modal-body {
+  background-color: #eee;
 }
 @media (min-width: 576px) {
   .modal-dialog {
     max-width: 100%;
   }
 }
+.modal-header h1 {
+  width: 100%;
+  text-align: center;
+}
 .modal-content ul {
   list-style: none;
   border-left: 2px solid rgba(255,255,255,0.5);
 }
-.image-wrap {
-  box-sizing: border-box;
-  margin-bottom: $spacer;
-  float: right;
-  max-width: 100%;
-  border: 2px solid rgba(255,255,255,0.5);
+.modal-img {
+  background-color: #eee;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0 0, 100% 0%, 100% 75%, 0% 100%);
+  object-fit: cover;
 }
 //intersection observer classes
 .fade-in {
@@ -165,9 +181,21 @@ a:link,a:visited,a:hover,a:active {
   h1 {
     font-size: 4em;
   }
-  .image-wrap {
-    margin-left: $spacer;
-    max-width: 400px;
-    max-height: 300px;
+  .modal-header {
+    padding: 0;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-left: $spacer;
+  }
+  .modal-header {
+    height: 40rem;
+  }
+  .modal-header h1 {
+    text-align: left;
+    width: 37.5%;
+  }
+  .modal-img {
+    width: 62.5%;
+    clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
   }
 }

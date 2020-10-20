@@ -33087,9 +33087,24 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .modal-header {
-  margin: 0 16px;
-  padding: 16px 0;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  width: 100%;
+  padding: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 0;
+}
+
+.modal-content .close {
+  outline: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0;
 }
 
 .modal-dialog {
@@ -33100,12 +33115,15 @@ a:link, a:visited, a:hover, a:active {
 
 .modal-content {
   height: auto;
+  position: relative;
   min-height: 100%;
   border-radius: 0;
-  padding: 1rem;
+  padding: 0;
   color: #222;
-  font-weight: 100;
-  background-color: #fff;
+}
+
+.modal-body {
+  background-color: #eee;
 }
 
 @media (min-width: 576px) {
@@ -33114,18 +33132,24 @@ a:link, a:visited, a:hover, a:active {
   }
 }
 
+.modal-header h1 {
+  width: 100%;
+  text-align: center;
+}
+
 .modal-content ul {
   list-style: none;
   border-left: 2px solid rgba(255, 255, 255, 0.5);
 }
 
-.image-wrap {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin-bottom: 1rem;
-  float: right;
-  max-width: 100%;
-  border: 2px solid rgba(255, 255, 255, 0.5);
+.modal-img {
+  background-color: #eee;
+  width: 100%;
+  height: 100%;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 75%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 100% 75%, 0% 100%);
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .fade-in {
@@ -33184,10 +33208,28 @@ a:link, a:visited, a:hover, a:active {
   h1 {
     font-size: 4em;
   }
-  .image-wrap {
-    margin-left: 1rem;
-    max-width: 400px;
-    max-height: 300px;
+  .modal-header {
+    padding: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 1rem;
+  }
+  .modal-header {
+    height: 40rem;
+  }
+  .modal-header h1 {
+    text-align: left;
+    width: 37.5%;
+  }
+  .modal-img {
+    width: 62.5%;
+    -webkit-clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
   }
 }
 /*# sourceMappingURL=App.css.map */

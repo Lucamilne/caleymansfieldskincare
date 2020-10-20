@@ -63,7 +63,7 @@ function ContactForm() {
 
     return (
         <section id="contact-form">
-            <Container>
+            <Container className="py-5">
                 <h1 className="text-center mb-4">Enquiries.</h1>
                 <p className="text-center mb-4">Fill out the form below to learn more.</p>
                 <Form noValidate validated={validated} onSubmit={handleSubmit}>
@@ -172,7 +172,7 @@ function ContactForm() {
                             </Form.Row>
                         </Col>
                     </Row>
-                    <div className="pb-5 pt-4 d-flex justify-content-center">
+                    <div className="mt-5 d-flex justify-content-center">
                         <Button variant="dark" type="submit">Submit</Button>
                     </div>
                 </Form>

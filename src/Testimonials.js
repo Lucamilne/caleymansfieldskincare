@@ -13,7 +13,7 @@ const Testimonials = () => {
     return (
         <section id="testimonials" className="d-flex flex-column justify-content-between">
             <ShapeFill alt="shapefill-alt" />
-            <Container>
+            <Container className="my-5">
                 <h1 className="text-center mb-4">What our clients say.</h1>
                 <Row>
                     {reviews.map(review => (
