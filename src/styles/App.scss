@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Over+the+Rainbow&family=Playfair+Display:wght@400;700&family=Rubik:wght@100;200;300;400&display=swap");
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "./variables";
 @import "./Filter";
 @import "./Navigation";
 @import "./Hero";
 @import "./ShapeFill";
 @import "./Introduction";
-// @import "./AboutMe";
+@import "./ReadMore";
 @import "./Services";
 @import "./Showcase";
 @import "./Products";
@@ -21,7 +22,6 @@ $theme-colors: (
   "dark": $darkColor,
 );
 
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 body {
   font-family: "Rubik", sans-serif;
@@ -88,20 +88,6 @@ a:link,a:visited,a:hover,a:active {
   color: $secondaryColor;
   text-decoration: none;
 }
-.modal-header {
-  width: 100%;
-  padding: 0;
-  flex-direction: column;
-  align-items: center;
-  border: 0;
-}
-.modal-content .close {
-  outline: none;
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin: 0;
-}
 .modal-dialog {
    margin: 0;
    padding: 0;
@@ -112,32 +98,13 @@ a:link,a:visited,a:hover,a:active {
     position: relative;
     min-height: 100%;
     border-radius: 0;
+    border: 0;
     padding: 0;
-    color: $darkColor;
-    // background-color: $lightColor;
-}
-.modal-body {
-  background-color: #eee;
 }
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: 100%;
+    min-width: 100%;
   }
-}
-.modal-header header {
-  width: 100%;
-  text-align: center;
-}
-.modal-content ul {
-  list-style: none;
-  border-left: 2px solid rgba(255,255,255,0.5);
-}
-.modal-img {
-  background-color: #eee;
-  width: 100%;
-  height: 100%;
-  clip-path: polygon(0 0, 100% 0%, 100% 75%, 0% 100%);
-  object-fit: cover;
 }
 //intersection observer classes
 .fade-in {
@@ -179,22 +146,5 @@ a:link,a:visited,a:hover,a:active {
 @include media-breakpoint-up(lg) {
   h1 {
     font-size: 4em;
-  }
-  .modal-header {
-    padding: 0;
-    flex-direction: row-reverse;
-    align-items: center;
-    height: 40rem;
-  }
-  .modal-header header {
-    text-align: left;
-    width: 37.5%;
-  }
-  .modal-header h1 {
-    padding-left: $spacer;
-  }
-  .modal-img {
-    width: 62.5%;
-    clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
   }
 }
