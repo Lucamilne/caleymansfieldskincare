@@ -1,12 +1,12 @@
 #read-more {
     .modal-header {
-        box-sizing: content-box;
-        background-color: #fff;
-        color: $darkColor;
+        position: relative;
+        background-color: $darkColor;
+        color: $lightColor;
         width: 100%;
         padding: 0;
         flex-direction: column;
-        align-items: center;
+        // align-items: center;
         border: 0;
     }
     .modal-content .close {
@@ -18,31 +18,48 @@
     }
     .modal-content ul {
         list-style: none;
-        border-left: 2px solid $thirdColor;
-        margin: 0;
+        padding: 0;
+        font-weight: 100;
+    }
+    i {
+        color: $secondaryColor;
     }
     .modal-body {
-        background-color: #eee;
+        background-color: #fff;
     }
     .modal-img {
         background-color: #ddd;
         width: 100%;
         height: 100%;
-        clip-path: polygon(0 0, 100% 0%, 100% 75%, 0% 100%);
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
         object-fit: cover;
     }
+    .cm-icon {
+        right: 0;
+        bottom: 0;
+        margin: $spacer;
+        border-radius: 50%;
+        border: 2px solid #fff;
+    }
+    .container {
+        height: 100%;
+        width: 100%;
+    }
+    h1 {
+        max-width: 500px;
+    }
     @include media-breakpoint-up(lg) {
+        ul {
+            font-size: 1.5em;
+        }
         .modal-header {
-            flex-direction: row-reverse;
-            align-items: center;
+            display: grid;
+            grid-template-columns: 1fr 800px;
+            grid-template-rows: 1fr;
             height: 40rem;
         }
-        .container-fluid {
-            width: 37.5%;
-        }
         .modal-img {
-            width: 62.5%;
-            clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
         }
     }
 }

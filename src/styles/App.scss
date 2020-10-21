@@ -1,6 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Over+the+Rainbow&family=Playfair+Display:wght@400;700&family=Rubik:wght@100;200;300;400&display=swap");
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "./variables";
+
+$theme-colors: (
+  "primary": $primaryColor,
+  "secondary": $secondaryColor,
+  "link": $thirdColor,
+  "light": $lightColor,
+  "dark": $darkColor,
+);
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "./Filter";
 @import "./Navigation";
 @import "./Hero";
@@ -13,15 +22,6 @@
 @import "./Testimonials";
 @import "./ContactForm";
 @import "./Footer";
-
-$theme-colors: (
-  "primary": $primaryColor,
-  "secondary": $secondaryColor,
-  "link": $thirdColor,
-  "light": $lightColor,
-  "dark": $darkColor,
-);
-
 
 body {
   font-family: "Rubik", sans-serif;
@@ -65,6 +65,7 @@ h2,
   border-radius: 0px;
   overflow: hidden;
 }
+//marked for deletion
 hr {
   border-top: 1px solid inherit;
   width: 32px;
@@ -81,9 +82,9 @@ hr {
 .modal.show {
   padding: 0 !important;
 }
-.show {
-  display: block;
-}
+// .show {
+//   display: block;
+// }
 a:link,a:visited,a:hover,a:active {
   color: $secondaryColor;
   text-decoration: none;
