@@ -1,12 +1,11 @@
 #read-more {
     .modal-header {
         position: relative;
-        background-color: $darkColor;
-        color: $lightColor;
+        background-color: #fff;
+        color: $darkColor;
         width: 100%;
         padding: 0;
         flex-direction: column;
-        // align-items: center;
         border: 0;
     }
     .modal-content .close {
@@ -19,20 +18,39 @@
     .modal-content ul {
         list-style: none;
         padding: 0;
-        font-weight: 100;
     }
-    i {
+    .modal-header i {
         color: $secondaryColor;
     }
+    h5 {
+        text-transform: uppercase;
+    }
+    .faqs {
+        i {
+            font-size: 2em;
+        }
+        p {
+            margin: 0;
+        }
+    }
     .modal-body {
-        background-color: #fff;
+        background-color: #eee;
     }
     .modal-img {
         background-color: #ddd;
         width: 100%;
         height: 100%;
-        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
         object-fit: cover;
+        animation: blur 600ms ease;
+    }
+    @keyframes blur {
+        from {
+            filter: blur(1rem);
+        }
+        to {
+            filter: blur(0);
+        }
     }
     .cm-icon {
         right: 0;
@@ -49,17 +67,29 @@
         max-width: 500px;
     }
     @include media-breakpoint-up(lg) {
-        ul {
-            font-size: 1.5em;
-        }
+        // ul {
+        //     font-size: 1.25em;
+        // }
         .modal-header {
-            display: grid;
-            grid-template-columns: 1fr 800px;
-            grid-template-rows: 1fr;
             height: 40rem;
         }
         .modal-img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            max-width: 50%;
             clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+        }
+        .animate-left {
+            animation: slide-left 600ms ease;
+        }
+        @keyframes slide-left {
+            from {
+                transform: translateX(-10%)
+            }
+            to {
+                transform: translateX(0);
+            }
         }
     }
 }

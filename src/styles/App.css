@@ -22172,8 +22172,8 @@ a.text-link:hover, a.text-link:focus {
 
 #read-more .modal-header {
   position: relative;
-  background-color: #222;
-  color: #fff;
+  background-color: #fff;
+  color: #222;
   width: 100%;
   padding: 0;
   -webkit-box-orient: vertical;
@@ -22194,25 +22194,60 @@ a.text-link:hover, a.text-link:focus {
 #read-more .modal-content ul {
   list-style: none;
   padding: 0;
-  font-weight: 100;
 }
 
-#read-more i {
+#read-more .modal-header i {
   color: #ffcece;
 }
 
+#read-more h5 {
+  text-transform: uppercase;
+}
+
+#read-more .faqs i {
+  font-size: 2em;
+}
+
+#read-more .faqs p {
+  margin: 0;
+}
+
 #read-more .modal-body {
-  background-color: #fff;
+  background-color: #eee;
 }
 
 #read-more .modal-img {
-  background-color: #ddd;
+  background-color: #fff;
   width: 100%;
   height: 100%;
-  -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
-          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-animation: blur 600ms ease;
+          animation: blur 600ms ease;
+}
+
+@-webkit-keyframes blur {
+  from {
+    -webkit-filter: blur(1rem);
+            filter: blur(1rem);
+  }
+  to {
+    -webkit-filter: blur(0);
+            filter: blur(0);
+  }
+}
+
+@keyframes blur {
+  from {
+    -webkit-filter: blur(1rem);
+            filter: blur(1rem);
+  }
+  to {
+    -webkit-filter: blur(0);
+            filter: blur(0);
+  }
 }
 
 #read-more .cm-icon {
@@ -22233,21 +22268,40 @@ a.text-link:hover, a.text-link:focus {
 }
 
 @media (min-width: 992px) {
-  #read-more ul {
-    font-size: 1.5em;
-  }
   #read-more .modal-header {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 800px;
-        grid-template-columns: 1fr 800px;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
     height: 40rem;
   }
   #read-more .modal-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 50%;
     -webkit-clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
             clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  #read-more .animate-left {
+    -webkit-animation: slide-left 600ms ease;
+            animation: slide-left 600ms ease;
+  }
+  @-webkit-keyframes slide-left {
+    from {
+      -webkit-transform: translateX(-10%);
+              transform: translateX(-10%);
+    }
+    to {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @keyframes slide-left {
+    from {
+      -webkit-transform: translateX(-10%);
+              transform: translateX(-10%);
+    }
+    to {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
   }
 }
 
@@ -22447,7 +22501,7 @@ footer .favicon {
 
 body {
   font-family: "Rubik", sans-serif;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 h1,
@@ -22586,12 +22640,6 @@ a:link, a:visited, a:hover, a:active {
 .from-above.appear {
   -webkit-transform: translateX(0);
           transform: translateX(0);
-}
-
-@media (min-width: 768px) {
-  body {
-    font-size: 1rem;
-  }
 }
 
 @media (min-width: 992px) {
