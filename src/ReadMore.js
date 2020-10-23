@@ -14,6 +14,7 @@ const technology = {
         description: "Geneo offers effective treatments through encouraging the natural processes of skin rejuvenation. The power of natural oxygenation, complemented by the anti-aging effect of Tripollar RF, both further enhanced by Ultrasound, offer valuable advantages of immediately visible skin improvement and long-term rejuvenating effects.",
         summary: "Geneo treatments can be offered to a wide variety of skin types, ages and needs, making it a perfect solution for ongoing maintenance of the skin, for targeted treatment of specific skin conditions, and for maintenance and enhancement of skin improvement following a surgical procedure.",
         img: { alt: "Geneo Machine", variableName: geneoImage },
+        video: { type: "embedded", src: "https://www.youtube.com/embed/I0U5AddOYZs" },
         benefits: { title: "Geneo delivers four essential treatments simulataneously:", content: ["Dermis regeneration", "Increased collagen and elastin production", "Smooths and tightens skin", "Reduces fine lines and wrinkles", "Oxygenation", "Advanced exfoliation"] },
         faq: { results: "Immediate / Cumulative / Long Lasting", downtime: "None", sessions: "Included in bespoke treatments devised at consultation" }
     },
@@ -23,6 +24,7 @@ const technology = {
         description: "A-Lift with its dual current output of microcurrent and nanocurrent boosts ATP production by up to 500% as well as automatically monitoring and adjusting itself to synchronise with the skin’s own bio-electrical frequency. The current stimulates ATP production within the cells which effectively ‘supercharges’ the rate of their metabolism back to previous levels of youth.",
         summary: "ATP levels are increased because ATP stores and transports chemical energy within the cells. It provides the cell with energy to reproduce, repair, and function. Fibroblast cells are stimulated to produce more proteins including collagen leading to better structure and improved toning and lift so the skin looks fresh. Another positive effect of this chemical reaction is more water so the cells appear more hydrated.",
         img: { alt: "A-lift Machine", variableName: aliftImage },
+        video: { type: "embedded", src: "https://www.youtube.com/embed/3lrXsYMcafs" },
         benefits: { title: "What are the benefits of A-lift treatments?", content: ["Increases cellular energy", "Lifts and firms muscle tone", "Reduces fine lines and wrinkles", "Hydratation"] },
         faq: { results: "Immediate / Cumulative / Long Lasting", downtime: "None", sessions: "Included in bespoke treatments devised at consultation" }
     },
@@ -32,8 +34,9 @@ const technology = {
         description: "The Dermalux® treatment is a relaxing, pain free experience with proven mood enhancing effects. Enjoy some luxury me-time as your skin absorbs the energising light to kick start cell regeneration and restore radiance. Each treatment lasts for around 20 minutes and with no downtime, you can simply get up and glow! As the light triggers a whole cascade of skin enhancing processes, the visible benefits continue even after the treatment has finished.",
         summary: "We are all influenced by the Power of Light. Light has many positive effects on our bodies; it helps us to produce essential vitamin D, triggers growth, promotes wellbeing and makes our skin glow!",
         img: { alt: "Dermalux Tri-wave LED Machine", variableName: dermaluxImage },
+        video: { type: "embedded", src: "https://www.youtube.com/embed/Nwz53NRp4-M" },
         benefits: { title: "What are the benefits of Dermalux LED?", content: ["Increases cellular energy", "Calms redness", "Evens skin tone", "Revitalises and restores radiance", "Helps spot prone skin", "Improves clarity", "Heals eczema", "Boosts collagen and elastin", "Reduces fine lines and wrinkles"] },
-        faq: { results: "Immediate / Cumulative / Long Lasting", downtime: "None", sessions: "Powerplan course of 12 for £500 for dramatic improvement in the appearance and health of the skin. Included in bespoke treatments devised at consultation" }
+        faq: { results: "Immediate / Cumulative / Long Lasting", downtime: "None", sessions: "Powerplan course of 12 for £500. Included in bespoke treatments devised at consultation" }
     },
     "Coolift Gun": {
         title: "Coolift Gun Cryophoresis",
@@ -41,6 +44,7 @@ const technology = {
         description: "This treatment is ideal for anti-aging and adding luminosity to the skin. It contains Hyaluronic acid and tighteners. Suitable for all skin types. It is designed to easily and quickly treat the entire face. Achieving a general lifting effect that smoothes and illuminates the skin.",
         summary: "£75 as a stand alone treatment.",
         img: { alt: "Coolift Gun", variableName: cooliftImage },
+        video: null,
         benefits: { title: "What are the benefits of the Coolift Gun treatment?", content: ["Intense hydration", "Improves skin texture and quality", "Collagen stimulation", "Dermis regeneration", "Visible plumping and brightening effects"] },
         faq: { results: "Immediate / Cumulative", downtime: "None", sessions: "A course of 3 in quick succession for £75 per session. Perfect for a special occassion. Included in bespoke treatments devised at consultation" }
     },
@@ -50,6 +54,7 @@ const technology = {
         description: "The disposable needles are 33g ultra sharp, and of the highest quality, encased in biocompatible medical plastic. The cartridges benefit from anti-back flow technology, to prevent product or bodily fluids entering the device and eliminating any chance of cross-contamination. Making the platinum pen one of the safest micro needling pens available.",
         summary: "The Fusion Mesotherapy range includes products containing the latest generation of Growth Factors and Biomimetic Peptides. Used in conjunction with the Platinum Pen, it guarantees hygiene, safety, quality treatments and results.",
         img: { alt: "Fusion Platinum Pen", variableName: fusionImage },
+        video: null,
         benefits: { title: "What are the benefits to the Fusion Meso Platinum treatment?", content: ["Face rejuvenation", "Reduced wrinkles and expression lines", "Reverse visible aging", "Whitens skin", "Reduces cellulite"] },
         faq: { results: "Immediate / Cumulative / Long Lasting", downtime: "12 - 24 hours", sessions: "1 treatment recommended every 2 weeks, 3-6 treatments in total" }
     }
@@ -64,7 +69,7 @@ const list = [
 function ReadMore(props) {
     const tech = props.clicked;
     return (
-        <Modal {...props} aria-labelledby="contained-modal-title-vcenter" size="xl" closeButton id="read-more">
+        <Modal {...props} aria-labelledby="contained-modal-title-vcenter" size="xl" id="read-more">
             <Modal.Header closeButton className="modal-close-btn">
                 {tech &&
                     <>
@@ -91,8 +96,20 @@ function ReadMore(props) {
                 {tech &&
                     <Container className="my-5">
                         <Row>
+                            {technology[tech].video &&
+                                <Col lg={6}>
+                                    <Card className="mb-4">
+                                        <Card.Header as="h5">Watch</Card.Header>
+                                        <Card.Body>
+                                            <div className="embed-responsive embed-responsive-16by9">
+                                                <iframe title={technology[tech].title} className="embed-responsive-item" src={technology[tech].video.src} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                            </div>
+                                        </Card.Body>
+                                    </Card>
+                                </Col>
+                            }
                             <Col lg={6}>
-                                <Card className="faqs">
+                                <Card className="faqs mb-4">
                                     <Card.Header as="h5">Frequently Asked Questions</Card.Header>
                                     <Card.Body>
                                         <ListGroup variant="flush">

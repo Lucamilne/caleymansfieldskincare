@@ -48,7 +48,7 @@ const Products = () => {
                                     </ul>
                                     {treatment.services &&
                                         <div className="d-flex flex-column align-items-start">
-                                            <p>Technologies:</p>
+                                            <p>Click on any technology below to learn more:</p>
                                             {treatment.services.map(service => (
                                                 <Button variant="outline-dark mb-1" key={service} onClick={() => {
                                                     setModalShow(true)
