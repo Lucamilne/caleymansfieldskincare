@@ -15,7 +15,7 @@ const technology = {
         summary: "Geneo treatments can be offered to a wide variety of skin types, ages and needs, making it a perfect solution for ongoing maintenance of the skin, for targeted treatment of specific skin conditions, and for maintenance and enhancement of skin improvement following a surgical procedure.",
         img: { alt: "Geneo Machine", variableName: geneoImage },
         benefits: { title: "Geneo delivers four essential treatments simulataneously:", content: ["Dermis regeneration", "Increased collagen and elastin production", "Smooths and tightens skin", "Reduces fine lines and wrinkles", "Oxygenation", "Advanced exfoliation"] },
-        faq: { results: ["Immediate", "Cumulative", "Long lasting"], downtime: "None", sessions: "Included in bespoke treatments devised at consultation" }
+        faq: { results: "Immediate / Cumulative / Long Lasting", downtime: "None", sessions: "Included in bespoke treatments devised at consultation" }
     },
     "A-Lift": {
         title: "A-lift Facial Treatment",
@@ -24,7 +24,7 @@ const technology = {
         summary: "ATP levels are increased because ATP stores and transports chemical energy within the cells. It provides the cell with energy to reproduce, repair, and function. Fibroblast cells are stimulated to produce more proteins including collagen leading to better structure and improved toning and lift so the skin looks fresh. Another positive effect of this chemical reaction is more water so the cells appear more hydrated.",
         img: { alt: "A-lift Machine", variableName: aliftImage },
         benefits: { title: "What are the benefits of A-lift treatments?", content: ["Increases cellular energy", "Lifts and firms muscle tone", "Reduces fine lines and wrinkles", "Hydratation"] },
-        faq: { results: ["Immediate", "Cumulative", "Long lasting"], downtime: "None", sessions: "Included in bespoke treatments devised at consultation" }
+        faq: { results: "Immediate / Cumulative / Long Lasting", downtime: "None", sessions: "Included in bespoke treatments devised at consultation" }
     },
     "Dermalux Tri-wave LED": {
         title: "Dermalux Tri-wave LED",
@@ -33,7 +33,7 @@ const technology = {
         summary: "We are all influenced by the Power of Light. Light has many positive effects on our bodies; it helps us to produce essential vitamin D, triggers growth, promotes wellbeing and makes our skin glow!",
         img: { alt: "Dermalux Tri-wave LED Machine", variableName: dermaluxImage },
         benefits: { title: "What are the benefits of Dermalux LED?", content: ["Increases cellular energy", "Calms redness", "Evens skin tone", "Revitalises and restores radiance", "Helps spot prone skin", "Improves clarity", "Heals eczema", "Boosts collagen and elastin", "Reduces fine lines and wrinkles"] },
-        faq: { results: ["Immediate", "Cumulative", "Long lasting"], downtime: "None", sessions: "Powerplan course of 12 for £500 for dramatic improvement in the appearance and health of the skin. Included in bespoke treatments devised at consultation" }
+        faq: { results: "Immediate / Cumulative / Long Lasting", downtime: "None", sessions: "Powerplan course of 12 for £500 for dramatic improvement in the appearance and health of the skin. Included in bespoke treatments devised at consultation" }
     },
     "Coolift Gun": {
         title: "Coolift Gun Cryophoresis",
@@ -42,7 +42,7 @@ const technology = {
         summary: "£75 as a stand alone treatment.",
         img: { alt: "Coolift Gun", variableName: cooliftImage },
         benefits: { title: "What are the benefits of the Coolift Gun treatment?", content: ["Intense hydration", "Improves skin texture and quality", "Collagen stimulation", "Dermis regeneration", "Visible plumping and brightening effects"] },
-        faq: { results: ["Immediate", "Cumulative"], downtime: "None", sessions: "A course of 3 in quick succession for £75 per session. Perfect for a special occassion. Included in bespoke treatments devised at consultation" }
+        faq: { results: "Immediate / Cumulative", downtime: "None", sessions: "A course of 3 in quick succession for £75 per session. Perfect for a special occassion. Included in bespoke treatments devised at consultation" }
     },
     "Fusion Platinum Pen": {
         title: "Fusion Meso Pen Platinum",
@@ -51,9 +51,15 @@ const technology = {
         summary: "The Fusion Mesotherapy range includes products containing the latest generation of Growth Factors and Biomimetic Peptides. Used in conjunction with the Platinum Pen, it guarantees hygiene, safety, quality treatments and results.",
         img: { alt: "Fusion Platinum Pen", variableName: fusionImage },
         benefits: { title: "What are the benefits to the Fusion Meso Platinum treatment?", content: ["Face rejuvenation", "Reduced wrinkles and expression lines", "Reverse visible aging", "Whitens skin", "Reduces cellulite"] },
-        faq: { results: ["Immediate", "Cumulative", "Long lasting"], downtime: "12 - 24 hours", sessions: "1 treatment recommended every 2 weeks, 3-6 treatments in total" }
+        faq: { results: "Immediate / Cumulative / Long Lasting", downtime: "12 - 24 hours", sessions: "1 treatment recommended every 2 weeks, 3-6 treatments in total" }
     }
 }
+
+const list = [
+    { icon: "far fa-smile", title: "Visible Effects", key: "results" },
+    { icon: "far fa-clock", title: "Downtime", key: "downtime" },
+    { icon: "far fa-calendar", title: "Recommended Sessions", key: "sessions" }
+]
 
 function ReadMore(props) {
     const tech = props.clicked;
@@ -68,7 +74,6 @@ function ReadMore(props) {
                             src={technology[tech].img.variableName}
                         />
                         <img src={require("./images/icon.ico")} alt="Caley Mansfield Logo" className="position-absolute cm-icon" />
-
                         <Container className="position-relative d-flex align-items-center">
                             <div className="animate-left">
                                 <h1 className="my-4">{technology[tech].title}</h1>
@@ -87,42 +92,29 @@ function ReadMore(props) {
                     <Container className="my-5">
                         <Row>
                             <Col lg={6}>
-                                <p>{technology[tech].introduction}</p>
-                            </Col>
-                            <Col lg={6}>
                                 <Card className="faqs">
-                                    <ListGroup>
-                                        <ListGroup.Item className="d-flex align-items-center">
-                                            <i className="far fa-smile mr-3"></i>
-                                            <div>
-                                                <h5>Visible Effects</h5>
-                                                <p>{technology[tech].faq.results.map(el => el + " / ")}</p>
-                                            </div>
-                                        </ListGroup.Item>
-                                        <ListGroup.Item className="d-flex align-items-center">
-                                            <i className="far fa-clock mr-3"></i>
-                                            <div>
-                                                <h5>Downtime</h5>
-                                                <p>{technology[tech].faq.downtime}</p>
-                                            </div>
-                                        </ListGroup.Item>
-                                        <ListGroup.Item className="d-flex align-items-center">
-                                            <i className="far fa-calendar-alt mr-3"></i>
-                                            <div>
-                                                <h5>Recommended Sessions</h5>
-                                                <p>{technology[tech].faq.sessions}</p>
-                                            </div>
-                                        </ListGroup.Item>
-                                    </ListGroup>
+                                    <Card.Header as="h5">Frequently Asked Questions</Card.Header>
+                                    <Card.Body>
+                                        <ListGroup variant="flush">
+                                            {list.map((el, index) => {
+                                                return (
+                                                    <ListGroup.Item className="d-flex align-items-center" key={index}>
+                                                        <i className={`${el.icon} mr-4`}></i>
+                                                        <div>
+                                                            <Card.Title>{el.title}</Card.Title>
+                                                            <Card.Text>{technology[tech].faq[el.key]}</Card.Text>
+                                                        </div>
+                                                    </ListGroup.Item>
+                                                )
+                                            })}
+                                        </ListGroup>
+                                    </Card.Body>
                                 </Card>
                             </Col>
-                        </Row>
-                        <Row>
                             <Col lg={6}>
+                                <p>{technology[tech].introduction}</p>
                                 <p>{technology[tech].description}</p>
-                            </Col>
-                            <Col lg={6}>
-                                <p>{technology[tech].description}</p>
+                                <p>{technology[tech].summary}</p>
                             </Col>
                         </Row>
                     </Container>

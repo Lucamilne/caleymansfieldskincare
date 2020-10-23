@@ -22200,10 +22200,6 @@ a.text-link:hover, a.text-link:focus {
   color: #ffcece;
 }
 
-#read-more h5 {
-  text-transform: uppercase;
-}
-
 #read-more .faqs i {
   font-size: 2em;
 }
@@ -22217,7 +22213,7 @@ a.text-link:hover, a.text-link:focus {
 }
 
 #read-more .modal-img {
-  background-color: #fff;
+  background-color: #ddd;
   width: 100%;
   height: 100%;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
