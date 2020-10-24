@@ -20,7 +20,7 @@
         padding: 0;
     }
     .modal-header i {
-        color: $secondaryColor;
+        color: $thirdColor;
     }
     .faqs {
         i {
@@ -39,7 +39,7 @@
         height: 100%;
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
         object-fit: cover;
-        animation: blur 600ms ease;
+        animation: blur 1800ms ease;
     }
     @keyframes blur {
         from {

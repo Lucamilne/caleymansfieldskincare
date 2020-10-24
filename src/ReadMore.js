@@ -1,5 +1,5 @@
-import React from "react";
-import { Modal, Container, Row, Col, Card } from "react-bootstrap"
+import React, { useState } from "react";
+import { Modal, Container, Row, Col, Card, Accordion, Button } from "react-bootstrap"
 import ListGroup from 'react-bootstrap/ListGroup'
 import geneoImage from "./images/technology/geneo.webp"
 import aliftImage from "./images/technology/alift.webp"
@@ -68,6 +68,8 @@ const list = [
 
 function ReadMore(props) {
     const tech = props.clicked;
+    const [toggle, setToggle] = useState(false)
+
     return (
         <Modal {...props} aria-labelledby="contained-modal-title-vcenter" size="xl" id="read-more">
             <Modal.Header closeButton className="modal-close-btn">
@@ -96,18 +98,6 @@ function ReadMore(props) {
                 {tech &&
                     <Container className="my-5">
                         <Row>
-                            {technology[tech].video &&
-                                <Col lg={6}>
-                                    <Card className="mb-4">
-                                        <Card.Header as="h5">Watch</Card.Header>
-                                        <Card.Body>
-                                            <div className="embed-responsive embed-responsive-16by9">
-                                                <iframe title={technology[tech].title} className="embed-responsive-item" src={technology[tech].video.src} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                                            </div>
-                                        </Card.Body>
-                                    </Card>
-                                </Col>
-                            }
                             <Col lg={6}>
                                 <Card className="faqs mb-4">
                                     <Card.Header as="h5">Frequently Asked Questions</Card.Header>
@@ -127,6 +117,25 @@ function ReadMore(props) {
                                         </ListGroup>
                                     </Card.Body>
                                 </Card>
+                            </Col>
+                            <Col lg={6}>
+                                {technology[tech].video &&
+                                        <Accordion defaultActiveKey="0">
+                                            <Card.Header className="d-flex justify-content-between">
+                                                <span>Watch</span>
+                                                <Accordion.Toggle as={Button} eventKey="0" variant="outline-link" className="product-toggle" onClick={() => setToggle(!toggle)}>
+                                                    <i className={`fas fa-chevron-${toggle ? "up" : "down"}`}></i>
+                                                </Accordion.Toggle>
+                                            </Card.Header>
+                                            <Accordion.Collapse eventKey="0">
+                                                <Card.Body>
+                                                    <div className="embed-responsive embed-responsive-16by9">
+                                                        <iframe title={technology[tech].title} className="embed-responsive-item" src={technology[tech].video.src} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                                    </div>
+                                                </Card.Body>
+                                            </Accordion.Collapse>
+                                        </Accordion>
+                                }
                             </Col>
                             <Col lg={6}>
                                 <p>{technology[tech].introduction}</p>

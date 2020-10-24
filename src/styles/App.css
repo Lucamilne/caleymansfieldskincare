@@ -22197,7 +22197,7 @@ a.text-link:hover, a.text-link:focus {
 }
 
 #read-more .modal-header i {
-  color: #ffcece;
+  color: #FF9B9C;
 }
 
 #read-more .faqs i {
@@ -22220,8 +22220,8 @@ a.text-link:hover, a.text-link:focus {
           clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-animation: blur 600ms ease;
-          animation: blur 600ms ease;
+  -webkit-animation: blur 1800ms ease;
+          animation: blur 1800ms ease;
 }
 
 @-webkit-keyframes blur {
