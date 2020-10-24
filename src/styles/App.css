@@ -22172,8 +22172,8 @@ a.text-link:hover, a.text-link:focus {
 
 #read-more .modal-header {
   position: relative;
-  background-color: #fff;
-  color: #222;
+  background-color: #222;
+  color: #fff;
   width: 100%;
   padding: 0;
   -webkit-box-orient: vertical;
@@ -22192,7 +22192,6 @@ a.text-link:hover, a.text-link:focus {
 }
 
 #read-more .modal-content ul {
-  list-style: none;
   padding: 0;
 }
 
@@ -22200,16 +22199,29 @@ a.text-link:hover, a.text-link:focus {
   color: #FF9B9C;
 }
 
-#read-more .faqs i {
-  font-size: 2em;
+#read-more .card-header {
+  background-color: transparent;
+  font-size: 1.5em;
+  font-weight: 400;
 }
 
-#read-more .faqs p {
-  margin: 0;
+#read-more .list-title {
+  font-weight: 700;
+  font-family: "Rubik", sans-serif;
+}
+
+#read-more .btn-toggle {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+#read-more .faqs ul {
+  border-left: 2px solid #FF9B9C;
 }
 
 #read-more .modal-body {
-  background-color: #eee;
+  background-color: #fff;
 }
 
 #read-more .modal-img {
@@ -22343,7 +22355,7 @@ a.text-link:hover, a.text-link:focus {
   font-weight: 400;
 }
 
-#products .product-toggle {
+#products .btn-toggle {
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -22354,7 +22366,6 @@ a.text-link:hover, a.text-link:focus {
 }
 
 #products ul {
-  list-style: none;
   border-left: 2px solid #FF9B9C;
 }
 
@@ -22546,10 +22557,8 @@ h2,
   overflow: hidden;
 }
 
-hr {
-  border-top: 1px solid inherit;
-  width: 32px;
-  margin: 0;
+ul {
+  list-style: none;
 }
 
 .hollow {

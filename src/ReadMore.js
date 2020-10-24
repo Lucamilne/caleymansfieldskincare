@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import { Modal, Container, Row, Col, Card, Accordion, Button } from "react-bootstrap"
-import ListGroup from 'react-bootstrap/ListGroup'
 import geneoImage from "./images/technology/geneo.webp"
 import aliftImage from "./images/technology/alift.webp"
 import dermaluxImage from "./images/technology/dermalux.webp"
@@ -16,7 +15,7 @@ const technology = {
         img: { alt: "Geneo Machine", variableName: geneoImage },
         video: { type: "embedded", src: "https://www.youtube.com/embed/I0U5AddOYZs" },
         benefits: { title: "Geneo delivers four essential treatments simulataneously:", content: ["Dermis regeneration", "Increased collagen and elastin production", "Smooths and tightens skin", "Reduces fine lines and wrinkles", "Oxygenation", "Advanced exfoliation"] },
-        faq: { results: "Immediate / Cumulative / Long Lasting", downtime: "None", sessions: "Included in bespoke treatments devised at consultation" }
+        faq: { results: ["Immediate", "Cumulative", "Long Lasting"], downtime: "None", sessions: "Included in bespoke treatments devised at consultation" }
     },
     "A-Lift": {
         title: "A-lift Facial Treatment",
@@ -26,7 +25,7 @@ const technology = {
         img: { alt: "A-lift Machine", variableName: aliftImage },
         video: { type: "embedded", src: "https://www.youtube.com/embed/3lrXsYMcafs" },
         benefits: { title: "What are the benefits of A-lift treatments?", content: ["Increases cellular energy", "Lifts and firms muscle tone", "Reduces fine lines and wrinkles", "Hydratation"] },
-        faq: { results: "Immediate / Cumulative / Long Lasting", downtime: "None", sessions: "Included in bespoke treatments devised at consultation" }
+        faq: { results: ["Immediate", "Cumulative", "Long Lasting"], downtime: "None", sessions: "Included in bespoke treatments devised at consultation" }
     },
     "Dermalux Tri-wave LED": {
         title: "Dermalux Tri-wave LED",
@@ -36,7 +35,7 @@ const technology = {
         img: { alt: "Dermalux Tri-wave LED Machine", variableName: dermaluxImage },
         video: { type: "embedded", src: "https://www.youtube.com/embed/Nwz53NRp4-M" },
         benefits: { title: "What are the benefits of Dermalux LED?", content: ["Increases cellular energy", "Calms redness", "Evens skin tone", "Revitalises and restores radiance", "Helps spot prone skin", "Improves clarity", "Heals eczema", "Boosts collagen and elastin", "Reduces fine lines and wrinkles"] },
-        faq: { results: "Immediate / Cumulative / Long Lasting", downtime: "None", sessions: "Powerplan course of 12 for £500. Included in bespoke treatments devised at consultation" }
+        faq: { results: ["Immediate", "Cumulative", "Long Lasting"], downtime: "None", sessions: "Powerplan course of 12 for £500. Included in bespoke treatments devised at consultation" }
     },
     "Coolift Gun": {
         title: "Coolift Gun Cryophoresis",
@@ -46,7 +45,7 @@ const technology = {
         img: { alt: "Coolift Gun", variableName: cooliftImage },
         video: null,
         benefits: { title: "What are the benefits of the Coolift Gun treatment?", content: ["Intense hydration", "Improves skin texture and quality", "Collagen stimulation", "Dermis regeneration", "Visible plumping and brightening effects"] },
-        faq: { results: "Immediate / Cumulative", downtime: "None", sessions: "A course of 3 in quick succession for £75 per session. Perfect for a special occassion. Included in bespoke treatments devised at consultation" }
+        faq: { results: ["Immediate", "Cumulative"], downtime: "None", sessions: "A course of 3 in quick succession for £75 per session. Perfect for a special occassion. Included in bespoke treatments devised at consultation" }
     },
     "Fusion Platinum Pen": {
         title: "Fusion Meso Pen Platinum",
@@ -56,19 +55,12 @@ const technology = {
         img: { alt: "Fusion Platinum Pen", variableName: fusionImage },
         video: null,
         benefits: { title: "What are the benefits to the Fusion Meso Platinum treatment?", content: ["Face rejuvenation", "Reduced wrinkles and expression lines", "Reverse visible aging", "Whitens skin", "Reduces cellulite"] },
-        faq: { results: "Immediate / Cumulative / Long Lasting", downtime: "12 - 24 hours", sessions: "1 treatment recommended every 2 weeks, 3-6 treatments in total" }
+        faq: { results: ["Immediate", "Cumulative", "Long Lasting"], downtime: "12 - 24 hours", sessions: "1 treatment recommended every 2 weeks, 3-6 treatments in total" }
     }
 }
 
-const list = [
-    { icon: "far fa-smile", title: "Visible Effects", key: "results" },
-    { icon: "far fa-clock", title: "Downtime", key: "downtime" },
-    { icon: "far fa-calendar", title: "Recommended Sessions", key: "sessions" }
-]
-
 function ReadMore(props) {
     const tech = props.clicked;
-    const [toggle, setToggle] = useState(false)
 
     return (
         <Modal {...props} aria-labelledby="contained-modal-title-vcenter" size="xl" id="read-more">
@@ -99,48 +91,69 @@ function ReadMore(props) {
                     <Container className="my-5">
                         <Row>
                             <Col lg={6}>
-                                <Card className="faqs mb-4">
-                                    <Card.Header as="h5">Frequently Asked Questions</Card.Header>
-                                    <Card.Body>
-                                        <ListGroup variant="flush">
-                                            {list.map((el, index) => {
-                                                return (
-                                                    <ListGroup.Item className="d-flex align-items-center" key={index}>
-                                                        <i className={`${el.icon} mr-4`}></i>
-                                                        <div>
-                                                            <Card.Title>{el.title}</Card.Title>
-                                                            <Card.Text>{technology[tech].faq[el.key]}</Card.Text>
-                                                        </div>
-                                                    </ListGroup.Item>
-                                                )
-                                            })}
-                                        </ListGroup>
-                                    </Card.Body>
-                                </Card>
-                            </Col>
-                            <Col lg={6}>
+                                <Accordion defaultActiveKey="0">
+                                    <Card.Header className="d-flex justify-content-between">
+                                        <span>Details</span>
+                                        <Accordion.Toggle as={Button} eventKey="0" variant="outline-link" className="btn-toggle">
+                                            <i className="fas fa-chevron-down"></i>
+                                        </Accordion.Toggle>
+                                    </Card.Header>
+                                    <Accordion.Collapse eventKey="0">
+                                        <Card.Body className="faqs">
+                                            <h6 className="list-title">Results</h6>
+                                            <ul className="pl-3">
+                                                {technology[tech].faq.results.map((el, index) => (
+                                                    <li key={index}>{el}</li>
+                                                ))}
+                                            </ul>
+                                            <h6 className="list-title">Downtime</h6>
+                                            <ul className="pl-3">
+                                                <li>{technology[tech].faq.downtime}</li>
+                                            </ul>
+                                            <h6 className="list-title">Sessions</h6>
+                                            <ul className="pl-3">
+                                                <li>{technology[tech].faq.sessions}</li>
+                                            </ul>
+                                        </Card.Body>
+                                    </Accordion.Collapse>
+                                </Accordion>
                                 {technology[tech].video &&
-                                        <Accordion defaultActiveKey="0">
-                                            <Card.Header className="d-flex justify-content-between">
-                                                <span>Watch</span>
-                                                <Accordion.Toggle as={Button} eventKey="0" variant="outline-link" className="product-toggle" onClick={() => setToggle(!toggle)}>
-                                                    <i className={`fas fa-chevron-${toggle ? "up" : "down"}`}></i>
-                                                </Accordion.Toggle>
-                                            </Card.Header>
-                                            <Accordion.Collapse eventKey="0">
-                                                <Card.Body>
-                                                    <div className="embed-responsive embed-responsive-16by9">
-                                                        <iframe title={technology[tech].title} className="embed-responsive-item" src={technology[tech].video.src} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                                                    </div>
-                                                </Card.Body>
-                                            </Accordion.Collapse>
-                                        </Accordion>
+                                    <Accordion defaultActiveKey="1">
+                                        <Card.Header className="d-flex justify-content-between">
+                                            <span>Watch</span>
+                                            <Accordion.Toggle as={Button} eventKey="1" variant="outline-link" className="btn-toggle">
+                                                <i className="fas fa-chevron-down"></i>
+                                            </Accordion.Toggle>
+                                        </Card.Header>
+                                        <Accordion.Collapse eventKey="1">
+                                            <Card.Body>
+                                                <div className="embed-responsive embed-responsive-16by9">
+                                                    <iframe title={technology[tech].title} className="embed-responsive-item" src={technology[tech].video.src} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                                </div>
+                                            </Card.Body>
+                                        </Accordion.Collapse>
+                                    </Accordion>
                                 }
                             </Col>
                             <Col lg={6}>
-                                <p>{technology[tech].introduction}</p>
-                                <p>{technology[tech].description}</p>
-                                <p>{technology[tech].summary}</p>
+                                <Accordion defaultActiveKey="2">
+                                    <Card.Header className="d-flex justify-content-between">
+                                        <span>Description</span>
+                                        <Accordion.Toggle as={Button} eventKey="2" variant="outline-link" className="btn-toggle">
+                                            <i className="fas fa-chevron-down"></i>
+                                        </Accordion.Toggle>
+                                    </Card.Header>
+                                    <Accordion.Collapse eventKey="2">
+                                        <Card.Body>
+                                            <p>{technology[tech].introduction}</p>
+                                            <p>{technology[tech].description}</p>
+                                            <p>{technology[tech].summary}</p>
+                                        </Card.Body>
+                                    </Accordion.Collapse>
+                                </Accordion>
+                            </Col>
+                            <Col lg={6}>
+
                             </Col>
                         </Row>
                     </Container>

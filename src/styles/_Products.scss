@@ -4,7 +4,7 @@
     font-size: 1.5em;
     font-weight: 400;
   }
-  .product-toggle {
+  .btn-toggle {
     height: 40px;
     width: 40px;
     border-radius: 50%;
@@ -13,8 +13,6 @@
     width: 200px;
   }
   ul {
-    list-style: none;
     border-left: 2px solid $thirdColor;
   }
-
 }

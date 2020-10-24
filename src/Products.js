@@ -24,7 +24,7 @@ const Products = () => {
                         <Accordion defaultActiveKey={treatment.id}>
                             <Card.Header className="d-flex justify-content-between">
                                 <span>{treatment.header}</span>
-                                <Accordion.Toggle as={Button} eventKey={treatment.id} variant="outline-link" className="product-toggle" onClick={() => setToggle(!toggle)}>
+                                <Accordion.Toggle as={Button} eventKey={treatment.id} variant="outline-link" className="btn-toggle" onClick={() => setToggle(!toggle)}>
                                     <i className={`fas fa-chevron-${toggle ? "up" : "down"}`}></i>
                                 </Accordion.Toggle>
                             </Card.Header>

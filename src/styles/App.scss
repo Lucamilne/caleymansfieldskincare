@@ -66,10 +66,8 @@ h2,
   overflow: hidden;
 }
 //marked for deletion
-hr {
-  border-top: 1px solid inherit;
-  width: 32px;
-  margin: 0;
+ul {
+  list-style: none;
 }
 .hollow {
   background-color: transparent;
