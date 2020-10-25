@@ -91,32 +91,6 @@ function ReadMore(props) {
                     <Container className="my-5">
                         <Row>
                             <Col lg={6}>
-                                <Accordion defaultActiveKey="0">
-                                    <Card.Header className="d-flex justify-content-between">
-                                        <span>Details</span>
-                                        <Accordion.Toggle as={Button} eventKey="0" variant="outline-link" className="btn-toggle">
-                                            <i className="fas fa-chevron-down"></i>
-                                        </Accordion.Toggle>
-                                    </Card.Header>
-                                    <Accordion.Collapse eventKey="0">
-                                        <Card.Body className="faqs">
-                                            <h6 className="list-title">Results</h6>
-                                            <ul className="pl-3">
-                                                {technology[tech].faq.results.map((el, index) => (
-                                                    <li key={index}>{el}</li>
-                                                ))}
-                                            </ul>
-                                            <h6 className="list-title">Downtime</h6>
-                                            <ul className="pl-3">
-                                                <li>{technology[tech].faq.downtime}</li>
-                                            </ul>
-                                            <h6 className="list-title">Sessions</h6>
-                                            <ul className="pl-3">
-                                                <li>{technology[tech].faq.sessions}</li>
-                                            </ul>
-                                        </Card.Body>
-                                    </Accordion.Collapse>
-                                </Accordion>
                                 {technology[tech].video &&
                                     <Accordion defaultActiveKey="1">
                                         <Card.Header className="d-flex justify-content-between">
@@ -153,7 +127,22 @@ function ReadMore(props) {
                                 </Accordion>
                             </Col>
                             <Col lg={6}>
-
+                                <Card.Body className="faqs">
+                                    <h6 className="list-title">Results:</h6>
+                                    <ul className="pl-1">
+                                        {technology[tech].faq.results.map((el, index) => (
+                                            <li key={index}>{el}</li>
+                                        ))}
+                                    </ul>
+                                    <h6 className="list-title">Downtime:</h6>
+                                    <ul className="pl-1">
+                                        <li>{technology[tech].faq.downtime}</li>
+                                    </ul>
+                                    <h6 className="list-title">Sessions:</h6>
+                                    <ul className="mb-0 pl-1">
+                                        <li>{technology[tech].faq.sessions}</li>
+                                    </ul>
+                                </Card.Body>
                             </Col>
                         </Row>
                     </Container>

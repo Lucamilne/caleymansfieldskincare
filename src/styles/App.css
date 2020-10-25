@@ -22196,7 +22196,7 @@ a.text-link:hover, a.text-link:focus {
 }
 
 #read-more .modal-header i {
-  color: #FF9B9C;
+  color: #ffcece;
 }
 
 #read-more .card-header {
@@ -22216,8 +22216,8 @@ a.text-link:hover, a.text-link:focus {
   border-radius: 50%;
 }
 
-#read-more .faqs ul {
-  border-left: 2px solid #FF9B9C;
+#read-more .faqs {
+  border: 2px solid #FF9B9C;
 }
 
 #read-more .modal-body {
