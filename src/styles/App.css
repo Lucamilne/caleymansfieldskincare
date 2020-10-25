@@ -22207,7 +22207,7 @@ a.text-link:hover, a.text-link:focus {
 
 #read-more .list-title {
   font-weight: 700;
-  font-family: "Rubik", sans-serif;
+  text-transform: uppercase;
 }
 
 #read-more .btn-toggle {
@@ -22217,7 +22217,14 @@ a.text-link:hover, a.text-link:focus {
 }
 
 #read-more .faqs {
-  border: 2px solid #FF9B9C;
+  border: 0;
+  color: #fff;
+  border-radius: 0;
+  background-color: #FF9B9C;
+}
+
+#read-more .faqs .card-body {
+  border: 4px solid rgba(255, 255, 255, 0.5);
 }
 
 #read-more .modal-body {

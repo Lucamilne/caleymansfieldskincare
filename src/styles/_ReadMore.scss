@@ -28,7 +28,8 @@
   }
   .list-title {
     font-weight: 700;
-    font-family: "Rubik", sans-serif;
+    // font-family: "Rubik", sans-serif;
+    text-transform: uppercase;
   }
   .btn-toggle {
     height: 40px;
@@ -36,7 +37,13 @@
     border-radius: 50%;
   }
   .faqs {
-    border: 2px solid $thirdColor;
+    border: 0;
+    color: $lightColor;
+    border-radius: 0;
+    background-color: $thirdColor;
+  }
+  .faqs .card-body {
+    border: 4px solid rgba(255, 255, 255, 0.5)
   }
   .modal-body {
     background-color: #fff;

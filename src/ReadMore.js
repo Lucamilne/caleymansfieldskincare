@@ -112,36 +112,40 @@ function ReadMore(props) {
                             <Col lg={6}>
                                 <Accordion defaultActiveKey="2">
                                     <Card.Header className="d-flex justify-content-between">
-                                        <span>Description</span>
+                                        <span>Details</span>
                                         <Accordion.Toggle as={Button} eventKey="2" variant="outline-link" className="btn-toggle">
                                             <i className="fas fa-chevron-down"></i>
                                         </Accordion.Toggle>
                                     </Card.Header>
                                     <Accordion.Collapse eventKey="2">
-                                        <Card.Body>
-                                            <p>{technology[tech].introduction}</p>
-                                            <p>{technology[tech].description}</p>
-                                            <p>{technology[tech].summary}</p>
-                                        </Card.Body>
+                                        <>
+                                            <Card className="faqs p-3 mt-4">
+                                                <Card.Body>
+                                                    <h4 className="list-title">Results:</h4>
+                                                    <ul className="pl-3">
+                                                        {technology[tech].faq.results.map((el, index) => (
+                                                            <li key={index}>{el}</li>
+                                                        ))}
+                                                    </ul>
+                                                    <h4 className="list-title">Downtime:</h4>
+                                                    <ul className="pl-3">
+                                                        <li>{technology[tech].faq.downtime}</li>
+                                                    </ul>
+                                                    <h4 className="list-title">Sessions:</h4>
+                                                    <ul className="mb-0 pl-3">
+                                                        <li>{technology[tech].faq.sessions}</li>
+                                                    </ul>
+                                                </Card.Body>
+                                            </Card>
+                                        </>
                                     </Accordion.Collapse>
                                 </Accordion>
                             </Col>
-                            <Col lg={6}>
-                                <Card.Body className="faqs">
-                                    <h6 className="list-title">Results:</h6>
-                                    <ul className="pl-1">
-                                        {technology[tech].faq.results.map((el, index) => (
-                                            <li key={index}>{el}</li>
-                                        ))}
-                                    </ul>
-                                    <h6 className="list-title">Downtime:</h6>
-                                    <ul className="pl-1">
-                                        <li>{technology[tech].faq.downtime}</li>
-                                    </ul>
-                                    <h6 className="list-title">Sessions:</h6>
-                                    <ul className="mb-0 pl-1">
-                                        <li>{technology[tech].faq.sessions}</li>
-                                    </ul>
+                            <Col lg={12}>
+                                <Card.Body>
+                                    <p>{technology[tech].introduction}</p>
+                                    <p>{technology[tech].description}</p>
+                                    <p>{technology[tech].summary}</p>
                                 </Card.Body>
                             </Col>
                         </Row>
