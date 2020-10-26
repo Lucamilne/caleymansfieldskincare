@@ -19,8 +19,8 @@ const Products = () => {
             <h1 className="text-center mb-4">Treatments.</h1>
             <Row>
                 {treatments.map(treatment => (
-                    <Col lg={6} key={treatment.id}>
-                        <Accordion defaultActiveKey={treatment.id}>
+                    <Col lg={12} key={treatment.id}>
+                        <Accordion>
                             <Card.Header className="d-flex justify-content-between">
                                 <span>{treatment.header}</span>
                                 <Accordion.Toggle as={Button} eventKey={treatment.id} variant="outline-link" className="btn-toggle">
