@@ -1,17 +1,17 @@
 import React from "react";
-import { Modal, Container, Row, Col, Card, Accordion, Button } from "react-bootstrap"
-import geneoImage from "./images/technology/geneo.webp"
-import aliftImage from "./images/technology/alift.webp"
-import dermaluxImage from "./images/technology/dermalux.webp"
-import cooliftImage from "./images/technology/coolift.webp"
-import fusionImage from "./images/technology/fusion.webp"
+import { Modal, Container, Card } from "react-bootstrap"
+import geneoImage from "./images/technology/geneo.jpg"
+import aliftImage from "./images/technology/alift.jpg"
+import dermaluxImage from "./images/technology/dermalux.jpg"
+import cooliftImage from "./images/technology/coolift.jpg"
+import fusionImage from "./images/technology/fusion.jpg"
 
 const technology = {
     "Geneo": {
         title: "Geneo Facial Treatment Platform",
-        introduction: "The ultimate facial treatment platform for achieving a young, fresh and natural looking skin. It is the only device on the markey offering a unique combination of advanced technologies that work both on the outside and the inside of the skin.",
+        introduction: "The ultimate facial treatment platform for achieving a young, fresh and natural looking skin. It is the only device on the market offering a unique combination of advanced technologies that work both on the outside and the inside of the skin.",
         description: "Geneo offers effective treatments through encouraging the natural processes of skin rejuvenation. The power of natural oxygenation, complemented by the anti-aging effect of Tripollar RF, both further enhanced by Ultrasound, offer valuable advantages of immediately visible skin improvement and long-term rejuvenating effects.",
-        summary: "Geneo treatments can be offered to a wide variety of skin types, ages and needs, making it a perfect solution for ongoing maintenance of the skin, for targeted treatment of specific skin conditions, and for maintenance and enhancement of skin improvement following a surgical procedure.",
+        summary: "Geneo treatments can be offered to a wide variety of skin types, ages and needs, making it a perfect solution for ongoing maintenance of the skin and for targeted treatment of specific skin conditions.",
         img: { alt: "Geneo Machine", variableName: geneoImage },
         video: { type: "embedded", src: "https://www.youtube.com/embed/I0U5AddOYZs" },
         benefits: { title: "Geneo delivers four essential treatments simulataneously:", content: ["Dermis regeneration", "Increased collagen and elastin production", "Smooths and tightens skin", "Reduces fine lines and wrinkles", "Oxygenation", "Advanced exfoliation"] },
@@ -30,8 +30,8 @@ const technology = {
     "Dermalux Tri-wave LED": {
         title: "Dermalux Tri-wave LED",
         introduction: "Multi-Award winning Dermalux® LED Phototherapy is the leading, non-invasive treatment that harnesses the power of natural light for visibly radiant, rejuvenated and refined skin. Beautiful skin is achievable for everybody with Dermalux®. One treatment instantly energises skin cells to revitalise a dull and tired complexion. A course of treatment offers long lasting visible results, stimulating the skin’s natural rejuvenation and repair processes to speed up cell renewal, resolve problem skin conditions and promote vibrant healthy-looking skin.",
-        description: "The Dermalux® treatment is a relaxing, pain free experience with proven mood enhancing effects. Enjoy some luxury me-time as your skin absorbs the energising light to kick start cell regeneration and restore radiance. Each treatment lasts for around 20 minutes and with no downtime, you can simply get up and glow! As the light triggers a whole cascade of skin enhancing processes, the visible benefits continue even after the treatment has finished.",
-        summary: "We are all influenced by the Power of Light. Light has many positive effects on our bodies; it helps us to produce essential vitamin D, triggers growth, promotes wellbeing and makes our skin glow!",
+        description: "The Dermalux® treatment is a relaxing, pain free experience with proven mood enhancing effects. Enjoy some luxury me-time as your skin absorbs the energising light to kick start cell regeneration and restore radiance. Each treatment lasts for around 20 minutes and with no downtime. As the light triggers a whole cascade of skin enhancing processes, the visible benefits continue even after the treatment has finished.",
+        summary: "We are all influenced by the Power of Light. Light has many positive effects on our bodies; it helps us to produce essential vitamin D, triggers growth, promotes wellbeing and makes our skin glow. A powerplan course of 12 is available for £500, or £45 per session as a standalone.",
         img: { alt: "Dermalux Tri-wave LED Machine", variableName: dermaluxImage },
         video: { type: "embedded", src: "https://www.youtube.com/embed/Nwz53NRp4-M" },
         benefits: { title: "What are the benefits of Dermalux LED?", content: ["Increases cellular energy", "Calms redness", "Evens skin tone", "Revitalises and restores radiance", "Helps spot prone skin", "Improves clarity", "Heals eczema", "Boosts collagen and elastin", "Reduces fine lines and wrinkles"] },
@@ -39,9 +39,9 @@ const technology = {
     },
     "Coolift Gun": {
         title: "Coolift Gun Cryophoresis",
-        introduction: "The most spectacular and fast face lifting treatment to defy the passing time: 5 minutes to remove 10 years. It is a revolutionary registered system that shoots upon the facial tissues a strong CO2 flow, combining an extremely high concentration of atomized actives at a very high pressure and low temperature.",
-        description: "This treatment is ideal for anti-aging and adding luminosity to the skin. It contains Hyaluronic acid and tighteners. Suitable for all skin types. It is designed to easily and quickly treat the entire face. Achieving a general lifting effect that smoothes and illuminates the skin.",
-        summary: "£75 as a stand alone treatment.",
+        introduction: "The Coolifting gun is a needle free 4 minute treatment. It works by spraying the facial tissue or cellulite with a powerful C02 flow at a very low temperature and a high pressure. This low temperature initially causes blood vessels to constrict, then expand to increase temperature and prevent damage. This process has the secondary effect of increasing blood flow through the skin, bringing more red blood cells to the area which carry oxygen and assists in the removal of waste products.",
+        description: "The body naturally absorbs C02, so by pushing this gas out at high pressure mixed with a specialised HA serum, this cocktail of molecules begins to diffuse through the epidermis uniformly. The molecules swell and replenish natural hyaluronic levels. This plumps the skin from below; softening and flattening fine lines and wrinkles.",
+        summary: "This means improved skin elasticity, improved circulation, an encouragement of collagen production and repair, improved appearance of fine lines and wrinkles. £75 as a stand alone treatment.",
         img: { alt: "Coolift Gun", variableName: cooliftImage },
         video: null,
         benefits: { title: "What are the benefits of the Coolift Gun treatment?", content: ["Intense hydration", "Improves skin texture and quality", "Collagen stimulation", "Dermis regeneration", "Visible plumping and brightening effects"] },
@@ -54,7 +54,7 @@ const technology = {
         summary: "The Fusion Mesotherapy range includes products containing the latest generation of Growth Factors and Biomimetic Peptides. Used in conjunction with the Platinum Pen, it guarantees hygiene, safety, quality treatments and results.",
         img: { alt: "Fusion Platinum Pen", variableName: fusionImage },
         video: null,
-        benefits: { title: "What are the benefits to the Fusion Meso Platinum treatment?", content: ["Face rejuvenation", "Reduced wrinkles and expression lines", "Reverse visible aging", "Whitens skin", "Reduces cellulite"] },
+        benefits: { title: "What are the benefits to the Fusion Meso Platinum treatment?", content: ["Face rejuvenation", "Reduced wrinkles and expression lines", "Reverse visible aging", "Increases collagen and elastin production", "Improves skin texture and quality"] },
         faq: { results: ["Immediate", "Cumulative", "Long Lasting"], downtime: "12 - 24 hours", sessions: "1 treatment recommended every 2 weeks, 3-6 treatments in total" }
     }
 }
@@ -89,66 +89,19 @@ function ReadMore(props) {
             <Modal.Body className="tech-text-content">
                 {tech &&
                     <Container className="my-5">
-                        <Row>
-                            <Col lg={6}>
-                                {technology[tech].video &&
-                                    <Accordion defaultActiveKey="1">
-                                        <Card.Header className="d-flex justify-content-between">
-                                            <span>Watch</span>
-                                            <Accordion.Toggle as={Button} eventKey="1" variant="outline-link" className="btn-toggle">
-                                                <i className="fas fa-chevron-down"></i>
-                                            </Accordion.Toggle>
-                                        </Card.Header>
-                                        <Accordion.Collapse eventKey="1">
-                                            <Card.Body>
-                                                <div className="embed-responsive embed-responsive-16by9">
-                                                    <iframe title={technology[tech].title} className="embed-responsive-item" src={technology[tech].video.src} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                                                </div>
-                                            </Card.Body>
-                                        </Accordion.Collapse>
-                                    </Accordion>
-                                }
-                            </Col>
-                            <Col lg={6}>
-                                <Accordion defaultActiveKey="2">
-                                    <Card.Header className="d-flex justify-content-between">
-                                        <span>Details</span>
-                                        <Accordion.Toggle as={Button} eventKey="2" variant="outline-link" className="btn-toggle">
-                                            <i className="fas fa-chevron-down"></i>
-                                        </Accordion.Toggle>
-                                    </Card.Header>
-                                    <Accordion.Collapse eventKey="2">
-                                        <>
-                                            <Card className="faqs p-3 mt-4">
-                                                <Card.Body>
-                                                    <h4 className="list-title">Results:</h4>
-                                                    <ul className="pl-3">
-                                                        {technology[tech].faq.results.map((el, index) => (
-                                                            <li key={index}>{el}</li>
-                                                        ))}
-                                                    </ul>
-                                                    <h4 className="list-title">Downtime:</h4>
-                                                    <ul className="pl-3">
-                                                        <li>{technology[tech].faq.downtime}</li>
-                                                    </ul>
-                                                    <h4 className="list-title">Sessions:</h4>
-                                                    <ul className="mb-0 pl-3">
-                                                        <li>{technology[tech].faq.sessions}</li>
-                                                    </ul>
-                                                </Card.Body>
-                                            </Card>
-                                        </>
-                                    </Accordion.Collapse>
-                                </Accordion>
-                            </Col>
-                            <Col lg={12}>
-                                <Card.Body>
-                                    <p>{technology[tech].introduction}</p>
-                                    <p>{technology[tech].description}</p>
-                                    <p>{technology[tech].summary}</p>
-                                </Card.Body>
-                            </Col>
-                        </Row>
+                        <Card>
+                            {technology[tech].video &&
+                                <div className="embed-responsive embed-responsive-16by9 mb-4">
+                                    <iframe title={technology[tech].title} className="embed-responsive-item" src={technology[tech].video.src} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                </div>
+                            }
+                            <Card.Body className="description p-4">
+                                <h2 className="mb-4">About {tech}</h2>
+                                <p>{technology[tech].introduction}</p>
+                                <p>{technology[tech].description}</p>
+                                <p>{technology[tech].summary}</p>
+                            </Card.Body>
+                        </Card>
                     </Container>
                 }
             </Modal.Body>

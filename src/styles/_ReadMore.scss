@@ -21,6 +21,10 @@
   .modal-header i {
     color: $secondaryColor;
   }
+  .card {
+    border-radius: 0;
+    border: 0;
+  }
   .card-header {
     background-color: transparent;
     font-size: 1.5em;
@@ -36,6 +40,7 @@
     width: 40px;
     border-radius: 50%;
   }
+  //marked for deletion
   .faqs {
     border: 0;
     color: $lightColor;
@@ -44,6 +49,10 @@
   }
   .faqs .card-body {
     border: 4px solid rgba(255, 255, 255, 0.5)
+  }
+  //
+  .description {
+    background-color: $secondaryColor;
   }
   .modal-body {
     background-color: #fff;
@@ -82,6 +91,10 @@
     .modal-header {
       height: 40rem;
     }
+    // p {
+    //   font-size: 1.25em;
+    //   line-height: 1.75em;
+    // }
     .modal-img {
       position: absolute;
       top: 0;

@@ -22199,6 +22199,11 @@ a.text-link:hover, a.text-link:focus {
   color: #ffcece;
 }
 
+#read-more .card {
+  border-radius: 0;
+  border: 0;
+}
+
 #read-more .card-header {
   background-color: transparent;
   font-size: 1.5em;
@@ -22225,6 +22230,10 @@ a.text-link:hover, a.text-link:focus {
 
 #read-more .faqs .card-body {
   border: 4px solid rgba(255, 255, 255, 0.5);
+}
+
+#read-more .description {
+  background-color: #ffcece;
 }
 
 #read-more .modal-body {
