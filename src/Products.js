@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import ReadMore from "./ReadMore";
 import { Container, Accordion, Card, Button, Row, Col } from "react-bootstrap"
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
 
 const treatments = [
     { id: 1, header: "The Ultimate Skin Revival Treatment", description: "The luxurious relaxing signature facial delivers immediate results by:", services: ["Geneo", "A-Lift", "Dermalux Tri-wave LED", "Coolift Gun"], detail: "Using a selection of non-invasive technologies and advanced aesthetic products, each treatment is tailored to create efficacy for each and every client. A journey of skin improvement to feel and look years younger after just one treatment. This treatment may include the use of some or all the technologies listed below, depending on your skin type and requirements.", list: ["Stimulating collagen and elastin", "Increasing hydration levels", "Healing and enhancing skin health", "Charging up cell energy", "Oxygenating cells from within", "Lifting, shaping and firming the skin"], packages: [{ length: "70 minutes", price: "£145" }, { length: "105 minutes", price: "£205" }] },
@@ -49,10 +55,23 @@ const Products = () => {
                                         <div className="d-flex flex-column align-items-start">
                                             <p>Click on any technology below to learn more:</p>
                                             {treatment.services.map(service => (
-                                                <Button variant="outline-dark mb-1" key={service} onClick={() => {
-                                                    setModalShow(true)
-                                                    setClicked(service)
-                                                }}>{service}</Button>
+                                                <Router>
+                                                    <Link to="/Technology">
+                                                        <Button variant="outline-dark mb-1" key={service} onClick={() => {
+                                                            setModalShow(true)
+                                                            setClicked(service)
+                                                        }}>{service}</Button>
+                                                    </Link>
+                                                    <Switch>
+                                                        <Route path="/technology">
+                                                            <ReadMore
+                                                                show={modalShow}
+                                                                onHide={() => setModalShow(false)}
+                                                                clicked={clicked}
+                                                            />
+                                                        </Route>
+                                                    </Switch>
+                                                </Router>
                                             ))}
                                         </div>
                                     }
@@ -62,13 +81,7 @@ const Products = () => {
                     </Col>
                 ))}
             </Row>
-            <ReadMore
-                show={modalShow}
-                onHide={() => setModalShow(false)}
-                clicked={clicked}
-            />
         </Container>
-
     )
 }
 
