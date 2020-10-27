@@ -56,7 +56,7 @@ const Products = () => {
                                             <p>Click on any technology below to learn more:</p>
                                             {treatment.services.map(service => (
                                                 <Router>
-                                                    <Link to="/Technology">
+                                                    <Link to="/technology">
                                                         <Button variant="outline-dark mb-1" key={service} onClick={() => {
                                                             setModalShow(true)
                                                             setClicked(service)

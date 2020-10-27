@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Over+the+Rainbow&family=Playfair+Display:wght@400;700&family=Rubik:wght@100;200;300;400&display=swap");
 /*!
- * Bootstrap v4.5.2 (https://getbootstrap.com/)
+ * Bootstrap v4.5.3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -219,6 +219,7 @@ caption {
 
 th {
   text-align: inherit;
+  text-align: -webkit-match-parent;
 }
 
 label {
@@ -4110,6 +4111,7 @@ input[type="button"].btn-block {
   display: block;
   min-height: 1.5rem;
   padding-left: 1.5rem;
+  color-adjust: exact;
 }
 
 .custom-control-inline {
@@ -5752,6 +5754,7 @@ a.badge-link:focus, a.badge-link.focus {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 2;
   padding: 0.75rem 1.25rem;
   color: inherit;
 }
@@ -10869,7 +10872,7 @@ a.text-link:hover, a.text-link:focus {
 
 .text-break {
   word-break: break-word !important;
-  overflow-wrap: break-word !important;
+  word-wrap: break-word !important;
 }
 
 .text-reset {
@@ -11142,18 +11145,8 @@ a.text-link:hover, a.text-link:focus {
   }
 }
 
-.shapefill-alt {
-  -webkit-transform: scale(-1, -1);
-          transform: scale(-1, -1);
-}
-
-.bottom {
-  position: absolute;
-  bottom: 0;
-}
-
 /*!
- * Bootstrap v4.5.2 (https://getbootstrap.com/)
+ * Bootstrap v4.5.3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -11372,6 +11365,7 @@ caption {
 
 th {
   text-align: inherit;
+  text-align: -webkit-match-parent;
 }
 
 label {
@@ -15263,6 +15257,7 @@ input[type="button"].btn-block {
   display: block;
   min-height: 1.5rem;
   padding-left: 1.5rem;
+  color-adjust: exact;
 }
 
 .custom-control-inline {
@@ -16905,6 +16900,7 @@ a.badge-link:focus, a.badge-link.focus {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 2;
   padding: 0.75rem 1.25rem;
   color: inherit;
 }
@@ -22010,7 +22006,7 @@ a.text-link:hover, a.text-link:focus {
 
 .text-break {
   word-break: break-word !important;
-  overflow-wrap: break-word !important;
+  word-wrap: break-word !important;
 }
 
 .text-reset {
@@ -22168,6 +22164,37 @@ a.text-link:hover, a.text-link:focus {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
+}
+
+#about-me {
+  position: relative;
+}
+
+#about-me .modal-background {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+
+#about-me .backgrounds {
+  height: 100%;
+  width: 100%;
+}
+
+#about-me .backgrounds:nth-of-type(1) {
+  background-color: green;
+}
+
+#about-me .backgrounds:nth-of-type(2) {
+  background-color: yellow;
+}
+
+#about-me .backgrounds:nth-of-type(3) {
+  background-color: blue;
 }
 
 #read-more .modal-header {
@@ -22520,6 +22547,16 @@ footer ul:nth-of-type(2) {
 footer .favicon {
   border: 1px solid #fff;
   border-radius: 50%;
+}
+
+.shapefill-alt {
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
 }
 
 body {

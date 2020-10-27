@@ -1,5 +1,5 @@
 import React from "react";
-import { Modal } from "react-bootstrap"
+import { Modal, Card } from "react-bootstrap";
 
 const content = [
     "Skin and it’s wellbeing is Caley’s passion. With 20 years experience, combined with continuous learning and research, Caley offers innovative personalised skin revival facials from her private clinic in Marlow, Buckinghamshire.",
@@ -10,16 +10,21 @@ const content = [
 
 function AboutMe(props) {
     return (
-        <Modal {...props} aria-labelledby="contained-modal-title-vcenter" className="modal-fullscreen">
-            <Modal.Header closeButton>
-                <Modal.Title id="contained-modal-title-vcenter">
-                    About Caley Mansfield
-                </Modal.Title>
-            </Modal.Header>
+        <Modal {...props} aria-labelledby="contained-modal-title-vcenter" className="modal-fullscreen" id="about-me">
+            <div className="modal-background">
+                <div className="backgrounds"></div>
+                <div className="backgrounds"></div>
+                <div className="backgrounds"></div>
+            </div>
+            <Modal.Header closeButton></Modal.Header>
             <Modal.Body>
-                {content.map((el, i) => (
-                    <p key={i}>{el}</p>
-                ))}
+                <Card>
+                    <Card.Body>
+                        {content.map((el, i) => (
+                            <p key={i}>{el}</p>
+                        ))}
+                    </Card.Body>
+                </Card>
             </Modal.Body>
         </Modal>
     )

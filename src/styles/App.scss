@@ -13,8 +13,8 @@ $theme-colors: (
 @import "./Filter";
 @import "./Navigation";
 @import "./Hero";
-@import "./ShapeFill";
 @import "./Introduction";
+@import "./AboutMe";
 @import "./ReadMore";
 @import "./Services";
 @import "./Showcase";
@@ -22,6 +22,7 @@ $theme-colors: (
 @import "./Testimonials";
 @import "./ContactForm";
 @import "./Footer";
+@import "./ShapeFill";
 
 body {
   font-family: "Rubik", sans-serif;
