@@ -17,8 +17,9 @@ function AboutMe(props) {
                 <div className="backgrounds"></div>
             </div>
             <Modal.Header closeButton></Modal.Header>
-            <Modal.Body>
+            <Modal.Body className="d-flex justify-content-center align-items-center">
                 <Card>
+                    <Card.Title>About Caley</Card.Title>
                     <Card.Body>
                         {content.map((el, i) => (
                             <p key={i}>{el}</p>

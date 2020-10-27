@@ -54,25 +54,25 @@ const Products = () => {
                                     {treatment.services &&
                                         <div className="d-flex flex-column align-items-start">
                                             <p>Click on any technology below to learn more:</p>
-                                            {treatment.services.map(service => (
-                                                <Router>
-                                                    <Link to="/technology">
-                                                        <Button variant="outline-dark mb-1" key={service} onClick={() => {
+                                            <Router >
+                                                {treatment.services.map((service, index) => (
+                                                    <Link key={index} to="/technology">
+                                                        <Button variant="outline-dark mb-1" onClick={() => {
                                                             setModalShow(true)
                                                             setClicked(service)
                                                         }}>{service}</Button>
                                                     </Link>
-                                                    <Switch>
-                                                        <Route path="/technology">
-                                                            <ReadMore
-                                                                show={modalShow}
-                                                                onHide={() => setModalShow(false)}
-                                                                clicked={clicked}
-                                                            />
-                                                        </Route>
-                                                    </Switch>
-                                                </Router>
-                                            ))}
+                                                ))}
+                                                <Switch>
+                                                    <Route path="/technology">
+                                                        <ReadMore
+                                                            show={modalShow}
+                                                            onHide={() => setModalShow(false)}
+                                                            clicked={clicked}
+                                                        />
+                                                    </Route>
+                                                </Switch>
+                                            </Router>
                                         </div>
                                     }
                                 </Card.Body>

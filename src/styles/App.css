@@ -22170,6 +22170,10 @@ a.text-link:hover, a.text-link:focus {
   position: relative;
 }
 
+#about-me .modal-content {
+  background-color: transparent !important;
+}
+
 #about-me .modal-background {
   position: absolute;
   display: -webkit-box;
@@ -22183,18 +22187,52 @@ a.text-link:hover, a.text-link:focus {
 #about-me .backgrounds {
   height: 100%;
   width: 100%;
+  -webkit-animation: slide-down 600ms forwards ease-out;
+          animation: slide-down 600ms forwards ease-out;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+@-webkit-keyframes slide-down {
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+}
+
+@keyframes slide-down {
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
 }
 
 #about-me .backgrounds:nth-of-type(1) {
-  background-color: green;
+  background-image: url(../images/col1.jpg);
 }
 
 #about-me .backgrounds:nth-of-type(2) {
-  background-color: yellow;
+  background-image: url(../images/col2.jpg);
+  -webkit-animation-delay: 150ms;
+          animation-delay: 150ms;
 }
 
 #about-me .backgrounds:nth-of-type(3) {
-  background-color: blue;
+  background-image: url(../images/col3.jpg);
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+
+#about-me .card {
+  max-width: 700px;
 }
 
 #read-more .modal-header {
