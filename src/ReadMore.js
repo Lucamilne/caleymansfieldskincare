@@ -1,10 +1,15 @@
 import React from "react";
-import { Modal, Container, Card } from "react-bootstrap"
-import geneoImage from "./images/technology/geneo.jpg"
-import aliftImage from "./images/technology/alift.jpg"
-import dermaluxImage from "./images/technology/dermalux.jpg"
-import cooliftImage from "./images/technology/coolift.jpg"
-import fusionImage from "./images/technology/fusion.jpg"
+import { Modal, Container, Card } from "react-bootstrap";
+import geneoImage from "./images/technology/geneo.jpg";
+import aliftImage from "./images/technology/alift.jpg";
+import dermaluxImage from "./images/technology/dermalux.jpg";
+import cooliftImage from "./images/technology/coolift.jpg";
+import fusionImage from "./images/technology/fusion.jpg";
+import {
+    BrowserRouter as Router,
+    Route,
+    Link
+} from "react-router-dom";
 
 const technology = {
     "Geneo": {
@@ -64,7 +69,7 @@ function ReadMore(props) {
 
     return (
         <Modal {...props} aria-labelledby="contained-modal-title-vcenter" size="xl" id="read-more">
-            <Modal.Header closeButton className="modal-close-btn">
+            <Modal.Header className="modal-close-btn">
                 {tech &&
                     <>
                         <img
@@ -85,6 +90,21 @@ function ReadMore(props) {
                         </Container>
                     </>
                 }
+                <Router>
+                    <Link to="/">
+                        <button
+                            className='close'
+                            aria-label={props['aria-label'] || 'Close'} //eslint-disable-line react/prop-types
+                            onClick={props.onHide}
+                            style={{ margin: -2 }}
+                        >
+                            <span aria-hidden="true">
+                                &times;
+                             </span>
+                        </button>
+                    </Link>
+                    <Route path="/" />
+                </Router>
             </Modal.Header>
             <Modal.Body className="tech-text-content">
                 {tech &&

@@ -1,5 +1,10 @@
 import React from "react";
 import { Modal, Card } from "react-bootstrap";
+import {
+    BrowserRouter as Router,
+    Route,
+    Link
+} from "react-router-dom";
 
 const content = [
     "Skin and it’s wellbeing is Caley’s passion. With 20 years experience, combined with continuous learning and research, Caley offers innovative personalised skin revival facials from her private clinic in Marlow, Buckinghamshire.",
@@ -16,14 +21,32 @@ function AboutMe(props) {
                 <div className="backgrounds"></div>
                 <div className="backgrounds"></div>
             </div>
-            <Modal.Header closeButton></Modal.Header>
+            <Modal.Header>
+                <Router>
+                    <Link to="/">
+                        <button
+                            className='close'
+                            aria-label={props['aria-label'] || 'Close'} //eslint-disable-line react/prop-types
+                            onClick={props.onHide}
+                            style={{ margin: -2 }}
+                        >
+                            <span aria-hidden="true">
+                                &times;
+                             </span>
+                        </button>
+                    </Link>
+                    <Route path="/" />
+                </Router>
+            </Modal.Header>
             <Modal.Body className="d-flex justify-content-center align-items-center">
-                <Card>
-                    <Card.Title>About Caley</Card.Title>
+                <Card className="shadow">
                     <Card.Body>
-                        {content.map((el, i) => (
-                            <p key={i}>{el}</p>
-                        ))}
+                        <Card.Title>Caley Mansfield Skin Revival Specialist.</Card.Title>
+                        <Card.Text>
+                            {content.map((el, i) => (
+                                <p key={i}>{el}</p>
+                            ))}
+                        </Card.Text>
                     </Card.Body>
                 </Card>
             </Modal.Body>

@@ -22166,8 +22166,10 @@ a.text-link:hover, a.text-link:focus {
   }
 }
 
-#about-me {
+#about-me .modal-header {
   position: relative;
+  width: 100%;
+  border: 0;
 }
 
 #about-me .modal-content {
@@ -22187,22 +22189,24 @@ a.text-link:hover, a.text-link:focus {
 #about-me .backgrounds {
   height: 100%;
   width: 100%;
-  -webkit-animation: slide-down 600ms forwards ease-out;
-          animation: slide-down 600ms forwards ease-out;
+  -webkit-animation: slide-down 600ms forwards ease;
+          animation: slide-down 600ms forwards ease;
+  background-repeat: no-repeat;
+  background-position: center;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-transform: translateY(-10%);
           transform: translateY(-10%);
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
+  -webkit-filter: blur(8px);
+          filter: blur(8px);
 }
 
 @-webkit-keyframes slide-down {
   to {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
   }
 }
 
@@ -22210,29 +22214,31 @@ a.text-link:hover, a.text-link:focus {
   to {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
   }
 }
 
 #about-me .backgrounds:nth-of-type(1) {
-  background-image: url(../images/col1.jpg);
+  background-image: url(../images/col3b.jpg);
 }
 
 #about-me .backgrounds:nth-of-type(2) {
-  background-image: url(../images/col2.jpg);
-  -webkit-animation-delay: 150ms;
-          animation-delay: 150ms;
+  background-image: url(../images/col1b.jpeg);
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
 }
 
 #about-me .backgrounds:nth-of-type(3) {
-  background-image: url(../images/col3.jpg);
-  -webkit-animation-delay: 300ms;
-          animation-delay: 300ms;
+  background-image: url(../images/col2b.jpeg);
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
 }
 
 #about-me .card {
   max-width: 700px;
+  border: 0;
+  border-radius: 0;
 }
 
 #read-more .modal-header {
@@ -22246,14 +22252,6 @@ a.text-link:hover, a.text-link:focus {
       -ms-flex-direction: column;
           flex-direction: column;
   border: 0;
-}
-
-#read-more .modal-content .close {
-  outline: none;
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin: 0;
 }
 
 #read-more .modal-content ul {
@@ -22684,6 +22682,14 @@ a:link, a:visited, a:hover, a:active {
   border-radius: 0;
   border: 0;
   padding: 0;
+}
+
+.close {
+  outline: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0;
 }
 
 @media (min-width: 576px) {
