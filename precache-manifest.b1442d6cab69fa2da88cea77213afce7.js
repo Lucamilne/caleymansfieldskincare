@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "076c3cda788c6e72899ebf251d098f3c",
+    "revision": "3f2fb843cdf4d2b091494f5e2d033753",
     "url": "/caleymansfieldskincare/index.html"
   },
   {
-    "revision": "546b2ec333fe9b54c43f",
-    "url": "/caleymansfieldskincare/static/css/main.49d6eee2.chunk.css"
+    "revision": "3461133a91c446f391c7",
+    "url": "/caleymansfieldskincare/static/css/main.9fbd8b4e.chunk.css"
   },
   {
     "revision": "71170e1bb400eca57eae",
@@ -16,16 +16,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/caleymansfieldskincare/static/js/2.da19b526.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "546b2ec333fe9b54c43f",
-    "url": "/caleymansfieldskincare/static/js/main.9f5b3ba8.chunk.js"
+    "revision": "3461133a91c446f391c7",
+    "url": "/caleymansfieldskincare/static/js/main.2a642dcb.chunk.js"
   },
   {
     "revision": "983ab79c665a0a817d51",
     "url": "/caleymansfieldskincare/static/js/runtime-main.bd8c4d50.js"
-  },
-  {
-    "revision": "5a61037b2e4a714d2c10423df645777d",
-    "url": "/caleymansfieldskincare/static/media/10.5a61037b.png"
   },
   {
     "revision": "5fa66dfd2576538f7e5333bb2ad3c235",
@@ -40,12 +36,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/caleymansfieldskincare/static/media/background2.e7a1c2c7.jpg"
   },
   {
-    "revision": "f8ad219e90021419431e14f2264717ac",
-    "url": "/caleymansfieldskincare/static/media/col1b.f8ad219e.jpeg"
+    "revision": "e13254e60c5baf6bb3e34f454c381781",
+    "url": "/caleymansfieldskincare/static/media/col1b.e13254e6.jpg"
   },
   {
-    "revision": "7fcbf7b95b812d9a99aacd7c88ba216b",
-    "url": "/caleymansfieldskincare/static/media/col2b.7fcbf7b9.jpeg"
+    "revision": "dfc0cb682fbd2574da8022668710c61a",
+    "url": "/caleymansfieldskincare/static/media/col2b.dfc0cb68.jpg"
   },
   {
     "revision": "14fa7e870ac02a54ab0f06200838fd04",
@@ -76,11 +72,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/caleymansfieldskincare/static/media/logo_fff.d38c5324.png"
   },
   {
-    "revision": "6862fd4556e3848d6a43bf4e63f946b6",
-    "url": "/caleymansfieldskincare/static/media/mobile-hero.6862fd45.jpg"
+    "revision": "18a5a7cf2fad4ac5c2e7ddcb1bf10840",
+    "url": "/caleymansfieldskincare/static/media/mobile-hero.18a5a7cf.jpg"
   },
   {
     "revision": "34006f386c448e5752eaffeb1a451d6b",
     "url": "/caleymansfieldskincare/static/media/routine2.34006f38.mp4"
+  },
+  {
+    "revision": "7fef962427bd12c9ffb002e4dd829c3b",
+    "url": "/caleymansfieldskincare/static/media/sketch.7fef9624.png"
   }
 ]);
