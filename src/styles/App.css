@@ -10967,14 +10967,6 @@ a.text-link:hover, a.text-link:focus {
   }
 }
 
-.filter {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.25);
-  z-index: 8;
-}
-
 .nav__menu {
   position: absolute;
   top: 0;
@@ -11046,13 +11038,6 @@ a.text-link:hover, a.text-link:focus {
   right: 15px;
 }
 
-#hero {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 0.8rem;
-  color: #fff;
-}
-
 #hero img {
   width: 100%;
 }
@@ -11062,81 +11047,6 @@ a.text-link:hover, a.text-link:focus {
      object-fit: cover;
   width: 100%;
   height: 100vh;
-}
-
-#hero .postcard__wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-#hero .postcard {
-  border-radius: 8px;
-  background-color: transparent;
-  border: 1px rgba(255, 255, 255, 0.5) solid;
-}
-
-#hero .postcard ::-webkit-input-placeholder {
-  color: white;
-}
-
-#hero .postcard :-ms-input-placeholder {
-  color: white;
-}
-
-#hero .postcard ::-ms-input-placeholder {
-  color: white;
-}
-
-#hero .postcard ::placeholder {
-  color: white;
-}
-
-#hero .postcard .card,
-#hero .postcard input,
-#hero .postcard textarea {
-  background-color: transparent;
-  border: none;
-  color: white;
-}
-
-#hero .postcard .form-group {
-  width: 100%;
-}
-
-#hero .postcard input,
-#hero .postcard textarea {
-  resize: none;
-  border-bottom: 1px rgba(255, 255, 255, 0.8) solid;
-}
-
-#hero .postcard button {
-  border-radius: 4px;
-  text-transform: uppercase;
-}
-
-#hero .filter {
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.4)), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(180deg, rgba(34, 34, 34, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
-}
-
-#hero .hero__text {
-  bottom: 0;
-  width: 100%;
-  color: #fff;
-}
-
-#hero .hero__column {
-  height: 100%;
-}
-
-#hero .hero__column-center {
-  font-size: 2rem;
 }
 
 @media (min-width: 992px) {
@@ -22225,8 +22135,7 @@ a.text-link:hover, a.text-link:focus {
           animation: slide-down 500ms forwards ease;
   background-repeat: no-repeat;
   background-position: center;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background-size: cover;
   -webkit-filter: blur(16px);
           filter: blur(16px);
 }
@@ -22251,14 +22160,14 @@ a.text-link:hover, a.text-link:focus {
 }
 
 #about-me .backgrounds:nth-of-type(2) {
-  background-image: url(../images/col1b.jpeg);
+  background-image: url(../images/col1b.jpg);
   -webkit-animation-delay: 100ms;
           animation-delay: 100ms;
   display: none;
 }
 
 #about-me .backgrounds:nth-of-type(3) {
-  background-image: url(../images/col2b.jpeg);
+  background-image: url(../images/col2b.jpg);
   -webkit-animation-delay: 200ms;
           animation-delay: 200ms;
 }
@@ -22666,6 +22575,7 @@ footer .favicon {
 .bottom {
   position: absolute;
   bottom: 0;
+  left: 0;
 }
 
 body {
@@ -22721,6 +22631,15 @@ h2,
 
 ul {
   list-style: none;
+}
+
+.gradient-filter {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.4)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(180deg, rgba(34, 34, 34, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .hollow {

@@ -41,7 +41,7 @@
     animation: slide-down 500ms forwards ease;
     background-repeat: no-repeat;
     background-position: center;
-    object-fit: cover;
+    background-size: cover;
     filter: blur(16px);
   }
   @keyframes slide-down {
@@ -55,12 +55,12 @@
     display: none;
   }
   .backgrounds:nth-of-type(2) {
-    background-image: url(../images/col1b.jpeg);
+    background-image: url(../images/col1b.jpg);
     animation-delay: 100ms;
     display: none;
   }
   .backgrounds:nth-of-type(3) {
-    background-image: url(../images/col2b.jpeg);
+    background-image: url(../images/col2b.jpg);
     animation-delay: 200ms;
   }
   @include media-breakpoint-up(lg) {

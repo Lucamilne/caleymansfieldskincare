@@ -18,7 +18,7 @@ const Sketch = () => {
     const { ref, inView } = useInView(options);
 
     return (
-        <Image ref={ref} className={`fade-in from-right ${inView ? 'appear' : ''}`} fluid src={require("./images/10.png")} />
+        <Image ref={ref} className={`fade-in from-right ${inView ? 'appear' : ''}`} fluid src={require("./images/sketch.png")} />
     );
 };
 

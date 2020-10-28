@@ -10,7 +10,7 @@ $theme-colors: (
 );
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
-@import "./Filter";
+// @import "./Filter";
 @import "./Navigation";
 @import "./Hero";
 @import "./Introduction";
@@ -69,6 +69,17 @@ h2,
 //marked for deletion
 ul {
   list-style: none;
+}
+.gradient-filter {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(34, 34, 34, 0.4) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 .hollow {
   background-color: transparent;

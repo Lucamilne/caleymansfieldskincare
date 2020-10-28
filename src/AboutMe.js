@@ -20,6 +20,7 @@ function AboutMe(props) {
                 <div className="backgrounds"></div>
                 <div className="backgrounds"></div>
                 <div className="backgrounds"></div>
+                <div className="gradient-filter"></div>
             </div>
             <Modal.Header>
                 <Router>
