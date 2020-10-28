@@ -72,6 +72,7 @@
     margin: $spacer;
     border-radius: 50%;
     border: 2px solid #fff;
+    display: none;
   }
   .container {
     height: 100%;
@@ -84,6 +85,9 @@
     .modal-header {
       height: 40rem;
     }
+    .cm-icon {
+      display: block;
+    }
     .modal-img {
       position: absolute;
       top: 0;
@@ -91,12 +95,23 @@
       max-width: 50%;
       clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
     }
+    .animate-right {
+      animation: slide-right 600ms ease;
+    }
     .animate-left {
       animation: slide-left 600ms ease;
     }
     @keyframes slide-left {
       from {
         transform: translateX(-10%);
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
+    @keyframes slide-right {
+      from {
+        transform: translateX(10%);
       }
       to {
         transform: translateX(0);

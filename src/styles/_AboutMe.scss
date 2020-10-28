@@ -13,21 +13,21 @@
     height: 100%;
     width: 100%;
     padding: 0;
+    background-color: rgba(0,0,0,0.5);
   }
   .backgrounds {
     height: 100%;
     width: 100%;
-    animation: slide-down 600ms forwards ease;
+    animation: slide-down 500ms forwards ease;
     background-repeat: no-repeat;
     background-position: center;
     object-fit: cover;
-    transform: translateY(-10%);
-    filter: blur(8px);
+    filter: blur(16px);
   }
   @keyframes slide-down {
     to {
-      transform: translateY(0);
-      filter: blur(1px);
+      // transform: translateY(0);
+      filter: blur(0px);
     }
   }
   .backgrounds:nth-of-type(1) {
@@ -44,14 +44,27 @@
     animation-delay: 200ms;
   }
   .card {
-    max-width: 700px;
+    max-width: 750px;
     border: 0;
+    padding: $spacer;
     border-radius: 0;
   }
   @include media-breakpoint-up(lg) {
     .backgrounds:nth-of-type(1),
     .backgrounds:nth-of-type(2) {
       display: block;
+    }
+    .backgrounds {
+      transform: translateY(-10%);
+    }
+    @keyframes slide-down {
+      to {
+        transform: translateY(0);
+        filter: blur(0px);
+      }
+    }
+    .card {
+      padding: $spacer * 2;
     }
   }
 }

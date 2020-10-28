@@ -22184,38 +22184,33 @@ a.text-link:hover, a.text-link:focus {
   height: 100%;
   width: 100%;
   padding: 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 #about-me .backgrounds {
   height: 100%;
   width: 100%;
-  -webkit-animation: slide-down 600ms forwards ease;
-          animation: slide-down 600ms forwards ease;
+  -webkit-animation: slide-down 500ms forwards ease;
+          animation: slide-down 500ms forwards ease;
   background-repeat: no-repeat;
   background-position: center;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transform: translateY(-10%);
-          transform: translateY(-10%);
-  -webkit-filter: blur(8px);
-          filter: blur(8px);
+  -webkit-filter: blur(16px);
+          filter: blur(16px);
 }
 
 @-webkit-keyframes slide-down {
   to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-filter: blur(1px);
-            filter: blur(1px);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
   }
 }
 
 @keyframes slide-down {
   to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-filter: blur(1px);
-            filter: blur(1px);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
   }
 }
 
@@ -22238,8 +22233,9 @@ a.text-link:hover, a.text-link:focus {
 }
 
 #about-me .card {
-  max-width: 700px;
+  max-width: 750px;
   border: 0;
+  padding: 1rem;
   border-radius: 0;
 }
 
@@ -22247,6 +22243,29 @@ a.text-link:hover, a.text-link:focus {
   #about-me .backgrounds:nth-of-type(1),
   #about-me .backgrounds:nth-of-type(2) {
     display: block;
+  }
+  #about-me .backgrounds {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+  @-webkit-keyframes slide-down {
+    to {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+    }
+  }
+  @keyframes slide-down {
+    to {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+    }
+  }
+  #about-me .card {
+    padding: 2rem;
   }
 }
 
@@ -22352,6 +22371,7 @@ a.text-link:hover, a.text-link:focus {
   margin: 1rem;
   border-radius: 50%;
   border: 2px solid #fff;
+  display: none;
 }
 
 #read-more .container {
@@ -22367,6 +22387,9 @@ a.text-link:hover, a.text-link:focus {
   #read-more .modal-header {
     height: 40rem;
   }
+  #read-more .cm-icon {
+    display: block;
+  }
   #read-more .modal-img {
     position: absolute;
     top: 0;
@@ -22374,6 +22397,10 @@ a.text-link:hover, a.text-link:focus {
     max-width: 50%;
     -webkit-clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
             clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  #read-more .animate-right {
+    -webkit-animation: slide-right 600ms ease;
+            animation: slide-right 600ms ease;
   }
   #read-more .animate-left {
     -webkit-animation: slide-left 600ms ease;
@@ -22393,6 +22420,26 @@ a.text-link:hover, a.text-link:focus {
     from {
       -webkit-transform: translateX(-10%);
               transform: translateX(-10%);
+    }
+    to {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @-webkit-keyframes slide-right {
+    from {
+      -webkit-transform: translateX(10%);
+              transform: translateX(10%);
+    }
+    to {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @keyframes slide-right {
+    from {
+      -webkit-transform: translateX(10%);
+              transform: translateX(10%);
     }
     to {
       -webkit-transform: translateX(0);

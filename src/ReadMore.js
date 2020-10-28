@@ -77,7 +77,7 @@ function ReadMore(props) {
                             alt={technology[tech].img.alt}
                             src={technology[tech].img.variableName}
                         />
-                        <img src={require("./images/icon.ico")} alt="Caley Mansfield Logo" className="position-absolute cm-icon" />
+                        <img src={require("./images/icon.ico")} alt="Caley Mansfield Logo" className="position-absolute cm-icon shadow" />
                         <Container className="position-relative d-flex align-items-center">
                             <div className="animate-left">
                                 <h1 className="my-4">{technology[tech].title}</h1>
