@@ -42,11 +42,9 @@ function AboutMe(props) {
                 <Card className="shadow">
                     <Card.Body>
                         <Card.Title>Caley Mansfield Skin Revival Specialist.</Card.Title>
-                        <Card.Text>
-                            {content.map((el, i) => (
-                                <p key={i}>{el}</p>
-                            ))}
-                        </Card.Text>
+                        {content.map((el, i) => (
+                            <p key={i}>{el}</p>
+                        ))}
                     </Card.Body>
                 </Card>
             </Modal.Body>
