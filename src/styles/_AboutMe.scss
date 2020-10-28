@@ -1,49 +1,57 @@
 #about-me {
-    .modal-header {
-        position: relative;
-        width: 100%;
-        border: 0;    
+  .modal-header {
+    position: relative;
+    width: 100%;
+    border: 0;
+  }
+  .modal-content {
+    background-color: transparent !important;
+  }
+  .modal-background {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+  }
+  .backgrounds {
+    height: 100%;
+    width: 100%;
+    animation: slide-down 600ms forwards ease;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    transform: translateY(-10%);
+    filter: blur(8px);
+  }
+  @keyframes slide-down {
+    to {
+      transform: translateY(0);
+      filter: blur(1px);
     }
-    .modal-content {
-        background-color: transparent !important;
-    }
-    .modal-background {
-        position: absolute;
-        display: flex;
-        height: 100%;
-        width: 100%;
-        padding: 0;
-    }
-    .backgrounds {
-        height: 100%;
-        width: 100%;
-        animation: slide-down 600ms forwards ease;
-        background-repeat: no-repeat;
-        background-position: center;
-        object-fit: cover;
-        transform: translateY(-10%);
-        filter: blur(8px);
-    }
-    @keyframes slide-down {
-        to {
-            transform: translateY(0);
-            filter: blur(1px);
-        }
-    }
-    .backgrounds:nth-of-type(1) {
-        background-image: url(../images/col3b.jpg);
-    }
+  }
+  .backgrounds:nth-of-type(1) {
+    background-image: url(../images/col3b.jpg);
+    display: none;
+  }
+  .backgrounds:nth-of-type(2) {
+    background-image: url(../images/col1b.jpeg);
+    animation-delay: 100ms;
+    display: none;
+  }
+  .backgrounds:nth-of-type(3) {
+    background-image: url(../images/col2b.jpeg);
+    animation-delay: 200ms;
+  }
+  .card {
+    max-width: 700px;
+    border: 0;
+    border-radius: 0;
+  }
+  @include media-breakpoint-up(lg) {
+    .backgrounds:nth-of-type(1),
     .backgrounds:nth-of-type(2) {
-        background-image: url(../images/col1b.jpeg);
-        animation-delay: 100ms;
+      display: block;
     }
-    .backgrounds:nth-of-type(3) {
-        background-image: url(../images/col2b.jpeg);
-        animation-delay: 200ms;
-    }
-    .card {
-        max-width: 700px;
-        border: 0;
-        border-radius: 0;
-    }
+  }
 }
