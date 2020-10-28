@@ -109,13 +109,13 @@ function ReadMore(props) {
             <Modal.Body className="tech-text-content">
                 {tech &&
                     <Container className="my-5">
+                        {technology[tech].video &&
+                            <div className="embed-responsive embed-responsive-16by9 mb-4">
+                                <iframe title={technology[tech].title} className="embed-responsive-item" src={technology[tech].video.src} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                            </div>
+                        }
                         <Card>
-                            {technology[tech].video &&
-                                <div className="embed-responsive embed-responsive-16by9 mb-4">
-                                    <iframe title={technology[tech].title} className="embed-responsive-item" src={technology[tech].video.src} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                                </div>
-                            }
-                            <Card.Body className="description p-4">
+                            <Card.Body className="description">
                                 <h2 className="mb-4">About {tech}</h2>
                                 <p>{technology[tech].introduction}</p>
                                 <p>{technology[tech].description}</p>

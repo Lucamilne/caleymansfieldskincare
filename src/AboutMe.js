@@ -41,7 +41,8 @@ function AboutMe(props) {
             <Modal.Body className="d-flex justify-content-center align-items-center">
                 <Card className="shadow">
                     <Card.Body>
-                        <Card.Title>Caley Mansfield Skin Revival Specialist.</Card.Title>
+                        <h1 className="mb-2">Caley Mansfield</h1>
+                        <h3 className="mb-4">Skin Revival Specialist.</h3>
                         {content.map((el, i) => (
                             <p key={i}>{el}</p>
                         ))}

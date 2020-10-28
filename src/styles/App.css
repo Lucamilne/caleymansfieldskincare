@@ -22172,6 +22172,37 @@ a.text-link:hover, a.text-link:focus {
   border: 0;
 }
 
+#about-me .card {
+  max-width: 750px;
+  border: 0;
+  border-radius: 0;
+  opacity: 0;
+  -webkit-animation: fade-in 600ms forwards ease;
+          animation: fade-in 600ms forwards ease;
+}
+
+@-webkit-keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+
+#about-me h1, #about-me h2, #about-me h3 {
+  text-align: center;
+}
+
+#about-me h3 {
+  font-family: "Rubik", sans-serif;
+  color: #FF9B9C;
+  font: 300;
+}
+
 #about-me .modal-content {
   background-color: transparent !important;
 }
@@ -22230,13 +22261,6 @@ a.text-link:hover, a.text-link:focus {
   background-image: url(../images/col2b.jpeg);
   -webkit-animation-delay: 200ms;
           animation-delay: 200ms;
-}
-
-#about-me .card {
-  max-width: 750px;
-  border: 0;
-  padding: 1rem;
-  border-radius: 0;
 }
 
 @media (min-width: 992px) {
@@ -22312,19 +22336,9 @@ a.text-link:hover, a.text-link:focus {
   border-radius: 50%;
 }
 
-#read-more .faqs {
-  border: 0;
-  color: #fff;
-  border-radius: 0;
-  background-color: #FF9B9C;
-}
-
-#read-more .faqs .card-body {
-  border: 4px solid rgba(255, 255, 255, 0.5);
-}
-
 #read-more .description {
-  background-color: #ffcece;
+  border-top: 2px solid #ffcece;
+  border-bottom: 2px solid #ffcece;
 }
 
 #read-more .modal-body {
@@ -22397,6 +22411,9 @@ a.text-link:hover, a.text-link:focus {
     max-width: 50%;
     -webkit-clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
             clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  #read-more .description {
+    padding: 3.25rem;
   }
   #read-more .animate-right {
     -webkit-animation: slide-right 600ms ease;

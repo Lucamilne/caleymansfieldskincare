@@ -4,6 +4,26 @@
     width: 100%;
     border: 0;
   }
+  .card {
+    max-width: 750px;
+    border: 0;
+    border-radius: 0;
+    opacity: 0;
+    animation: fade-in 600ms forwards ease;
+  }
+  @keyframes fade-in {
+    to {
+      opacity: 1;
+    }
+  }
+  h1, h2, h3 {
+    text-align: center;
+  }
+  h3 {
+    font-family: "Rubik", sans-serif;
+    color: $thirdColor;
+    font: 300;
+  }
   .modal-content {
     background-color: transparent !important;
   }
@@ -42,12 +62,6 @@
   .backgrounds:nth-of-type(3) {
     background-image: url(../images/col2b.jpeg);
     animation-delay: 200ms;
-  }
-  .card {
-    max-width: 750px;
-    border: 0;
-    padding: $spacer;
-    border-radius: 0;
   }
   @include media-breakpoint-up(lg) {
     .backgrounds:nth-of-type(1),
