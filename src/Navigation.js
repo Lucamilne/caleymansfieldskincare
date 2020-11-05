@@ -11,8 +11,6 @@ class Navigation extends React.Component {
             email: "caley@skinrevivalspecialist.co.uk",
             number: "077976 962012"
         };
-
-        // This binding is necessary to make `this` work in the callback
         this.toggleMenu = this.toggleMenu.bind(this);
     }
 
@@ -50,7 +48,7 @@ class Navigation extends React.Component {
                     <Col md={6} lg={4}>
                         <Navbar.Brand href="#home" className="nav__section d-flex justify-content-center">
                             <Image
-                                src={require("./images/logo_fff.png")}
+                                src={require("./images/logo-alt_fff.png")}
                                 className="d-inline-block align-top"
                                 alt="Caley Mansfield Skin Revival logo"
                                 fluid

@@ -6,8 +6,8 @@ function Footer() {
         <footer className="d-flex flex-column align-items-center text-center">
 
             <div className="social-media py-5">
-                <i title="Coming Soon" className="fab fa-facebook mx-1"></i>
-                <i title="Coming Soon" className="fab fa-instagram-square mx-1"></i>
+                <a href="https://www.facebook.com/Caley-Mansfield-Skin-Revival-Specialist-108221147618411/"><i title="Facebook" className="fab fa-facebook mx-1"></i></a>
+                <a href="https://www.instagram.com/skinrevivalspecialist/"><i title="Instagram" className="fab fa-instagram-square mx-1"></i></a>
                 <i title="Coming Soon" className="fab fa-linkedin mx-1"></i>
             </div>
             <div className="footer-bottom pt-5">
@@ -20,7 +20,7 @@ function Footer() {
                         <li>©{new Date().getFullYear()} Caley Mansfield Skin Revival</li>
                         <li>All rights reserved</li>
                     </ul>
-                    <img src={require("./images/icon.ico")} alt="Caley Mansfield Logo" className="favicon mt-2 mb-4"/>
+                    <img src={require("./images/icon.ico")} alt="Caley Mansfield Logo" className="favicon mt-2 mb-4" />
                 </Container>
             </div>
         </footer>
