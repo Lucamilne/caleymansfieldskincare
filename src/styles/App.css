@@ -10992,6 +10992,7 @@ a.text-link:hover, a.text-link:focus {
 
 .nav__menu-btn {
   position: absolute;
+  left: 1rem;
 }
 
 .open {
