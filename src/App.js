@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        <Route exact path="/" children={<Home />} />
+        <Route exact path={baseUrl} children={<Home />} />
         <Route path={baseUrl + "/about"} children={<AboutMe />} />
         <Route path={baseUrl + "/technology/:id"} children={<ReadMore />} />
         <Route>{'404: not found'}</Route>

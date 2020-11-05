@@ -1,1 +1,1 @@
-export const baseUrl = process.env.NODE_ENV === 'development' ? '/' : 'caleymansfieldskincare/'
+export const baseUrl = process.env.NODE_ENV === 'development' ? '/' : '/caleymansfieldskincare'
