@@ -16,7 +16,7 @@ function App() {
         <Route exact path={baseUrl} children={<Home />} />
         <Route path={baseUrl + "/about"} children={<AboutMe />} />
         <Route path={baseUrl + "/technology/:id"} children={<ReadMore />} />
-        <Route>{'404: not found'}</Route>
+        <Route>{''}</Route>
       </Switch>
       {isModal && <Route path="/about" children={<AboutMe />} />}
       {isModal && <Route path="/technology/:id" children={<ReadMore />} />}

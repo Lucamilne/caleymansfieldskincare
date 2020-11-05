@@ -67,8 +67,8 @@ function ContactForm() {
                 <h1 className="text-center mb-4">Enquiries.</h1>
                 <p className="text-center mb-4">Fill out the form below to learn more.</p>
                 <Form noValidate validated={validated} onSubmit={handleSubmit}>
-                    <Row className="justify-content-center">
-                        <Col lg={9}>
+                    <Row>
+                        <Col lg>
                             <Form.Row>
                                 <Col sm>
                                     <Form.Group controlId="formName">
@@ -87,7 +87,67 @@ function ContactForm() {
                                         </Form.Control>
                                     </Form.Group>
                                 </Col>
+                                {/* <Col sm>
+                                    <Form.Group controlId="formGender">
+                                        <Form.Label>Gender</Form.Label>
+                                        <Form.Control as="select">
+                                            {options.gender.map((option, i) => (
+                                                <option key={i}>{option}</option>
+                                            ))}
+                                        </Form.Control>
+                                    </Form.Group>
+                                </Col> */}
                             </Form.Row>
+                            {/* <Form.Row>
+                                <Col>
+                                    <Form.Group>
+                                        <Form.Label>How would you describe your complexion?</Form.Label>
+                                        <Form.Control as="select">
+                                            {options.skinColor.map((option, i) => (
+                                                <option key={i}>{option}</option>
+                                            ))}
+                                        </Form.Control>
+                                    </Form.Group>
+                                </Col>
+                            </Form.Row> */}
+                            <Form.Row>
+                                <Col>
+                                    <Form.Group>
+                                        <Form.Label>How would you describe your skin?</Form.Label>
+                                        <Form.Control as="select">
+                                            {options.skinDescription.map((option, i) => (
+                                                <option key={i}>{option}</option>
+                                            ))}
+                                        </Form.Control>
+                                    </Form.Group>
+                                </Col>
+                            </Form.Row>
+                            <Form.Row>
+                                <Col>
+                                    <Form.Group>
+                                        <Form.Label>Check the concerns that apply to you:</Form.Label>
+                                        <div className="px-3 py-2">
+                                            {options.skinConcern.map((option, i) => (
+                                                <Form.Check type="checkbox" label={option} key={i} />
+                                            ))}
+                                        </div>
+                                    </Form.Group>
+                                </Col>
+                            </Form.Row>
+                        </Col>
+                        <Col lg>
+                            {/* <Form.Row>
+                                <Col>
+                                    <Form.Group>
+                                        <Form.Label>Check all that applies to your lifestyle:</Form.Label>
+                                        <div className="px-3 py-2">
+                                            {options.lifestyle.map((option, i) => (
+                                                <Form.Check type="checkbox" label={option} key={i} />
+                                            ))}
+                                        </div>
+                                    </Form.Group>
+                                </Col>
+                            </Form.Row> */}
                             <Form.Row>
                                 <Col>
                                     <Form.Group controlId="fromMessage">
