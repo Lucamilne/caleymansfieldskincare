@@ -12,9 +12,9 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        <Route exact path="/" children={<Home />} />
-        <Route path="/about" children={<AboutMe />} />
-        <Route path="/technology/:id" children={<ReadMore />} />
+        <Route exact path="/caleymansfieldskincare/" children={<Home />} />
+        <Route path="/caleymansfieldskincare/about" children={<AboutMe />} />
+        <Route path="/caleymansfieldskincare/technology/:id" children={<ReadMore />} />
         <Route>{'404: not found'}</Route>
       </Switch>
       {isModal && <Route path="/about" children={<AboutMe />} />}
