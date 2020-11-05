@@ -8,11 +8,13 @@ import fusionImage from "./images/technology/fusion.jpg";
 import {
     BrowserRouter as Router,
     Route,
-    Link
+    Link,
+    useHistory,
+    useParams
 } from "react-router-dom";
 
 const technology = {
-    "Geneo": {
+    "geneo": {
         title: "Geneo Facial Treatment Platform",
         introduction: "The ultimate facial treatment platform for achieving a young, fresh and natural looking skin. It is the only device on the market offering a unique combination of advanced technologies that work both on the outside and the inside of the skin.",
         description: "Geneo offers effective treatments through encouraging the natural processes of skin rejuvenation. The power of natural oxygenation, complemented by the anti-aging effect of Tripollar RF, both further enhanced by Ultrasound, offer valuable advantages of immediately visible skin improvement and long-term rejuvenating effects.",
@@ -22,7 +24,7 @@ const technology = {
         benefits: { title: "Geneo delivers four essential treatments simulataneously:", content: ["Dermis regeneration", "Increased collagen and elastin production", "Smooths and tightens skin", "Reduces fine lines and wrinkles", "Oxygenation", "Advanced exfoliation"] },
         faq: { results: ["Immediate", "Cumulative", "Long Lasting"], downtime: "None", sessions: "Included in bespoke treatments devised at consultation" }
     },
-    "A-Lift": {
+    "alift": {
         title: "A-lift Facial Treatment",
         introduction: "A-Lift is a highly-effective, non-invasive facial treatment that uses the latest technology to deliver proven results. The A-Lift machine uses three phases of microcurrent and two phases of nanocurrent technology to lift, tone, and re-energise the cells in the face and neck. A-Lift increases Adenosine Triphosphate (ATP) production within the cells to accelerate their metabolism.",
         description: "A-Lift with its dual current output of microcurrent and nanocurrent boosts ATP production by up to 500% as well as automatically monitoring and adjusting itself to synchronise with the skin’s own bio-electrical frequency. The current stimulates ATP production within the cells which effectively ‘supercharges’ the rate of their metabolism back to previous levels of youth.",
@@ -32,7 +34,7 @@ const technology = {
         benefits: { title: "What are the benefits of A-lift treatments?", content: ["Increases cellular energy", "Lifts and firms muscle tone", "Reduces fine lines and wrinkles", "Hydratation"] },
         faq: { results: ["Immediate", "Cumulative", "Long Lasting"], downtime: "None", sessions: "Included in bespoke treatments devised at consultation" }
     },
-    "Dermalux Tri-wave LED": {
+    "dermalux": {
         title: "Dermalux Tri-wave LED",
         introduction: "Multi-Award winning Dermalux® LED Phototherapy is the leading, non-invasive treatment that harnesses the power of natural light for visibly radiant, rejuvenated and refined skin. Beautiful skin is achievable for everybody with Dermalux®. One treatment instantly energises skin cells to revitalise a dull and tired complexion. A course of treatment offers long lasting visible results, stimulating the skin’s natural rejuvenation and repair processes to speed up cell renewal, resolve problem skin conditions and promote vibrant healthy-looking skin.",
         description: "The Dermalux® treatment is a relaxing, pain free experience with proven mood enhancing effects. Enjoy some luxury me-time as your skin absorbs the energising light to kick start cell regeneration and restore radiance. Each treatment lasts for around 20 minutes and with no downtime. As the light triggers a whole cascade of skin enhancing processes, the visible benefits continue even after the treatment has finished.",
@@ -42,7 +44,7 @@ const technology = {
         benefits: { title: "What are the benefits of Dermalux LED?", content: ["Increases cellular energy", "Calms redness", "Evens skin tone", "Revitalises and restores radiance", "Helps spot prone skin", "Improves clarity", "Heals eczema", "Boosts collagen and elastin", "Reduces fine lines and wrinkles"] },
         faq: { results: ["Immediate", "Cumulative", "Long Lasting"], downtime: "None", sessions: "Powerplan course of 12 for £500. Included in bespoke treatments devised at consultation" }
     },
-    "Coolift Gun": {
+    "coolift": {
         title: "Coolift Gun Cryophoresis",
         introduction: "The Coolifting gun is a needle free 4 minute treatment. It works by spraying the facial tissue or cellulite with a powerful C02 flow at a very low temperature and a high pressure. This low temperature initially causes blood vessels to constrict, then expand to increase temperature and prevent damage. This process has the secondary effect of increasing blood flow through the skin, bringing more red blood cells to the area which carry oxygen and assists in the removal of waste products.",
         description: "The body naturally absorbs C02, so by pushing this gas out at high pressure mixed with a specialised HA serum, this cocktail of molecules begins to diffuse through the epidermis uniformly. The molecules swell and replenish natural hyaluronic levels. This plumps the skin from below; softening and flattening fine lines and wrinkles.",
@@ -52,7 +54,7 @@ const technology = {
         benefits: { title: "What are the benefits of the Coolift Gun treatment?", content: ["Intense hydration", "Improves skin texture and quality", "Collagen stimulation", "Dermis regeneration", "Visible plumping and brightening effects"] },
         faq: { results: ["Immediate", "Cumulative"], downtime: "None", sessions: "A course of 3 in quick succession for £75 per session. Perfect for a special occassion. Included in bespoke treatments devised at consultation" }
     },
-    "Fusion Platinum Pen": {
+    "fusion": {
         title: "Fusion Meso Pen Platinum",
         introduction: "The Fusion Platinum pen is the ultimate device for Fractional Mesotherapy treatments. It encompasses many beneficial features, such as low noise vibration technology which provides clients with a better and more enjoyable experience. And high speed penetration, with 133 punctures per second to reduce discomfort.",
         description: "The disposable needles are 33g ultra sharp, and of the highest quality, encased in biocompatible medical plastic. The cartridges benefit from anti-back flow technology, to prevent product or bodily fluids entering the device and eliminating any chance of cross-contamination. Making the platinum pen one of the safest micro needling pens available.",
@@ -65,24 +67,30 @@ const technology = {
 }
 
 function ReadMore(props) {
-    const tech = props.clicked;
+    let history = useHistory();
+    let { id } = useParams();
+
+    let goBack = e => {
+        e.stopPropagation();
+        history.goBack();
+    };
 
     return (
-        <Modal {...props} aria-labelledby="contained-modal-title-vcenter" size="xl" id="read-more">
+        <Modal show={true} aria-labelledby="contained-modal-title-vcenter" size="xl" id="read-more">
             <Modal.Header className="modal-close-btn">
-                {tech &&
+                {id &&
                     <>
                         <img
                             className="modal-img"
-                            alt={technology[tech].img.alt}
-                            src={technology[tech].img.variableName}
+                            alt={technology[id].img.alt}
+                            src={technology[id].img.variableName}
                         />
                         <img src={require("./images/icon.ico")} alt="Caley Mansfield Logo" className="position-absolute cm-icon shadow" />
                         <Container className="position-relative d-flex align-items-center">
                             <div className="animate-left">
-                                <h1 className="my-4">{technology[tech].title}</h1>
+                                <h1 className="my-4">{technology[id].title}</h1>
                                 <ul className="mb-4">
-                                    {technology[tech].benefits.content.map(el => (
+                                    {technology[id].benefits.content.map(el => (
                                         <li className="d-flex align-items-center" key={el}><i className="fas fa-check mr-3"></i><div>{el}</div></li>
                                     ))}
                                 </ul>
@@ -95,7 +103,7 @@ function ReadMore(props) {
                         <button
                             className='close'
                             aria-label={props['aria-label'] || 'Close'} //eslint-disable-line react/prop-types
-                            onClick={props.onHide}
+                            onClick={goBack}
                             style={{ margin: -2 }}
                         >
                             <span aria-hidden="true">
@@ -107,19 +115,19 @@ function ReadMore(props) {
                 </Router>
             </Modal.Header>
             <Modal.Body className="tech-text-content">
-                {tech &&
+                {id &&
                     <Container className="my-5">
-                        {technology[tech].video &&
+                        {technology[id].video &&
                             <div className="embed-responsive embed-responsive-16by9 mb-4">
-                                <iframe title={technology[tech].title} className="embed-responsive-item" src={technology[tech].video.src} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                <iframe title={technology[id].title} className="embed-responsive-item" src={technology[id].video.src} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                             </div>
                         }
                         <Card>
                             <Card.Body className="description">
-                                <h2 className="mb-4">About {tech}</h2>
-                                <p>{technology[tech].introduction}</p>
-                                <p>{technology[tech].description}</p>
-                                <p>{technology[tech].summary}</p>
+                                <h2 className="mb-4">About {id}</h2>
+                                <p>{technology[id].introduction}</p>
+                                <p>{technology[id].description}</p>
+                                <p>{technology[id].summary}</p>
                             </Card.Body>
                         </Card>
                     </Container>

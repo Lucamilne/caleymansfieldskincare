@@ -1,10 +1,6 @@
 import React from "react";
 import { Modal, Card } from "react-bootstrap";
-import {
-    BrowserRouter as Router,
-    Route,
-    Link
-} from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const content = [
     "Skin and it’s wellbeing is Caley’s passion. With 20 years experience, combined with continuous learning and research, Caley offers innovative personalised skin revival facials from her private clinic in Marlow, Buckinghamshire.",
@@ -14,8 +10,15 @@ const content = [
 ]
 
 function AboutMe(props) {
+    let history = useHistory();
+
+    let goBack = e => {
+        e.stopPropagation();
+        history.goBack();
+    };
+
     return (
-        <Modal {...props} aria-labelledby="contained-modal-title-vcenter" className="modal-fullscreen" id="about-me">
+        <Modal show={true} aria-labelledby="contained-modal-title-vcenter" className="modal-fullscreen" id="about-me">
             <div className="modal-background">
                 <div className="backgrounds"></div>
                 <div className="backgrounds"></div>
@@ -23,21 +26,16 @@ function AboutMe(props) {
                 <div className="gradient-filter"></div>
             </div>
             <Modal.Header>
-                <Router>
-                    <Link to="/">
-                        <button
-                            className='close'
-                            aria-label={props['aria-label'] || 'Close'} //eslint-disable-line react/prop-types
-                            onClick={props.onHide}
-                            style={{ margin: -2 }}
-                        >
-                            <span aria-hidden="true">
-                                &times;
-                             </span>
-                        </button>
-                    </Link>
-                    <Route path="/" />
-                </Router>
+                <button
+                    className='close'
+                    aria-label={props['aria-label'] || 'Close'} //eslint-disable-line react/prop-types
+                    onClick={goBack}
+                    style={{ margin: -2 }}
+                >
+                    <span aria-hidden="true">
+                        &times;
+                    </span>
+                </button>
             </Modal.Header>
             <Modal.Body className="d-flex justify-content-center align-items-center">
                 <Card className="shadow">

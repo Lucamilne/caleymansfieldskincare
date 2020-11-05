@@ -1,26 +1,24 @@
 import React from 'react';
 import './styles/App.css';
-import Navigation from "./Navigation";
-import Hero from "./Hero";
-import Introduction from "./Introduction";
-import Showcase from "./Showcase";
-import Products from "./Products";
-import Testimonials from "./Testimonials"
-import ContactForm from "./ContactForm"
-import Footer from "./Footer"
-
+import { Route, Switch, useLocation, } from "react-router-dom";
+import AboutMe from './AboutMe';
+import ReadMore from './ReadMore';
+import Home from "./Home.js";
 
 function App() {
+  const location = useLocation()
+  const isModal = location.state && location.state.modal;
+
   return (
     <div className="App">
-      <Navigation />
-      <Hero />
-      <Introduction />
-      <Showcase />
-      <Products />
-      <Testimonials />
-      <ContactForm />
-      <Footer />
+      <Switch>
+        <Route exact path="/" children={<Home />} />
+        <Route path="/about" children={<AboutMe />} />
+        <Route path="/technology/:id" children={<ReadMore />} />
+        <Route>{'404: not found'}</Route>
+      </Switch>
+      {isModal && <Route path="/about" children={<AboutMe />} />}
+      {isModal && <Route path="/technology/:id" children={<ReadMore />} />}
     </div>
   );
 }
