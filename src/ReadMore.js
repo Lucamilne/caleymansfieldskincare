@@ -5,13 +5,7 @@ import aliftImage from "./images/technology/alift.jpg";
 import dermaluxImage from "./images/technology/dermalux.jpg";
 import cooliftImage from "./images/technology/coolift.jpg";
 import fusionImage from "./images/technology/fusion.jpg";
-import {
-    BrowserRouter as Router,
-    Route,
-    Link,
-    useHistory,
-    useParams
-} from "react-router-dom";
+import { useHistory, useParams } from "react-router-dom";
 
 const technology = {
     "geneo": {
@@ -71,7 +65,7 @@ function ReadMore(props) {
     let { id } = useParams();
 
     let goBack = e => {
-        e.stopPropagation();
+        e.stopPropagation()
         history.goBack();
     };
 
@@ -98,21 +92,16 @@ function ReadMore(props) {
                         </Container>
                     </>
                 }
-                <Router>
-                    <Link to="/">
-                        <button
-                            className='close'
-                            aria-label={props['aria-label'] || 'Close'} //eslint-disable-line react/prop-types
-                            onClick={goBack}
-                            style={{ margin: -2 }}
-                        >
-                            <span aria-hidden="true">
-                                &times;
+                <button
+                    className='close'
+                    aria-label={props['aria-label'] || 'Close'} //eslint-disable-line react/prop-types
+                    onClick={goBack}
+                    style={{ margin: -2 }}
+                >
+                    <span aria-hidden="true">
+                        &times;
                              </span>
-                        </button>
-                    </Link>
-                    <Route path="/" />
-                </Router>
+                </button>
             </Modal.Header>
             <Modal.Body className="tech-text-content">
                 {id &&

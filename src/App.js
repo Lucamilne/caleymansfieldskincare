@@ -4,6 +4,7 @@ import { Route, Switch, useLocation, } from "react-router-dom";
 import AboutMe from './AboutMe';
 import ReadMore from './ReadMore';
 import Home from "./Home.js";
+import { baseUrl } from "./config/const";
 
 function App() {
   const location = useLocation()
@@ -12,9 +13,9 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        <Route exact path="/caleymansfieldskincare/" children={<Home />} />
-        <Route path="/caleymansfieldskincare/about" children={<AboutMe />} />
-        <Route path="/caleymansfieldskincare/technology/:id" children={<ReadMore />} />
+        <Route exact path="/" children={<Home />} />
+        <Route path={baseUrl + "/about"} children={<AboutMe />} />
+        <Route path={baseUrl + "/technology/:id"} children={<ReadMore />} />
         <Route>{'404: not found'}</Route>
       </Switch>
       {isModal && <Route path="/about" children={<AboutMe />} />}
