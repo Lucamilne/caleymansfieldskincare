@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/caleymansfieldskincare/static/css/main.9fbd8b4e.chunk.css",
-    "main.js": "/caleymansfieldskincare/static/js/main.64574fd9.chunk.js",
-    "main.js.map": "/caleymansfieldskincare/static/js/main.64574fd9.chunk.js.map",
+    "main.js": "/caleymansfieldskincare/static/js/main.844c09f1.chunk.js",
+    "main.js.map": "/caleymansfieldskincare/static/js/main.844c09f1.chunk.js.map",
     "runtime-main.js": "/caleymansfieldskincare/static/js/runtime-main.bd8c4d50.js",
     "runtime-main.js.map": "/caleymansfieldskincare/static/js/runtime-main.bd8c4d50.js.map",
-    "static/js/2.ae69d905.chunk.js": "/caleymansfieldskincare/static/js/2.ae69d905.chunk.js",
-    "static/js/2.ae69d905.chunk.js.map": "/caleymansfieldskincare/static/js/2.ae69d905.chunk.js.map",
+    "static/js/2.06183872.chunk.js": "/caleymansfieldskincare/static/js/2.06183872.chunk.js",
+    "static/js/2.06183872.chunk.js.map": "/caleymansfieldskincare/static/js/2.06183872.chunk.js.map",
     "index.html": "/caleymansfieldskincare/index.html",
-    "precache-manifest.a23a6903e18df543d9b9df54bf6c3314.js": "/caleymansfieldskincare/precache-manifest.a23a6903e18df543d9b9df54bf6c3314.js",
+    "precache-manifest.646a070d8227c61404e2bc2bb123f270.js": "/caleymansfieldskincare/precache-manifest.646a070d8227c61404e2bc2bb123f270.js",
     "service-worker.js": "/caleymansfieldskincare/service-worker.js",
     "static/css/main.9fbd8b4e.chunk.css.map": "/caleymansfieldskincare/static/css/main.9fbd8b4e.chunk.css.map",
-    "static/js/2.ae69d905.chunk.js.LICENSE.txt": "/caleymansfieldskincare/static/js/2.ae69d905.chunk.js.LICENSE.txt",
+    "static/js/2.06183872.chunk.js.LICENSE.txt": "/caleymansfieldskincare/static/js/2.06183872.chunk.js.LICENSE.txt",
     "static/media/alift.jpg": "/caleymansfieldskincare/static/media/alift.5fa66dfd.jpg",
     "static/media/App.css": "/caleymansfieldskincare/static/media/col3b.14fa7e87.jpg",
     "static/media/coolift.jpg": "/caleymansfieldskincare/static/media/coolift.f167ac27.jpg",
@@ -26,8 +26,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.bd8c4d50.js",
-    "static/js/2.ae69d905.chunk.js",
+    "static/js/2.06183872.chunk.js",
     "static/css/main.9fbd8b4e.chunk.css",
-    "static/js/main.64574fd9.chunk.js"
+    "static/js/main.844c09f1.chunk.js"
   ]
 }
