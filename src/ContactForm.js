@@ -92,7 +92,7 @@ function ContactForm() {
                                 <Col>
                                     <Form.Group controlId="fromMessage">
                                         <Form.Label>Your Message</Form.Label>
-                                        <Form.Control as="textarea" rows="11" defaultValue="I'm interested in booking a consultation." />
+                                        <Form.Control as="textarea" rows="15" defaultValue="I'm interested in booking a consultation." />
                                     </Form.Group>
                                 </Col>
                             </Form.Row>
