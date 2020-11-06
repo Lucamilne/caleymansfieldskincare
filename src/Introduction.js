@@ -22,7 +22,7 @@ const Paragraph = () => {
     return (
         <div ref={ref} className={`paragraph fade-in from-left ${inView ? 'appear' : ''}`}>
             <h1 className="mb-4">Skin Revival Specialist.</h1>
-            <p className="pl-3 mb-3">Based at her private Marlow clinic,{" "}
+            <p className="pl-3 mb-3">Based at her <strong>private Marlow clinic</strong>,{" "}
                 <Link to={{
                     pathname: '/about',
                     state: { modal: true, type: "about" }
