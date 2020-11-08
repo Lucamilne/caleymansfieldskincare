@@ -1,7 +1,9 @@
 #carousel {
-    .temp {
-        height: 500px;
-        width: 500px;
-        background-color: violet;
-    }
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+  img {
+    object-fit: cover;
+  }
 }

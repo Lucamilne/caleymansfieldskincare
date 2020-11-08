@@ -14,20 +14,22 @@ SwiperCore.use([Navigation, Pagination]);
 
 export default () => {
     return (
-        <div id="carousel">
+        <section id="carousel">
             <Swiper
                 spaceBetween={50}
-                slidesPerView={3}
                 navigation
                 pagination={{ clickable: true }}
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}
             >
-                <SwiperSlide><div className="temp"></div></SwiperSlide>
-                <SwiperSlide><div className="temp"></div></SwiperSlide>
-                <SwiperSlide><div className="temp"></div></SwiperSlide>
-                <SwiperSlide><div className="temp"></div></SwiperSlide>
+                <SwiperSlide><img src={require("./images/products/Image01.jpg")} alt="Skin Care Products"></img></SwiperSlide>
+                <SwiperSlide><img src={require("./images/products/Image02.jpg")} alt="Skin Care Products"></img></SwiperSlide>
+                <SwiperSlide><img src={require("./images/products/Image03.jpg")} alt="Skin Care Products"></img></SwiperSlide>
+                <SwiperSlide><img src={require("./images/products/Image04.jpg")} alt="Skin Care Products"></img></SwiperSlide>
+                <SwiperSlide><img src={require("./images/products/Image05.jpg")} alt="Skin Care Products"></img></SwiperSlide>
+                <SwiperSlide><img src={require("./images/products/Image06.jpg")} alt="Skin Care Products"></img></SwiperSlide>
+                <SwiperSlide><img src={require("./images/products/Image07.jpg")} alt="Skin Care Products"></img></SwiperSlide>
             </Swiper>
-        </div>
+        </section>
     );
 };

@@ -1,6 +1,14 @@
-#carousel .temp {
-  height: 500px;
-  width: 500px;
-  background-color: violet;
+#carousel .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#carousel img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=Carousel.css.map */
