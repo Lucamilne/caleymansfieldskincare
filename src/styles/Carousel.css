@@ -1,14 +1,10 @@
 #carousel .swiper-slide {
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-#carousel img {
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 /*# sourceMappingURL=Carousel.css.map */

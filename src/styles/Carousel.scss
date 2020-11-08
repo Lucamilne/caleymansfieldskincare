@@ -1,9 +1,7 @@
 #carousel {
-  .swiper-slide {
-    display: flex;
-    justify-content: center;
-  }
-  img {
-    object-fit: cover;
-  }
+ .swiper-slide {
+   overflow: hidden;
+   display: flex;
+   justify-content: center;
+ }
 }

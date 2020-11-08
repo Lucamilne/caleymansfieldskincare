@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AACE,SADO,CACP,aAAa,CAAC;EACZ,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;CACxB;;AAJH,AAKE,SALO,CAKP,GAAG,CAAC;EACF,UAAU,EAAE,KAAK;CAClB",
+    "mappings": "AAAA,AACC,SADQ,CACR,aAAa,CAAC;EACZ,QAAQ,EAAE,MAAM;EAChB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;CACxB",
     "sources": [
         "Carousel.scss"
     ],

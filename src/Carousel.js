@@ -15,8 +15,11 @@ export default () => {
     return (
         <section id="carousel">
             <Swiper
-                spaceBetween={50}
+                slidesPerView={2}
+                spaceBetween={16}
+                grabCursor={true}
                 navigation
+                centeredSlides={true}
                 pagination={{ clickable: true }}
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}
