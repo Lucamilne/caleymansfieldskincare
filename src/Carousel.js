@@ -7,7 +7,6 @@ import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
 import './styles/Carousel.scss';
-//custom scss here
 
 // install Swiper components
 SwiperCore.use([Navigation, Pagination]);
