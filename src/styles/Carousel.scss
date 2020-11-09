@@ -14,4 +14,17 @@
   .swiper-pagination-bullet-active {
     background: #FF9B9C;
   }
+  .card {
+    border-radius: 0;
+    border: 0;
+  }
+  .card-body {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  }
+  .logo {
+    top: 0;
+    left: 0;
+    max-width: 150px;
+    max-height: 75px;
+  }
 }

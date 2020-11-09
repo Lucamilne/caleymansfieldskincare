@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import SwiperCore, { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Card, Button } from "react-bootstrap"
+import { Card } from "react-bootstrap"
 import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
@@ -9,98 +9,75 @@ import './styles/Carousel.scss';
 
 const products = [
     {
-        name: "Lotion",
-        brand: "Meso",
-        description: "Lorem ipsum",
-        img: "Image01.jpg"
+        brand: "Fusion Meso",
+        description: " is an internationally renowned brand offering exclusive products for skin rejuvenation, skin micro-needling and transdermal skin delivery.",
+        img: "Image01.jpg",
+        logo: "logo_new_white.png"
     },
     {
-        name: "Lotion",
-        brand: "Meso",
-        description: "Lorem ipsum",
-        img: "Image02.jpg"
+        brand: "ekseption",
+        description: "  is a professional brand of chemical peelings, resurfacing skin care, dermal fillers and mesotherapy products, each unique by its formulation.",
+        img: "Image02.jpg",
+        logo: "logo.png"
     },
     {
-        name: "Lotion",
-        brand: "Meso",
-        description: "Lorem ipsum",
-        img: "Image03.jpg"
-    }, {
-        name: "Lotion",
-        brand: "Meso",
-        description: "Lorem ipsum",
-        img: "Image04.jpg"
-    },
-    {
-        name: "Lotion",
-        brand: "Meso",
-        description: "Lorem ipsum",
-        img: "Image05.jpg"
-    },
-    {
-        name: "Lotion",
-        brand: "Meso",
-        description: "Lorem ipsum",
-        img: "Image06.jpg"
+        brand: "NeoGenesis",
+        description: " offers a line of non-toxic, organic, stem cell based skincare. The NeoGenesis line of products cater to all aspects of aging and other skin conditions.",
+        img: "Image05.jpg",
+        logo: "NeoGenesisLogoTM_white.png"
     }
 ]
 
-// install Swiper components
 SwiperCore.use([Navigation, Pagination]);
 
 function useWindowSize() {
     const [windowSize, setWindowSize] = useState({
-      width: undefined,
-      height: undefined,
+        width: undefined,
+        height: undefined,
     });
-  
+
     useEffect(() => {
-      // Handler to call on window resize
-      function handleResize() {
-        // Set window width/height to state
-        setWindowSize({
-          width: window.innerWidth,
-          height: window.innerHeight,
-        });
-      }
-      
-      // Add event listener
-      window.addEventListener("resize", handleResize);
-      
-      // Call handler right away so state gets updated with initial window size
-      handleResize();
-      
-      // Remove event listener on cleanup
-      return () => window.removeEventListener("resize", handleResize);
+        function handleResize() {
+            setWindowSize({
+                width: window.innerWidth,
+                height: window.innerHeight,
+            });
+        }
+
+        // Add event listener
+        window.addEventListener("resize", handleResize);
+
+        handleResize();
+
+        // Remove event listener on cleanup
+        return () => window.removeEventListener("resize", handleResize);
     }, []); // Empty array ensures that effect is only run on mount
-  
+
     return windowSize;
-  }
+}
 
 function Carousel() {
     const size = useWindowSize();
 
     return (
         <section id="carousel">
+            <h1 className="text-center mb-4">Products.</h1>
             <Swiper
                 slidesPerView={size.width < 576 ? 1 : 2}
-                spaceBetween={16}
+                spaceBetween={48}
                 grabCursor={true}
                 navigation
                 centeredSlides={true}
                 pagination={{ clickable: true }}
+                className="pt-3 pb-5"
             >
                 {products.map((product, index) => (
                     <SwiperSlide key={index}>
                         <Card>
+                            <img className="ml-3 mt-3 position-absolute logo" src={require(`./images/products/${product.logo}`)}/>
                             <Card.Img variant="top" src={require(`./images/products/${product.img}`)} />
                             <Card.Body>
-                                <Card.Title>{product.name}</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the bulk of
-                                    the card's content.
-                                </Card.Text>
-                                <Button variant="outline-dark">Shop</Button>
+                                <Card.Text className={product.variant}><strong>{product.brand}</strong>{product.description}</Card.Text>
                             </Card.Body>
                         </Card>
                     </SwiperSlide>
