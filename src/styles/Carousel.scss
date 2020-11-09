@@ -7,4 +7,11 @@
  img {
   object-fit: cover;
  }
+ .swiper-button-prev,
+ .swiper-button-next {
+  color: #FF9B9C;
+  }
+  .swiper-pagination-bullet-active {
+    background: #FF9B9C;
+  }
 }
