@@ -1,10 +1,37 @@
 #carousel .swiper-slide {
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  height: auto;
+}
+
+#carousel img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#carousel .swiper-button-prev,
+#carousel .swiper-button-next {
+  color: #FF9B9C;
+}
+
+#carousel .swiper-pagination-bullet-active {
+  background: #FF9B9C;
+}
+
+#carousel .card {
+  border-radius: 0;
+  border: 0;
+  height: 100%;
+}
+
+#carousel .card-body {
+  height: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+#carousel .logo {
+  top: 0;
+  left: 0;
+  max-width: 9rem;
+  max-height: 5rem;
 }
 /*# sourceMappingURL=Carousel.css.map */

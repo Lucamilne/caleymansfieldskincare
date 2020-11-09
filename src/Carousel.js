@@ -10,19 +10,19 @@ import './styles/Carousel.scss';
 const products = [
     {
         brand: "Fusion Meso",
-        description: " is an internationally renowned brand offering exclusive products for skin rejuvenation, skin micro-needling and transdermal skin delivery.",
+        description: " is an internationally renowned cosmeceutical skin care range. Developed specifically to complement skin rejuvenating treatments.",
         img: "Image01.jpg",
         logo: "logo_new_white.png"
     },
     {
         brand: "ekseption",
-        description: "  is a professional brand of chemical peelings, resurfacing skin care, dermal fillers and mesotherapy products, each unique by its formulation.",
+        description: "  is a professional brand of chemical peels with home care products that prepares, rejuvenates and protects the skin.",
         img: "Image02.jpg",
         logo: "logo.png"
     },
     {
         brand: "NeoGenesis",
-        description: " offers a line of non-toxic, organic, stem cell based skincare. The NeoGenesis line of products cater to all aspects of aging and other skin conditions.",
+        description: " advanced stem cell technology provides skincare products that return the skin to glowing health. The products work through patented S2RM® technology to nourish and regenerate skin cells. This is a unique and natural approach to skin care.",
         img: "Image05.jpg",
         logo: "NeoGenesisLogoTM_white.png"
     }
@@ -65,8 +65,8 @@ function Carousel() {
             <Container>
                 <Swiper
                     updateOnWindowResize={true}
-                    slidesPerView={2}
-                    spaceBetween={48}
+                    slidesPerView={size < 576 ? 1 : 2}
+                    spaceBetween={32}
                     grabCursor={true}
                     navigation
                     centeredSlides={false}
