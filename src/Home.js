@@ -16,8 +16,10 @@ function Home() {
             <Hero />
             <Introduction />
             <Showcase />
-            <Products />
-            <Carousel />
+            <div className="service-container">
+                <Products />
+                <Carousel />
+            </div>
             <Testimonials />
             <ContactForm />
             <Footer />

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import SwiperCore, { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Card } from "react-bootstrap"
+import { Card, Container } from "react-bootstrap"
 import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
@@ -62,29 +62,32 @@ function Carousel() {
     return (
         <section id="carousel">
             <h1 className="text-center mb-4">Products.</h1>
-            <Swiper
-                slidesPerView={size.width < 576 ? 1 : 2}
-                spaceBetween={48}
-                grabCursor={true}
-                navigation
-                centeredSlides={true}
-                pagination={{ clickable: true }}
-                className="pt-3 pb-5"
-            >
-                {products.map((product, index) => (
-                    <SwiperSlide key={index}>
-                        <Card>
-                            <img className="ml-3 mt-3 position-absolute logo" src={require(`./images/products/${product.logo}`)}/>
-                            <Card.Img variant="top" src={require(`./images/products/${product.img}`)} />
-                            <Card.Body>
-                                <Card.Text className={product.variant}><strong>{product.brand}</strong>{product.description}</Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </SwiperSlide>
-                ))
+            <Container>
+                <Swiper
+                    updateOnWindowResize={true}
+                    slidesPerView={2}
+                    spaceBetween={48}
+                    grabCursor={true}
+                    navigation
+                    centeredSlides={false}
+                    pagination={{ clickable: true }}
+                    className="pt-3 pb-5"
+                >
+                    {products.map((product, index) => (
+                        <SwiperSlide key={index}>
+                            <Card>
+                                <img className="ml-3 mt-3 position-absolute logo" src={require(`./images/products/${product.logo}`)} alt={product.brand + " logo"} />
+                                <Card.Img variant="top" src={require(`./images/products/${product.img}`)} />
+                                <Card.Body>
+                                    <Card.Text className={product.variant}><strong>{product.brand}</strong>{product.description}</Card.Text>
+                                </Card.Body>
+                            </Card>
+                        </SwiperSlide>
+                    ))
 
-                }
-            </Swiper>
+                    }
+                </Swiper>
+            </Container>
         </section>
     );
 };
