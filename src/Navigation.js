@@ -63,7 +63,7 @@ class Navigation extends React.Component {
                     </Col>
                     <Col xl={4} className="d-none d-xl-block">
                         <Nav className="flex-column">
-                            <Nav.Link href="https://www.google.com/maps/place/96+Marlow+Bottom,+Marlow+SL7+3PH/" target="_blank"><i className="fas fa-map-marker-alt"></i>{this.state.address}</Nav.Link>
+                            <Nav.Link rel="noopener" href="https://www.google.com/maps/place/96+Marlow+Bottom,+Marlow+SL7+3PH/" target="_blank"><i className="fas fa-map-marker-alt"></i>{this.state.address}</Nav.Link>
                             <Nav.Link href={`mailto:${this.state.address}`}><i className="far fa-envelope"></i>{this.state.email}</Nav.Link>
                             <Nav.Link href={`tel:${this.state.number}`}><i className="fas fa-phone-alt"></i>{this.state.number}</Nav.Link>
                         </Nav>

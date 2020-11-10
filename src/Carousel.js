@@ -54,9 +54,9 @@ function Carousel() {
                         <SwiperSlide key={index}>
                             <Card>
                                 <img className="ml-3 mt-3 position-absolute logo" src={require(`./images/products/${product.logo}`)} alt={product.brand + " logo"} />
-                                <Card.Img variant="top" src={require(`./images/products/${product.img}`)} />
+                                <Card.Img variant="top" src={require(`./images/products/${product.img}`)} alt={product.brand + " range of products"}/>
                                 <Card.Body>
-                                    <Card.Text className={product.variant}><strong>{product.brand}</strong>{product.description}</Card.Text>
+                                    <Card.Text><strong>{product.brand}</strong>{product.description}</Card.Text>
                                 </Card.Body>
                             </Card>
                         </SwiperSlide>
