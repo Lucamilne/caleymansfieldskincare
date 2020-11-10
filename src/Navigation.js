@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar, Nav, Button, Image, Col } from "react-bootstrap";
-import Filter from "./Filter"
+import { Link } from "react-router-dom";
+import Filter from "./Filter";
 
 class Navigation extends React.Component {
     constructor() {
@@ -24,13 +25,16 @@ class Navigation extends React.Component {
         let isOpen = this.state.isMenuOpen ? 'open' : '';
 
         return (
-            <div>
+            <>
                 <Filter className={this.state.isMenuOpen ? "d-block" : "d-none"} />
-                <div className={`nav__menu d-block d-xl-none ${isOpen}`}>
+                <div className={`nav-menu d-block d-xl-none ${isOpen}`}>
                     <Nav className="py-3 d-flex flex-column align-items-center justify-content-center">
-                        <Nav.Link href="#about">About</Nav.Link>
-                        <Nav.Link href="#treatments">Treatments</Nav.Link>
-                        <Nav.Link href="#testimonials">Testimonials</Nav.Link>
+                        <Link to={{
+                            pathname: '/about',
+                            state: { modal: true, type: "about" }
+                        }}>About</Link>
+                        <Nav.Link onClick={this.toggleMenu} href="#treatments">Treatments</Nav.Link>
+                        <Nav.Link onClick={this.toggleMenu} href="#testimonials">Testimonials</Nav.Link>
                     </Nav>
                 </div>
                 <Navbar variant="dark" id="navbar" className="d-flex justify-content-center">
@@ -38,8 +42,11 @@ class Navigation extends React.Component {
                         <Button onClick={this.toggleMenu} variant="outline-light" className="menu-btn"><i className="fas fa-bars"></i></Button>
                     </div>
                     <Col xl={4} className="d-none d-xl-block">
-                        <Nav className="nav__section">
-                            <Nav.Link href="#about">About</Nav.Link>
+                        <Nav className="nav-section">
+                            <Link to={{
+                                pathname: '/about',
+                                state: { modal: true, type: "about" }
+                            }}>About</Link>
                             <Nav.Link href="#treatments">Treatments</Nav.Link>
                             <Nav.Link href="#testimonials">Testimonials</Nav.Link>
                         </Nav>
@@ -63,7 +70,7 @@ class Navigation extends React.Component {
                     </Col>
                 </Navbar >
 
-            </div>
+            </>
         )
     }
 }

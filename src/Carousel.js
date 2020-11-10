@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import SwiperCore, { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Card, Container } from "react-bootstrap"
@@ -8,6 +8,12 @@ import 'swiper/components/pagination/pagination.scss';
 import './styles/Carousel.scss';
 
 const products = [
+    {
+        brand: "NeoGenesis",
+        description: " advanced stem cell technology provides skincare products that return the skin to glowing health. The products work through patented S2RM® technology to nourish and regenerate skin cells. This is a unique and natural approach to skin care.",
+        img: "Image05.jpg",
+        logo: "NeoGenesisLogoTM_white.png"
+    },
     {
         brand: "Fusion Meso",
         description: " is an internationally renowned cosmeceutical skin care range. Developed specifically to complement skin rejuvenating treatments.",
@@ -19,54 +25,25 @@ const products = [
         description: "  is a professional brand of chemical peels with home care products that prepares, rejuvenates and protects the skin.",
         img: "Image02.jpg",
         logo: "logo.png"
-    },
-    {
-        brand: "NeoGenesis",
-        description: " advanced stem cell technology provides skincare products that return the skin to glowing health. The products work through patented S2RM® technology to nourish and regenerate skin cells. This is a unique and natural approach to skin care.",
-        img: "Image05.jpg",
-        logo: "NeoGenesisLogoTM_white.png"
     }
 ]
 
 SwiperCore.use([Navigation, Pagination]);
 
-function useWindowSize() {
-    const [windowSize, setWindowSize] = useState({
-        width: undefined,
-        height: undefined,
-    });
-
-    useEffect(() => {
-        function handleResize() {
-            setWindowSize({
-                width: window.innerWidth,
-                height: window.innerHeight,
-            });
-        }
-
-        // Add event listener
-        window.addEventListener("resize", handleResize);
-
-        handleResize();
-
-        // Remove event listener on cleanup
-        return () => window.removeEventListener("resize", handleResize);
-    }, []); // Empty array ensures that effect is only run on mount
-
-    return windowSize;
-}
-
 function Carousel() {
-    const size = useWindowSize();
-
     return (
         <section id="carousel">
-            <h1 className="text-center mb-4">Products.</h1>
-            <Container>
+            <Container className="pb-5">
+                <h1 className="text-center mb-4">Products.</h1>
                 <Swiper
-                    updateOnWindowResize={true}
-                    slidesPerView={size < 576 ? 1 : 2}
-                    spaceBetween={32}
+                    slidesPerView={1}
+                    spaceBetween={16}
+                    breakpoints={{
+                        576: {
+                            slidesPerView: 2,
+                            spaceBetween: 32
+                        }
+                    }}
                     grabCursor={true}
                     navigation
                     centeredSlides={false}

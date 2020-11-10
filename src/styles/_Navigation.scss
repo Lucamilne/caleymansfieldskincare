@@ -1,4 +1,4 @@
-.nav__menu {
+.nav-menu {
   position: absolute;
   top: 0;
   width: 100%;
@@ -21,27 +21,16 @@
 .open {
   transform: translateY(0);
 }
-#navbar {
-  position: absolute;
-  top: 0;
-  z-index: 10;
-  width: 100%;
-
-  .nav__section {
-    width: 100%;
-    margin: 0;
-  }
-  .menu-btn {
-    border-radius: 0px;
-  }
-  .nav-link {
+#navbar, .nav-menu {
+  a {
     text-align: end;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.8) !important;
+    padding: 0.5rem 1rem;
     i {
       margin-right: 1em;
     }
   }
-  .nav-link:hover {
+  a:hover {
     color: $lightColor;
   }
   &::after {
@@ -53,7 +42,18 @@
     width: calc(100% - 30px);
     right: 15px;
   }
-  @include media-breakpoint-up(xl) {
-//
+}
+#navbar {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+
+  .nav-section {
+    width: 100%;
+    margin: 0;
+  }
+  .menu-btn {
+    border-radius: 0px;
   }
 }

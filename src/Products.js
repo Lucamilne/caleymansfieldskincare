@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Accordion, Card, Button, Row, Col } from "react-bootstrap"
 import { Link } from "react-router-dom";
 
-
 const tech = {
     "geneo": { id: "geneo", name: "Geneo" },
     "alift": { id: "alift", name: "A-Lift" },
@@ -22,12 +21,12 @@ const treatments = [
 
 const Products = () => {
     return (
-        <Container id="products" className="my-5">
+        <Container id="treatments" className="my-5">
             <h1 className="text-center mb-4">Treatments.</h1>
             <Row>
                 {treatments.map(treatment => (
                     <Col lg={6} key={treatment.id}>
-                        <Accordion>
+                        <Accordion defaultActiveKey={window.innerWidth < 576 ? null : treatment.id}>
                             <Card.Header className="d-flex justify-content-between">
                                 <span>{treatment.header}</span>
                                 <Accordion.Toggle as={Button} eventKey={treatment.id} variant="outline-link" className="btn-toggle">
