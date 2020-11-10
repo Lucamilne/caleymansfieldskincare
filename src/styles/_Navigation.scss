@@ -33,15 +33,6 @@
   a:hover {
     color: $lightColor;
   }
-  &::after {
-    content: "";
-    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
-    position: absolute;
-    bottom: 0;
-    left: 15px;
-    width: calc(100% - 30px);
-    right: 15px;
-  }
 }
 #navbar {
   position: absolute;
@@ -55,5 +46,14 @@
   }
   .menu-btn {
     border-radius: 0px;
+  }
+  &::after {
+    content: "";
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    width: calc(100% - 30px);
+    right: 15px;
   }
 }

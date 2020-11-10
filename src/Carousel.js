@@ -10,7 +10,7 @@ import './styles/Carousel.scss';
 const products = [
     {
         brand: "NeoGenesis",
-        description: " advanced stem cell technology provides skincare products that return the skin to glowing health. The products work through patented S2RM® technology to nourish and regenerate skin cells. This is a unique and natural approach to skin care.",
+        description: " advanced stem cell technology provides skincare products that help heal the skin barrier. The products work through patented S2RM® technology to nourish and regenerate skin cells. This is a unique and natural approach to skin care.",
         img: "Image05.jpg",
         logo: "NeoGenesisLogoTM_white.png"
     },

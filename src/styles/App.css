@@ -11014,16 +11014,6 @@ a.text-link:hover, a.text-link:focus {
   color: #fff;
 }
 
-#navbar::after, .nav-menu::after {
-  content: "";
-  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
-  position: absolute;
-  bottom: 0;
-  left: 15px;
-  width: calc(100% - 30px);
-  right: 15px;
-}
-
 #navbar {
   position: absolute;
   top: 0;
@@ -11038,6 +11028,16 @@ a.text-link:hover, a.text-link:focus {
 
 #navbar .menu-btn {
   border-radius: 0px;
+}
+
+#navbar::after {
+  content: "";
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  width: calc(100% - 30px);
+  right: 15px;
 }
 
 #hero img {

@@ -9,8 +9,8 @@ const Showcase = () => {
                 <Container className="d-flex align-items-center my-5">
                     <Row className="d-flex justify-content-center">
                         <Col lg={6}>
-                            <h1 className="mb-4">Get the best out of your skin.</h1>
-                            <p className="pl-3">Every single treatment we offer is tailored to your individual needs. No two skin complexions are the same.</p>
+                            <h1 className="mb-4">Allow your skin to flourish.</h1>
+                            <p className="pl-3">We are all unique therefore each and every treatment is tailored to your specific requirements.</p>
                         </Col>
                     </Row>
                 </Container>
