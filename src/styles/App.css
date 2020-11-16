@@ -22492,45 +22492,45 @@ a.text-link:hover, a.text-link:focus {
   font-size: 3em;
 }
 
-#contact-form {
+#contact-form-section {
   background-color: #ffcece;
 }
 
-#contact-form p {
+#contact-form-section p {
   color: #fff;
   font-size: 1.5em;
 }
 
-#contact-form textarea {
+#contact-form-section textarea {
   font-size: 1em;
 }
 
-#contact-form .form-row {
+#contact-form-section .form-row {
   margin-bottom: 10px;
 }
 
-#contact-form .form-group {
+#contact-form-section .form-group {
   background-color: #fff;
   margin: 0;
 }
 
-#contact-form .form-control {
+#contact-form-section .form-control {
   border-radius: 0;
   border: none;
 }
 
-#contact-form .form-label {
+#contact-form-section .form-label {
   width: 100%;
   padding: 0.75em 0.75em;
   margin: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-#contact-form .required {
+#contact-form-section .required {
   color: red;
 }
 
-#contact-form textarea {
+#contact-form-section textarea {
   resize: none;
 }
 

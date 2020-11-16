@@ -53,6 +53,7 @@ function ContactForm() {
 
     const handleSubmit = (event) => {
         const form = event.currentTarget;
+
         if (form.checkValidity() === false) {
             event.preventDefault();
             event.stopPropagation();
@@ -62,25 +63,25 @@ function ContactForm() {
     };
 
     return (
-        <section id="contact-form">
+        <section id="contact-form-section">
             <Container className="py-5">
                 <h1 className="text-center mb-4">Enquiries.</h1>
                 <p className="text-center mb-4">Fill out the form below to learn more.</p>
-                <Form noValidate validated={validated} onSubmit={handleSubmit}>
+                <Form id="contact-form" noValidate validated={validated} onSubmit={handleSubmit} action="https://formspree.io/f/xeqpzllk" method="POST">
                     <Row className="justify-content-center">
                         <Col lg={9}>
                             <Form.Row>
                                 <Col sm>
                                     <Form.Group controlId="formName">
                                         <Form.Label>Name<span className="required">*</span></Form.Label>
-                                        <Form.Control required type="name" placeholder="Enter name" />
+                                        <Form.Control required type="name" placeholder="Enter name" name="name" />
                                     </Form.Group>
                                 </Col>
                                 <Col sm>
 
                                     <Form.Group controlId="formAge">
                                         <Form.Label>Age</Form.Label>
-                                        <Form.Control as="select">
+                                        <Form.Control as="select" name="age">
                                             {options.age.map((option, i) => (
                                                 <option key={i}>{option}</option>
                                             ))}
@@ -92,7 +93,7 @@ function ContactForm() {
                                 <Col>
                                     <Form.Group controlId="fromMessage">
                                         <Form.Label>Your Message</Form.Label>
-                                        <Form.Control as="textarea" rows="15" defaultValue="I'm interested in booking a consultation." />
+                                        <Form.Control as="textarea" rows="15" defaultValue="I'm interested in booking a consultation." name="message" />
                                     </Form.Group>
                                 </Col>
                             </Form.Row>
@@ -100,13 +101,13 @@ function ContactForm() {
                                 <Col>
                                     <Form.Group controlId="formEmail">
                                         <Form.Label>Email<span className="required">*</span></Form.Label>
-                                        <Form.Control required type="email" placeholder="Enter email address" />
+                                        <Form.Control required type="email" placeholder="Enter email address" name="email" />
                                     </Form.Group>
                                 </Col>
                                 <Col>
                                     <Form.Group controlId="formNumber">
                                         <Form.Label>Number<span className="required">*</span></Form.Label>
-                                        <Form.Control required type="tel" placeholder="Enter phone number" />
+                                        <Form.Control type="tel" placeholder="Enter phone number" name="number" />
                                     </Form.Group>
                                 </Col>
                             </Form.Row>
