@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.5cfbd31d.chunk.css",
-    "main.js": "/static/js/main.b02a1a5a.chunk.js",
-    "main.js.map": "/static/js/main.b02a1a5a.chunk.js.map",
+    "main.css": "/static/css/main.220b41c1.chunk.css",
+    "main.js": "/static/js/main.369eac09.chunk.js",
+    "main.js.map": "/static/js/main.369eac09.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5b9816dc.js",
     "runtime-main.js.map": "/static/js/runtime-main.5b9816dc.js.map",
     "static/css/2.04716422.chunk.css": "/static/css/2.04716422.chunk.css",
     "static/js/2.9407945d.chunk.js": "/static/js/2.9407945d.chunk.js",
     "static/js/2.9407945d.chunk.js.map": "/static/js/2.9407945d.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.bb8e5f265580a71dcd1aa4cf4c801f08.js": "/precache-manifest.bb8e5f265580a71dcd1aa4cf4c801f08.js",
+    "precache-manifest.6e52e929b2c0400cf297ef1a0e8c4488.js": "/precache-manifest.6e52e929b2c0400cf297ef1a0e8c4488.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.04716422.chunk.css.map": "/static/css/2.04716422.chunk.css.map",
-    "static/css/main.5cfbd31d.chunk.css.map": "/static/css/main.5cfbd31d.chunk.css.map",
+    "static/css/main.220b41c1.chunk.css.map": "/static/css/main.220b41c1.chunk.css.map",
     "static/js/2.9407945d.chunk.js.LICENSE.txt": "/static/js/2.9407945d.chunk.js.LICENSE.txt",
     "static/media/Image01.jpg": "/static/media/Image01.acdb735a.jpg",
     "static/media/Image02.jpg": "/static/media/Image02.ffc1a3c3.jpg",
@@ -21,7 +21,7 @@
     "static/media/Image05.jpg": "/static/media/Image05.52214b07.jpg",
     "static/media/Image06.jpg": "/static/media/Image06.77b10277.jpg",
     "static/media/alift.jpg": "/static/media/alift.5fa66dfd.jpg",
-    "static/media/App.css": "/static/media/col3b.14fa7e87.jpg",
+    "static/media/App.css": "/static/media/clinic-c.224f233d.jpg",
     "static/media/coolift.jpg": "/static/media/coolift.07d029f1.jpg",
     "static/media/dermalux.jpg": "/static/media/dermalux.aa35c10b.jpg",
     "static/media/fusion.jpg": "/static/media/fusion.91af5554.jpg",
@@ -37,7 +37,7 @@
     "static/js/runtime-main.5b9816dc.js",
     "static/css/2.04716422.chunk.css",
     "static/js/2.9407945d.chunk.js",
-    "static/css/main.5cfbd31d.chunk.css",
-    "static/js/main.b02a1a5a.chunk.js"
+    "static/css/main.220b41c1.chunk.css",
+    "static/js/main.369eac09.chunk.js"
   ]
 }
