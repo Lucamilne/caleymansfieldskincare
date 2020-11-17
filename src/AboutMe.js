@@ -1,6 +1,6 @@
 import React from "react";
 import { Modal, Card } from "react-bootstrap";
-import { useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 const content = [
     "Skin and it’s wellbeing is Caley’s passion. With 20 years experience, combined with continuous learning and research, Caley offers innovative personalised skin revival facials from her private clinic in Marlow, Buckinghamshire.",
@@ -10,11 +10,11 @@ const content = [
 ]
 
 function AboutMe(props) {
-    let history = useHistory();
+    // let history = useHistory();
 
     let goBack = e => {
         e.stopPropagation();
-        history.goBack();
+        // history.goBack();
     };
 
     return (
@@ -26,16 +26,21 @@ function AboutMe(props) {
                 <div className="gradient-filter"></div>
             </div>
             <Modal.Header>
-                <button
-                    className='close'
-                    aria-label={props['aria-label'] || 'Close'} //eslint-disable-line react/prop-types
-                    onClick={goBack}
-                    style={{ margin: -2 }}
-                >
-                    <span aria-hidden="true">
-                        &times;
+                <Link to={{
+                    pathname: '/',
+                    state: { modal: true, type: "about" }
+                }}>
+                    <button
+                        className='close'
+                        aria-label={props['aria-label'] || 'Close'} //eslint-disable-line react/prop-types
+                        onClick={goBack}
+                        style={{ margin: -2 }}
+                    >
+                        <span aria-hidden="true">
+                            &times;
                     </span>
-                </button>
+                    </button>
+                </Link>
             </Modal.Header>
             <Modal.Body className="d-flex justify-content-center align-items-center">
                 <Card className="shadow">
