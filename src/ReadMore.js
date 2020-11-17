@@ -5,7 +5,7 @@ import aliftImage from "./images/technology/alift.jpg";
 import dermaluxImage from "./images/technology/dermalux.jpg";
 import cooliftImage from "./images/technology/coolift.jpg";
 import fusionImage from "./images/technology/fusion.jpg";
-import { Link, useHistory, useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const technology = {
     "geneo": {
@@ -61,13 +61,7 @@ const technology = {
 }
 
 function ReadMore(props) {
-    // let history = useHistory();
     let { id } = useParams();
-
-    let goBack = e => {
-        e.stopPropagation()
-        // history.goBack();
-    };
 
     return (
         <Modal show={true} aria-labelledby="contained-modal-title-vcenter" size="xl" id="read-more">
@@ -99,7 +93,7 @@ function ReadMore(props) {
                     <button
                         className='close'
                         aria-label={props['aria-label'] || 'Close'} //eslint-disable-line react/prop-types
-                        onClick={goBack}
+                        onClick={e => {e.stopPropagation()}}
                         style={{ margin: -2 }}
                     >
                         <span aria-hidden="true">

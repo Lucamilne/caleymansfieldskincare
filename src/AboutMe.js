@@ -1,6 +1,6 @@
 import React from "react";
 import { Modal, Card } from "react-bootstrap";
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const content = [
     "Skin and it’s wellbeing is Caley’s passion. With 20 years experience, combined with continuous learning and research, Caley offers innovative personalised skin revival facials from her private clinic in Marlow, Buckinghamshire.",
@@ -10,13 +10,6 @@ const content = [
 ]
 
 function AboutMe(props) {
-    // let history = useHistory();
-
-    let goBack = e => {
-        e.stopPropagation();
-        // history.goBack();
-    };
-
     return (
         <Modal show={true} aria-labelledby="contained-modal-title-vcenter" className="modal-fullscreen" id="about-me">
             <div className="modal-background">
@@ -33,7 +26,7 @@ function AboutMe(props) {
                     <button
                         className='close'
                         aria-label={props['aria-label'] || 'Close'} //eslint-disable-line react/prop-types
-                        onClick={goBack}
+                        onClick={e => {e.stopPropagation()}}
                         style={{ margin: -2 }}
                     >
                         <span aria-hidden="true">

@@ -6,7 +6,7 @@ class Hero extends React.Component {
         return (
             <section className="position-relative" id="hero">
                 <img src={require("./images/mobile_hero_b.jpg")} alt="Woman undergoing skin care facial treatment" className="d-md-block d-lg-none" />
-                <video playsinline webkit-playsinline autoPlay muted loop className="d-none d-lg-block">
+                <video playsInline autoPlay muted loop className="d-none d-lg-block">
                     <source src={require("./images/hero_crop.mp4")} type="video/mp4" />
                 </video>
                 <div className="gradient-filter d-flex align-items-end">
