@@ -38,7 +38,7 @@ class Navigation extends React.Component {
                     </Nav>
                 </div>
                 <Navbar variant="dark" id="navbar" className="d-flex justify-content-center">
-                    <div className="nav__menu-btn d-none d-md-block d-xl-none">
+                    <div className="nav__menu-btn d-md-block d-xl-none">
                         <Button onClick={this.toggleMenu} variant="outline-light" className="menu-btn"><i className="fas fa-bars"></i></Button>
                     </div>
                     <Col xl={4} className="d-none d-xl-block">
@@ -51,8 +51,8 @@ class Navigation extends React.Component {
                             <Nav.Link href="#testimonials">Testimonials</Nav.Link>
                         </Nav>
                     </Col>
-                    <Col sm={9} lg={6} xl={4} className="logo">
-                        <Navbar.Brand href="#home" className="m-0">
+                    <Col xs={9} lg={6} xl={4} className="logo">
+                        <Navbar.Brand className="m-0">
                             <Image
                                 src={require("./images/logo-alt_fff.png")}
                                 className="d-inline-block align-top my-3"

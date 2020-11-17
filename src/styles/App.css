@@ -11028,6 +11028,7 @@ a.text-link:hover, a.text-link:focus {
 
 #navbar .menu-btn {
   border-radius: 0px;
+  border: 0;
 }
 
 #navbar::after {
