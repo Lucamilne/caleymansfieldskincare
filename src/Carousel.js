@@ -34,7 +34,7 @@ function Carousel() {
     return (
         <section id="carousel">
             <Container className="pb-5">
-                <h1 className="text-center mb-4">Products.</h1>
+                <h1 className="text-center mb-4">Products</h1>
                 <Swiper
                     slidesPerView={1}
                     spaceBetween={16}

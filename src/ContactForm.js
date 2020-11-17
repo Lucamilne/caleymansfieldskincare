@@ -65,7 +65,7 @@ function ContactForm() {
     return (
         <section id="contact-form-section">
             <Container className="py-5">
-                <h1 className="text-center mb-4">Enquiries.</h1>
+                <h1 className="text-center mb-4">Enquiries</h1>
                 <p className="text-center mb-4">Fill out the form below to learn more.</p>
                 <Form id="contact-form" noValidate validated={validated} onSubmit={handleSubmit} action="https://formspree.io/f/xeqpzllk" method="POST">
                     <Row className="justify-content-center">

@@ -10,7 +10,7 @@ class Navigation extends React.Component {
             isMenuOpen: false,
             address: "96 Marlow Bottom, SL7 3PH",
             email: "caley@skinrevivalspecialist.co.uk",
-            number: "077976 962012"
+            number: "07976 962912"
         };
         this.toggleMenu = this.toggleMenu.bind(this);
     }
@@ -64,7 +64,7 @@ class Navigation extends React.Component {
                     <Col xl={4} className="d-none d-xl-block">
                         <Nav className="flex-column">
                             <Nav.Link rel="noopener" href="https://www.google.com/maps/place/96+Marlow+Bottom,+Marlow+SL7+3PH/" target="_blank"><i className="fas fa-map-marker-alt"></i>{this.state.address}</Nav.Link>
-                            <Nav.Link href={`mailto:${this.state.address}`}><i className="far fa-envelope"></i>{this.state.email}</Nav.Link>
+                            <Nav.Link href={`mailto:${this.state.email}`}><i className="far fa-envelope"></i>{this.state.email}</Nav.Link>
                             <Nav.Link href={`tel:${this.state.number}`}><i className="fas fa-phone-alt"></i>{this.state.number}</Nav.Link>
                         </Nav>
                     </Col>

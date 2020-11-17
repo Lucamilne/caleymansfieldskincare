@@ -22158,19 +22158,19 @@ a.text-link:hover, a.text-link:focus {
 }
 
 #about-me .backgrounds:nth-of-type(1) {
-  background-image: url(../images/col3b.jpg);
+  background-image: url(../images/clinic-b.jpg);
   display: none;
 }
 
 #about-me .backgrounds:nth-of-type(2) {
-  background-image: url(../images/col1b.jpg);
+  background-image: url(../images/clinic-c.jpg);
   -webkit-animation-delay: 100ms;
           animation-delay: 100ms;
   display: none;
 }
 
 #about-me .backgrounds:nth-of-type(3) {
-  background-image: url(../images/col2b.jpg);
+  background-image: url(../images/clinic-a.jpg);
   -webkit-animation-delay: 200ms;
           animation-delay: 200ms;
 }
