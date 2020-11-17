@@ -4,8 +4,8 @@ import { useInView } from 'react-intersection-observer';
 import { Link } from "react-router-dom";
 
 const options = {
-    threshold: 0.5,
-    rootMargin: "0px 0px -80px 0px"
+    threshold: 0.75,
+    triggerOnce: true,
 }
 
 const Sketch = () => {
