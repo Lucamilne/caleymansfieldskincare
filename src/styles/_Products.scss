@@ -15,4 +15,12 @@
   ul {
     border-left: 2px solid $thirdColor;
   }
+  .accordion-header {
+    font-size: 1rem;
+  }
+  @include media-breakpoint-up(lg) {
+    .accordion-header {
+      font-size: 1.2rem;
+    }
+  }
 }
