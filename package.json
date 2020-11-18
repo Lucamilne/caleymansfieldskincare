@@ -32,12 +32,18 @@
     "production": [
       ">0.2%",
       "not dead",
-      "not op_mini all"
+      "not op_mini all",
+      "iOS 9",
+      "iOS 8",
+      "iOS 7"
     ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
-      "last 1 safari version"
+      "last 1 safari version",
+      "iOS 9",
+      "iOS 8",
+      "iOS 7"
     ]
   },
   "devDependencies": {
