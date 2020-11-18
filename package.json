@@ -10,6 +10,7 @@
     "bootstrap": "^4.5.3",
     "node-sass": "^4.14.1",
     "react": "^16.14.0",
+    "react-app-polyfill": "^2.0.0",
     "react-bootstrap": "^1.4.0",
     "react-dom": "^16.14.0",
     "react-intersection-observer": "^8.29.1",
@@ -32,18 +33,12 @@
     "production": [
       ">0.2%",
       "not dead",
-      "not op_mini all",
-      "iOS 9",
-      "iOS 8",
-      "iOS 7"
+      "not op_mini all"
     ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
-      "last 1 safari version",
-      "iOS 9",
-      "iOS 8",
-      "iOS 7"
+      "last 1 safari version"
     ]
   },
   "devDependencies": {
