@@ -10,7 +10,7 @@ class Navigation extends React.Component {
             isMenuOpen: false,
             address: "96 Marlow Bottom, SL7 3PH",
             email: "caley@skinrevivalspecialist.co.uk",
-            number: "07976 962912"
+            number: "07976 962012" 
         };
         this.toggleMenu = this.toggleMenu.bind(this);
     }
