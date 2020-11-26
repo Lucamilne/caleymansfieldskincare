@@ -24,10 +24,12 @@
   }
   h1, h2, h3 {
     text-align: center;
+    font-size: 1.75rem;
   }
   h3 {
     font-family: "Rubik", sans-serif;
     color: $thirdColor;
+    font-size: 1.25rem;
     font: 300;
   }
   .modal-content {
@@ -68,6 +70,19 @@
   .backgrounds:nth-of-type(3) {
     background-image: url(../images/clinic-a.jpg);
     animation-delay: 200ms;
+  }
+  @include media-breakpoint-up(sm) {
+    .portrait-image {
+      float: right;
+      max-width: 300px;
+      margin-left: 1rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+    }
+    h3 {
+      font-size: 1.75rem;
+    }
   }
   @include media-breakpoint-up(lg) {
     .backgrounds:nth-of-type(1),

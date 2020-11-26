@@ -1,5 +1,5 @@
 import React from "react";
-import { Modal, Card } from "react-bootstrap";
+import { Modal, Card, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const content = [
@@ -38,6 +38,9 @@ function AboutMe(props) {
                     <Card.Body>
                         <h1 className="mb-2">Caley Mansfield</h1>
                         <h3 className="mb-4">Skin Revival Specialist.</h3>
+                        <div className="d-flex justify-content-center portrait-image mb-3">
+                            <Image src={require("./images/Portrait.jpg")} thumbnail />
+                        </div>
                         {content.map((el, i) => (
                             <p key={i}>{el}</p>
                         ))}

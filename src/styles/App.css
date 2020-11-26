@@ -22112,11 +22112,13 @@ a.text-link:hover, a.text-link:focus {
 
 #about-me h1, #about-me h2, #about-me h3 {
   text-align: center;
+  font-size: 1.75rem;
 }
 
 #about-me h3 {
   font-family: "Rubik", sans-serif;
   color: #FF9B9C;
+  font-size: 1.25rem;
   font: 300;
 }
 
@@ -22177,6 +22179,20 @@ a.text-link:hover, a.text-link:focus {
   background-image: url(../images/clinic-a.jpg);
   -webkit-animation-delay: 200ms;
           animation-delay: 200ms;
+}
+
+@media (min-width: 576px) {
+  #about-me .portrait-image {
+    float: right;
+    max-width: 300px;
+    margin-left: 1rem;
+  }
+  #about-me h1 {
+    font-size: 2.5rem;
+  }
+  #about-me h3 {
+    font-size: 1.75rem;
+  }
 }
 
 @media (min-width: 992px) {
