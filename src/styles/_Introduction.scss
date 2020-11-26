@@ -14,11 +14,9 @@
     color: $thirdColor;
     border: none;
     padding: 0;
+    text-decoration: underline;
     outline: none;
     background-color: #eee;
-  }
-  button:hover {
-    text-decoration: underline;
   }
   button:focus {
     border: none;

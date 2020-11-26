@@ -18,25 +18,23 @@ function AboutMe(props) {
                 <div className="backgrounds"></div>
                 <div className="gradient-filter"></div>
             </div>
-            <Modal.Header>
-                <Link to={{
-                    pathname: '/',
-                    state: { modal: true, type: "about" }
-                }}>
-                    <button
-                        className='close'
-                        aria-label={props['aria-label'] || 'Close'} //eslint-disable-line react/prop-types
-                        onClick={e => {e.stopPropagation()}}
-                        style={{ margin: -2 }}
-                    >
-                        <span aria-hidden="true">
-                            &times;
-                    </span>
-                    </button>
-                </Link>
-            </Modal.Header>
             <Modal.Body className="d-flex justify-content-center align-items-center">
                 <Card className="shadow">
+                    <Link to={{
+                        pathname: '/',
+                        state: { modal: true, type: "about" }
+                    }}>
+                        <button
+                            className='close'
+                            aria-label={props['aria-label'] || 'Close'} //eslint-disable-line react/prop-types
+                            onClick={e => { e.stopPropagation() }}
+                            style={{ margin: -2 }}
+                        >
+                            <span aria-hidden="true">
+                                &times;
+                            </span>
+                        </button>
+                    </Link>
                     <Card.Body>
                         <h1 className="mb-2">Caley Mansfield</h1>
                         <h3 className="mb-4">Skin Revival Specialist.</h3>

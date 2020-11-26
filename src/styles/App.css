@@ -22031,12 +22031,9 @@ a.text-link:hover, a.text-link:focus {
   color: #FF9B9C;
   border: none;
   padding: 0;
+  text-decoration: underline;
   outline: none;
   background-color: #eee;
-}
-
-#introduction button:hover {
-  text-decoration: underline;
 }
 
 #introduction button:focus {
@@ -22083,6 +22080,13 @@ a.text-link:hover, a.text-link:focus {
   position: relative;
   width: 100%;
   border: 0;
+}
+
+#about-me .close {
+  right: 1rem;
+  top: 1rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 #about-me .card {
