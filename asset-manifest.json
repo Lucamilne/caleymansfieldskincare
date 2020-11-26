@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.852bc874.chunk.css",
-    "main.js": "/static/js/main.535037f2.chunk.js",
-    "main.js.map": "/static/js/main.535037f2.chunk.js.map",
+    "main.css": "/static/css/main.f3ed54e9.chunk.css",
+    "main.js": "/static/js/main.02c4d54c.chunk.js",
+    "main.js.map": "/static/js/main.02c4d54c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5b9816dc.js",
     "runtime-main.js.map": "/static/js/runtime-main.5b9816dc.js.map",
     "static/css/2.04716422.chunk.css": "/static/css/2.04716422.chunk.css",
-    "static/js/2.2c31778f.chunk.js": "/static/js/2.2c31778f.chunk.js",
-    "static/js/2.2c31778f.chunk.js.map": "/static/js/2.2c31778f.chunk.js.map",
+    "static/js/2.27d18e8d.chunk.js": "/static/js/2.27d18e8d.chunk.js",
+    "static/js/2.27d18e8d.chunk.js.map": "/static/js/2.27d18e8d.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.1a294fbcbb9e4aca075d1f7909bb7ca3.js": "/precache-manifest.1a294fbcbb9e4aca075d1f7909bb7ca3.js",
+    "precache-manifest.f8f3130954f9bc24f126fa454dde46f7.js": "/precache-manifest.f8f3130954f9bc24f126fa454dde46f7.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.04716422.chunk.css.map": "/static/css/2.04716422.chunk.css.map",
-    "static/css/main.852bc874.chunk.css.map": "/static/css/main.852bc874.chunk.css.map",
-    "static/js/2.2c31778f.chunk.js.LICENSE.txt": "/static/js/2.2c31778f.chunk.js.LICENSE.txt",
+    "static/css/main.f3ed54e9.chunk.css.map": "/static/css/main.f3ed54e9.chunk.css.map",
+    "static/js/2.27d18e8d.chunk.js.LICENSE.txt": "/static/js/2.27d18e8d.chunk.js.LICENSE.txt",
     "static/media/Image01.jpg": "/static/media/Image01.acdb735a.jpg",
     "static/media/Image02.jpg": "/static/media/Image02.ffc1a3c3.jpg",
     "static/media/Image03.jpg": "/static/media/Image03.2e9229c9.jpg",
     "static/media/Image04.jpg": "/static/media/Image04.6d7d40be.jpg",
     "static/media/Image05.jpg": "/static/media/Image05.52214b07.jpg",
     "static/media/Image06.jpg": "/static/media/Image06.77b10277.jpg",
+    "static/media/Portrait.jpg": "/static/media/Portrait.c0f29dc7.jpg",
     "static/media/alift.jpg": "/static/media/alift.5fa66dfd.jpg",
     "static/media/App.css": "/static/media/clinic-c.224f233d.jpg",
     "static/media/coolift.jpg": "/static/media/coolift.07d029f1.jpg",
@@ -36,8 +37,8 @@
   "entrypoints": [
     "static/js/runtime-main.5b9816dc.js",
     "static/css/2.04716422.chunk.css",
-    "static/js/2.2c31778f.chunk.js",
-    "static/css/main.852bc874.chunk.css",
-    "static/js/main.535037f2.chunk.js"
+    "static/js/2.27d18e8d.chunk.js",
+    "static/css/main.f3ed54e9.chunk.css",
+    "static/js/main.02c4d54c.chunk.js"
   ]
 }
