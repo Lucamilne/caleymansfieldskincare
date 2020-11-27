@@ -74,7 +74,6 @@
   @include media-breakpoint-up(sm) {
     .portrait-image {
       float: right;
-      max-width: 300px;
       margin-left: 1rem;
     }
     h1 {

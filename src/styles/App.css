@@ -22184,7 +22184,6 @@ a.text-link:hover, a.text-link:focus {
 @media (min-width: 576px) {
   #about-me .portrait-image {
     float: right;
-    max-width: 300px;
     margin-left: 1rem;
   }
   #about-me h1 {
