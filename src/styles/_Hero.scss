@@ -11,3 +11,22 @@
     height: 100vh;
   }
 }
+
+#contact-card {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 0;
+  border-radius: 0;
+  .card-title {
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+  }
+  .contact-body {
+    font-size: 0.75em;
+  }
+  ul {
+    padding: 0;
+  }
+
+}

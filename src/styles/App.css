@@ -11058,6 +11058,27 @@ a.text-link:hover, a.text-link:focus {
   }
 }
 
+#contact-card {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+#contact-card .card-title {
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+}
+
+#contact-card .contact-body {
+  font-size: 0.75em;
+}
+
+#contact-card ul {
+  padding: 0;
+}
+
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -22654,6 +22675,13 @@ h2,
 .btn {
   border-radius: 0px;
   overflow: hidden;
+}
+
+.btn-circle {
+  border-radius: 50%;
+  padding: 0;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 ul {
