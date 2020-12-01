@@ -1,16 +1,16 @@
 import React from "react";
-import { Card, Button } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import { useInView } from 'react-intersection-observer';
 import ShapeFill from "./ShapeFill";
 
 const contact = [
-    { value: "96 Marlow Bottom, SL7 3PH", icon: "fas fa-map-marker-alt" },
-    { value: "caley@skinrevivalspecialist.co.uk", icon: "far fa-envelope" },
-    { value: "07976 962012", icon: "fas fa-phone-alt" }
+    { value: "96 Marlow Bottom, SL7 3PH", icon: "fas fa-map-marker-alt", rel: "noopener", href: "https://www.google.com/maps/place/96+Marlow+Bottom,+Marlow+SL7+3PH/", target: "_blank"},
+    { value: "caley@skinrevivalspecialist.co.uk", icon: "far fa-envelope", href: "mailto:caley@skinrevivalspecialist.co.uk"},
+    { value: "07976 962012", icon: "fas fa-phone-alt", href: "tel:07976 962012" }
 ]
 
 const options = {
-    threshold: 1,
+    threshold: 0.75,
     triggerOnce: false,
 }
 
@@ -18,7 +18,7 @@ function ContactCard() {
     const { ref, inView } = useInView(options);
 
     return (
-        <Card ref={ref} style={{ width: '18rem' }} className={`d-lg-none m-3 fade-in from-below ${inView ? 'appear' : ''}`} id="contact-card">
+        <Card ref={ref} style={{ width: '18rem' }} className={`d-lg-none m-3 shadow fade-in from-below ${inView ? 'appear' : ''}`} id="contact-card">
             <Card.Body>
                 <Card.Title>Contact</Card.Title>
                 <Card.Text className="contact-body d-flex flex-column mb-3">
@@ -26,11 +26,13 @@ function ContactCard() {
                             <span key={i}>{el.value}</span>
                         ))}
                 </Card.Text>
+                <div className="d-flex">
                 {contact.map((el, i) => (
-                    <Button key={i} variant="secondary" className="btn-circle mr-1">
+                    <a key={i} variant="secondary" href={el.href} rel={el.rel ? el.rel : ""} target={el.target ? el.target : ""} className="btn btn-secondary btn-circle mr-1">
                         <i className={el.icon}></i>
-                    </Button>
+                    </a>
                 ))}
+                </div>
             </Card.Body>
         </Card >
     )
