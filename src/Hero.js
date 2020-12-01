@@ -1,6 +1,7 @@
 import React from "react";
-import { Card, Button } from "react-bootstrap"
-import ShapeFill from "./ShapeFill"
+import { Card, Button } from "react-bootstrap";
+import { useInView } from 'react-intersection-observer';
+import ShapeFill from "./ShapeFill";
 
 const contact = [
     { value: "96 Marlow Bottom, SL7 3PH", icon: "fas fa-map-marker-alt" },
@@ -8,20 +9,25 @@ const contact = [
     { value: "07976 962012", icon: "fas fa-phone-alt" }
 ]
 
+const options = {
+    threshold: 1,
+    triggerOnce: false,
+}
+
 function ContactCard() {
+    const { ref, inView } = useInView(options);
+
     return (
-        <Card style={{ width: '18rem' }} className="m-3" id="contact-card">
+        <Card ref={ref} style={{ width: '18rem' }} className={`d-lg-none m-3 fade-in from-below ${inView ? 'appear' : ''}`} id="contact-card">
             <Card.Body>
                 <Card.Title>Contact</Card.Title>
-                <Card.Text className="contact-body">
-                    <ul>
-                        {contact.map(el => (
-                            <li>{el.value}</li>
+                <Card.Text className="contact-body d-flex flex-column mb-3">
+                        {contact.map((el, i) => (
+                            <span key={i}>{el.value}</span>
                         ))}
-                    </ul>
                 </Card.Text>
-                {contact.map(el => (
-                    <Button variant="secondary" className="btn-circle mr-1">
+                {contact.map((el, i) => (
+                    <Button key={i} variant="secondary" className="btn-circle mr-1">
                         <i className={el.icon}></i>
                     </Button>
                 ))}

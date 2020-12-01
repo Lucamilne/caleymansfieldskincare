@@ -11061,7 +11061,7 @@ a.text-link:hover, a.text-link:focus {
 #contact-card {
   position: absolute;
   bottom: 0;
-  right: 0;
+  margin: 0 auto;
   border: 0;
   border-radius: 0;
 }
@@ -11073,6 +11073,7 @@ a.text-link:hover, a.text-link:focus {
 
 #contact-card .contact-body {
   font-size: 0.75em;
+  margin: 0;
 }
 
 #contact-card ul {
