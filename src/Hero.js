@@ -11,7 +11,7 @@ const contact = [
 
 const options = {
     threshold: 0.75,
-    triggerOnce: false,
+    triggerOnce: true,
 }
 
 function ContactCard() {
