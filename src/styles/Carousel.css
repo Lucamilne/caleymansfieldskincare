@@ -1,20 +1,20 @@
-#carousel .swiper-slide {
+.swiper-slide {
   overflow: hidden;
   height: auto;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #FF9B9C;
+}
+
+.swiper-pagination-bullet-active {
+  background: #FF9B9C;
 }
 
 #carousel img {
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-#carousel .swiper-button-prev,
-#carousel .swiper-button-next {
-  color: #FF9B9C;
-}
-
-#carousel .swiper-pagination-bullet-active {
-  background: #FF9B9C;
 }
 
 #carousel .card {

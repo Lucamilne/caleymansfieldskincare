@@ -22504,22 +22504,14 @@ a.text-link:hover, a.text-link:focus {
 }
 
 #testimonials .card {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 4px;
   border: 0px;
   background-color: #eee;
-  height: 100%;
+  height: calc(100% - 4.5rem);
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  cursor: default;
-}
-
-#testimonials .card:hover {
-  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
 }
 
 #testimonials .card-header {
@@ -22527,6 +22519,8 @@ a.text-link:hover, a.text-link:focus {
 }
 
 #testimonials .card-footer, #testimonials .card-header {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: #222;
   color: #fff;
   text-transform: uppercase;
@@ -22535,6 +22529,8 @@ a.text-link:hover, a.text-link:focus {
 }
 
 #testimonials .card-body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 1em;
   line-height: 1.5em;
   z-index: 2;
