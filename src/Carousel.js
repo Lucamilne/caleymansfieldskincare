@@ -1,7 +1,7 @@
 import React from "react"
 import SwiperCore, { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Card, Container } from "react-bootstrap"
+import { Card, Container, Button } from "react-bootstrap"
 import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
@@ -12,19 +12,22 @@ const products = [
         brand: "NeoGenesis",
         description: " advanced stem cell technology provides skincare products that help heal the skin barrier. The products work through patented S2RM® technology to nourish and regenerate skin cells. This is a unique and natural approach to skin care.",
         img: "Image05.jpg",
-        logo: "NeoGenesisLogoTM_white.png"
+        logo: "NeoGenesisLogoTM_white.png",
+        link: "https://www.skinrevivalshop.co.uk/neo-genesis"
     },
     {
         brand: "Fusion Meso",
         description: " is an internationally renowned cosmeceutical skin care range. Developed specifically to complement skin rejuvenating treatments.",
         img: "Image01.jpg",
-        logo: "logo_new_white.png"
+        logo: "logo_new_white.png",
+        link: "https://www.skinrevivalshop.co.uk/fusion"
     },
     {
         brand: "ekseption",
         description: "  is a professional brand of chemical peels with home care products that prepares, rejuvenates and protects the skin.",
         img: "Image02.jpg",
-        logo: "logo.png"
+        logo: "logo.png",
+        link: "https://www.skinrevivalshop.co.uk/ekseption"
     }
 ]
 
@@ -54,9 +57,10 @@ function Carousel() {
                         <SwiperSlide key={index}>
                             <Card>
                                 <img className="ml-3 mt-3 position-absolute logo" src={require(`./images/products/${product.logo}`)} alt={product.brand + " logo"} />
-                                <Card.Img variant="top" src={require(`./images/products/${product.img}`)} alt={product.brand + " range of products"}/>
-                                <Card.Body>
+                                <Card.Img variant="top" src={require(`./images/products/${product.img}`)} alt={product.brand + " range of products"} />
+                                <Card.Body className="d-flex flex-column justify-content-between">
                                     <Card.Text><strong>{product.brand}</strong>{product.description}</Card.Text>
+                                    <Button className="button-link" variant="outline-dark" href={product.link} target="_blank">Shop</Button>
                                 </Card.Body>
                             </Card>
                         </SwiperSlide>

@@ -28,4 +28,13 @@
     max-width: 9rem;
     max-height: 5rem;
   }
+  .button-link {
+    width: 200px;
+  }
+  a:link, a:visited {
+    color: #222;
+  }
+  a:hover, a:active {
+    color: #eee;
+  }
 }

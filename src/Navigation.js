@@ -34,7 +34,7 @@ class Navigation extends React.Component {
                             state: { modal: true, type: "about" }
                         }}>About</Link>
                         <Nav.Link onClick={this.toggleMenu} href="#treatments">Treatments</Nav.Link>
-                        <Nav.Link onClick={this.toggleMenu} href="#testimonials">Testimonials</Nav.Link>
+                        <Nav.Link onClick={this.toggleMenu} href="https://www.skinrevivalshop.co.uk/" target="_blank">Shop</Nav.Link>
                     </Nav>
                 </div>
                 <Navbar variant="dark" id="navbar" className="d-flex justify-content-center">
@@ -48,7 +48,7 @@ class Navigation extends React.Component {
                                 state: { modal: true, type: "about" }
                             }}>About</Link>
                             <Nav.Link href="#treatments">Treatments</Nav.Link>
-                            <Nav.Link href="#testimonials">Testimonials</Nav.Link>
+                            <Nav.Link href="https://www.skinrevivalshop.co.uk/" target="_blank">Shop</Nav.Link>
                         </Nav>
                     </Col>
                     <Col xs={9} lg={6} xl={4} className="logo">
