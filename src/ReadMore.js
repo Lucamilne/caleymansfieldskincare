@@ -1,27 +1,47 @@
 import React from "react";
 import { Modal, Container, Card } from "react-bootstrap";
-import geneoImage from "./images/technology/geneo.jpg";
 import aliftImage from "./images/technology/alift.jpg";
 import dermaluxImage from "./images/technology/dermalux.jpg";
 import cooliftImage from "./images/technology/coolift.jpg";
-import fusionImage from "./images/technology/fusion.jpg";
+import divineImage from "./images/technology/divine.jpeg";
+import infinityImage from "./images/technology/infinity.jpeg";
 import { Link, useParams } from "react-router-dom";
 
 const technology = {
-    "geneo": {
-        title: "Geneo Facial Treatment Platform",
-        introduction: "The ultimate facial treatment platform for achieving a young, fresh and natural looking skin. It is the only device on the market offering a unique combination of advanced technologies that work both on the outside and the inside of the skin.",
-        description: "Geneo offers effective treatments through encouraging the natural processes of skin rejuvenation. The power of natural oxygenation, complemented by the anti-aging effect of Tripollar RF, both further enhanced by Ultrasound, offer valuable advantages of immediately visible skin improvement and long-term rejuvenating effects.",
-        summary: "Geneo treatments can be offered to a wide variety of skin types, ages and needs, making it a perfect solution for ongoing maintenance of the skin and for targeted treatment of specific skin conditions.",
-        img: { alt: "Geneo Machine", variableName: geneoImage },
-        video: { type: "embedded", src: "https://www.youtube.com/embed/I0U5AddOYZs" },
-        benefits: { title: "Geneo delivers four essential treatments simulataneously:", content: ["Dermis regeneration", "Increased collagen and elastin production", "Smooths and tightens skin", "Reduces fine lines and wrinkles", "Oxygenation", "Advanced exfoliation"] },
+    // "geneo": {
+    //     title: "Geneo Facial Treatment Platform",
+    //     introduction: "The ultimate facial treatment platform for achieving a young, fresh and natural looking skin. It is the only device on the market offering a unique combination of advanced technologies that work both on the outside and the inside of the skin.",
+    //     description: "Geneo offers effective treatments through encouraging the natural processes of skin rejuvenation. The power of natural oxygenation, complemented by the anti-aging effect of Tripollar RF, both further enhanced by Ultrasound, offer valuable advantages of immediately visible skin improvement and long-term rejuvenating effects.",
+    //     summary: "Geneo treatments can be offered to a wide variety of skin types, ages and needs, making it a perfect solution for ongoing maintenance of the skin and for targeted treatment of specific skin conditions.",
+    //     img: { alt: "Geneo Machine", variableName: geneoImage },
+    //     video: { type: "embedded", src: "https://www.youtube.com/embed/I0U5AddOYZs" },
+    //     benefits: { title: "Geneo delivers four essential treatments simulataneously:", content: ["Dermis regeneration", "Increased collagen and elastin production", "Smooths and tightens skin", "Reduces fine lines and wrinkles", "Oxygenation", "Advanced exfoliation"] },
+    //     faq: { results: ["Immediate", "Cumulative", "Long Lasting"], downtime: "None", sessions: "Included in bespoke treatments devised at consultation" }
+    // },
+    // "fusion": {
+    //     title: "Fusion Meso Pen Platinum",
+    //     introduction: "The Fusion Platinum pen is the ultimate device for Fractional Mesotherapy treatments. It encompasses many beneficial features, such as low noise vibration technology which provides clients with a better and more enjoyable experience. And high speed penetration, with 133 punctures per second to reduce discomfort.",
+    //     description: "The disposable needles are 33g ultra sharp, and of the highest quality, encased in biocompatible medical plastic. The cartridges benefit from anti-back flow technology, to prevent product or bodily fluids entering the device and eliminating any chance of cross-contamination. Making the platinum pen one of the safest micro needling pens available.",
+    //     summary: "The Fusion Mesotherapy range includes products containing the latest generation of Growth Factors and Biomimetic Peptides. Used in conjunction with the Platinum Pen, it guarantees hygiene, safety, quality treatments and results.",
+    //     img: { alt: "Fusion Platinum Pen", variableName: fusionImage },
+    //     video: { type: "embedded", src: "https://www.youtube.com/embed/0qVwUrovbrQ" },
+    //     benefits: { title: "What are the benefits to the Fusion Meso Platinum treatment?", content: ["Face rejuvenation", "Reduced wrinkles and expression lines", "Reverse visible aging", "Increases collagen and elastin production", "Improves skin texture and quality"] },
+    //     faq: { results: ["Immediate", "Cumulative", "Long Lasting"], downtime: "12 - 24 hours", sessions: "1 treatment recommended every 2 weeks, 3-6 treatments in total" }
+    // }
+    "divine": {
+        title: "Pollogen Divine Pro Platform",
+        introduction: "Pollogen's Divine Pro combines dermal volumisation and skin firming to provide effective, yet comfortable, facial rejuvenation in a multi-solutions platform system.",
+        description: "The Divine Pro incorporates Four proven modalities, 'TriFractional Radiofrequency', 'VoluDerm needling'  'TriPollar RF and Dynamic Muscle Activation', to give a multi-dimensional benefit to the deep-dermis, mid-dermal layer and epidermis - effectively providing skin rejuvenation from the inside out.",
+        summary: "With three clinically proven technologies to yield powerful treatment efficacy, the Divine™ Pro is a multi-dimensional facial rejuvenation platform developed for dynamic medi-aesthetic service environments.",
+        img: { alt: "Pollogen Divine Pro", variableName: divineImage },
+        video: { type: "embedded", src: "https://www.youtube.com/embed/CyvqxQqvluY" },
+        benefits: { title: "The Divine Pro delivers four essential treatments simulataneously:", content: ["TriFractional Radiofrequency", "Dynamic Muscle Activation (DMA)", "TriPollar Radio Frequency", "VoluDerm needling"] },
         faq: { results: ["Immediate", "Cumulative", "Long Lasting"], downtime: "None", sessions: "Included in bespoke treatments devised at consultation" }
     },
     "alift": {
         title: "A-lift Facial Treatment",
         introduction: "A-Lift is a highly-effective, non-invasive facial treatment that uses the latest technology to deliver proven results. The A-Lift machine uses three phases of microcurrent and two phases of nanocurrent technology to lift, tone, and re-energise the cells in the face and neck. A-Lift increases Adenosine Triphosphate (ATP) production within the cells to accelerate their metabolism.",
-        description: "A-Lift with its dual current output of microcurrent and nanocurrent boosts ATP production by up to 500% as well as automatically monitoring and adjusting itself to synchronise with the skin’s own bio-electrical frequency. The current stimulates ATP production within the cells which effectively ‘supercharges’ the rate of their metabolism back to previous levels of youth.",
+        description: "A-Lift with its dual current output of mic1ocurrent and nanocurrent boosts ATP production by up to 500% as well as automatically monitoring and adjusting itself to synchronise with the skin’s own bio-electrical frequency. The current stimulates ATP production within the cells which effectively ‘supercharges’ the rate of their metabolism back to previous levels of youth.",
         summary: "ATP levels are increased because ATP stores and transports chemical energy within the cells. It provides the cell with energy to reproduce, repair, and function. Fibroblast cells are stimulated to produce more proteins including collagen leading to better structure and improved toning and lift so the skin looks fresh. Another positive effect of this chemical reaction is more water so the cells appear more hydrated.",
         img: { alt: "A-lift Machine", variableName: aliftImage },
         video: { type: "embedded", src: "https://www.youtube.com/embed/3lrXsYMcafs" },
@@ -48,14 +68,27 @@ const technology = {
         benefits: { title: "What are the benefits of the Coolift Gun treatment?", content: ["Intense hydration", "Improves skin texture and quality", "Collagen stimulation", "Dermis regeneration", "Visible plumping and brightening effects"] },
         faq: { results: ["Immediate", "Cumulative"], downtime: "None", sessions: "A course of 3 in quick succession for £75 per session. Perfect for a special occassion. Included in bespoke treatments devised at consultation" }
     },
-    "fusion": {
-        title: "Fusion Meso Pen Platinum",
-        introduction: "The Fusion Platinum pen is the ultimate device for Fractional Mesotherapy treatments. It encompasses many beneficial features, such as low noise vibration technology which provides clients with a better and more enjoyable experience. And high speed penetration, with 133 punctures per second to reduce discomfort.",
-        description: "The disposable needles are 33g ultra sharp, and of the highest quality, encased in biocompatible medical plastic. The cartridges benefit from anti-back flow technology, to prevent product or bodily fluids entering the device and eliminating any chance of cross-contamination. Making the platinum pen one of the safest micro needling pens available.",
-        summary: "The Fusion Mesotherapy range includes products containing the latest generation of Growth Factors and Biomimetic Peptides. Used in conjunction with the Platinum Pen, it guarantees hygiene, safety, quality treatments and results.",
-        img: { alt: "Fusion Platinum Pen", variableName: fusionImage },
-        video: { type: "embedded", src: "https://www.youtube.com/embed/0qVwUrovbrQ" },
-        benefits: { title: "What are the benefits to the Fusion Meso Platinum treatment?", content: ["Face rejuvenation", "Reduced wrinkles and expression lines", "Reverse visible aging", "Increases collagen and elastin production", "Improves skin texture and quality"] },
+    "infinity": {
+        title: "Meso Infinity",
+        introduction: "The Meso Infinity device is a cutting edge needle-free mesotherapy delivery system.",
+        description: "ETM mesotherapy technology is a combination of both Meso-chip transdermal technology & Electroporation.",
+        summary: "EMT is an effective way to transport vital nutrients into the mesoderm (mesoblast layer), to achieve acceleration of cell metabolism, to promote circulation within the capillaries, and to increase collagen regeneration.",
+        img: { alt: "Fusion Platinum Pen", variableName: infinityImage },
+        video: { type: "embedded", src: "https://www.youtube.com/embed/GkBXC2Uczy8" },
+        benefits: {
+            title: "What are the benefits to the Meso Infinity treatment?", content:
+                [
+                    "Sensitive skin conditions",
+                    "Aged skin/loss of collagen and elastin",
+                    "Expanded pores/open pores",
+                    "Dehydration",
+                    "Pigmentation disorders",
+                    "Acne/ acne rosacea",
+                    "Dialated blood vessels",
+                    "Scars",
+                    "Hair loss/scalp conditions"
+                ]
+        },
         faq: { results: ["Immediate", "Cumulative", "Long Lasting"], downtime: "12 - 24 hours", sessions: "1 treatment recommended every 2 weeks, 3-6 treatments in total" }
     }
 }
@@ -93,12 +126,12 @@ function ReadMore(props) {
                     <button
                         className='close'
                         aria-label={props['aria-label'] || 'Close'} //eslint-disable-line react/prop-types
-                        onClick={e => {e.stopPropagation()}}
+                        onClick={e => { e.stopPropagation() }}
                         style={{ margin: -2 }}
                     >
                         <span aria-hidden="true">
                             &times;
-                             </span>
+                        </span>
                     </button>
                 </Link>
             </Modal.Header>
@@ -112,7 +145,7 @@ function ReadMore(props) {
                         }
                         <Card>
                             <Card.Body className="description">
-                                <h2 className="mb-4">About {id}</h2>
+                                <h2 className="mb-4">About {technology[id].title}</h2>
                                 <p>{technology[id].introduction}</p>
                                 <p>{technology[id].description}</p>
                                 <p>{technology[id].summary}</p>

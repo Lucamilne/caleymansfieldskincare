@@ -16,7 +16,7 @@
     "react-intersection-observer": "^8.29.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.4",
-    "swiper": "^6.3.5"
+    "swiper": "^6.8.4"
   },
   "scripts": {
     "predeploy": "npm run build",
